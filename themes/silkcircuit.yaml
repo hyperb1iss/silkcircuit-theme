@@ -2,386 +2,391 @@ SilkCircuit:
   # ============================================
   # CORE COLORS - Cyberpunk palette fundamentals
   # ============================================
-  primary-color: "#ff5cd6"                         # Hot pink for primary elements
-  light-primary-color: "#ff92df"                   # Lighter version of primary
-  accent-color: "#50fa7b"                          # Neon green for accents
-  secondary-color: "#bd93f9"                       # Vibrant purple for secondary elements
-  
-  # Additional color palette
-  pink-color: "#ff5cd6"                            # Hot pink (primary)
-  light-pink-color: "#ff92df"                      # Lighter pink
-  dark-pink-color: "#d940b0"                       # Darker pink
-  purple-color: "#bd93f9"                          # Vibrant purple
-  blue-color: "#8be9fd"                            # Cyan blue
-  green-color: "#50fa7b"                           # Neon green
-  yellow-color: "#f1fa8c"                          # Neon yellow
-  red-color: "#ff5555"                             # Neon red
-  orange-color: "#ffb86c"                          # Neon orange
-  teal-color: "#4fffb0"                            # Neon teal
-  
-  # Background colors
-  primary-background-color: "#15121e"              # Main background - deep blue-purple
-  secondary-background-color: "#272136"            # Secondary background
-  card-background-color: "#272136"                 # Card background
-  divider-color: "#3d3654"                         # Subtle divider
-  
+  primary-color: "#ff5cd6" # Hot pink for primary elements
+  light-primary-color: "#ff92df" # Lighter version of primary
+  dark-primary-color: "#d940b0" # Darker primary
+  accent-color: "#50fa7b" # Neon green for accents
+  light-accent-color: "#69ffb0" # Lighter accent
+  secondary-color: "#bd93f9" # Vibrant purple for secondary elements
+
+  # Extended color palette
+  pink-color: "#ff5cd6" # Hot pink (primary)
+  light-pink-color: "#ff92df" # Lighter pink
+  dark-pink-color: "#d940b0" # Darker pink
+  purple-color: "#bd93f9" # Vibrant purple
+  blue-color: "#8be9fd" # Cyan blue
+  green-color: "#50fa7b" # Neon green
+  yellow-color: "#f1fa8c" # Neon yellow
+  red-color: "#ff5555" # Neon red
+  orange-color: "#ffb86c" # Neon orange
+  teal-color: "#4fffb0" # Neon teal
+
   # Status colors
-  info-color: "#8be9fd"                            # Info status
-  success-color: "#50fa7b"                         # Success status
-  warning-color: "#f1fa8c"                         # Warning status
-  error-color: "#ff5555"                           # Error status
-  
+  info-color: "#8be9fd" # Info status
+  success-color: "#50fa7b" # Success status
+  warning-color: "#f1fa8c" # Warning status
+  error-color: "#ff5555" # Error status
+
+  # ============================================
+  # BACKGROUNDS - Deep, rich color foundations
+  # ============================================
+  primary-background-color: "#15121e" # Main background - deep blue-purple
+  secondary-background-color: "#272136" # Secondary background
+  card-background-color: "#272136" # Card background
+  divider-color: "#3d3654" # Subtle divider
+
+  # Dialog backgrounds
+  paper-dialog-background-color: "#272136" # Dialog background
+  markdown-code-background-color: "#1d1b2e" # Code background
+  code-editor-background-color: "#1d1b2e" # Code editor
+
+  # Material backgrounds
+  material-background-color: "#272136" # Material bg
+  material-secondary-background-color: "#1d1b2e" # Material secondary bg
+
+  # Table backgrounds
+  table-row-background-color: "#272136" # Table row
+  table-row-alternative-background-color: "#1d1b2e" # Alternate row
+  data-table-background-color: "#15121e" # Data table background
+
   # ============================================
   # TEXT STYLING - High contrast for readability
   # ============================================
-  text-primary-color: "#ffffff"                    # Primary text on dark background
-  primary-text-color: "#ffffff"                    # Primary text color
-  text-secondary-color: "#f0f0ff"                  # Secondary text - slight purple tint
-  secondary-text-color: "#f0f0ff"                  # Secondary text color
-  disabled-text-color: "#b8b8d0"                   # Disabled text - lighter
-  app-header-text-color: "#ffffff"                 # Header text
-  text-accent-color: "#272136"                     # Text on accent color backgrounds
-  
+  text-primary-color: "#ffffff" # Primary text on dark background
+  primary-text-color: "#ffffff" # Primary text color
+  text-secondary-color: "#f0f0ff" # Secondary text - slight purple tint
+  secondary-text-color: "#f0f0ff" # Secondary text color
+  text-accent-color: "#272136" # Text on accent color backgrounds
+  text-dark-color: "#15121e" # Dark text for light backgrounds
+  text-very-light-color: "#f8f8f2" # Very light text
+  disabled-text-color: "#b8b8d0" # Disabled text - lighter
+
+  # Headers and special text
+  app-header-text-color: "#ffffff" # Header text
+  paper-card-header-color: "#ffffff" # Card header
+  paper-card-header-text-color: "#ffffff" # Card header text
+
   # Paper element text colors
-  paper-font-headline_-_color: "#ffffff"           # Headlines
-  paper-font-subhead_-_color: "#f0f0ff"            # Subheadings
-  paper-font-body1_-_color: "#ffffff"              # Body text
-  paper-font-caption_-_color: "#f0f0ff"            # Captions
-  
+  paper-font-headline_-_color: "#ffffff" # Headlines
+  paper-font-subhead_-_color: "#f0f0ff" # Subheadings
+  paper-font-body1_-_color: "#ffffff" # Body text
+  paper-font-caption_-_color: "#f0f0ff" # Captions
+  paper-grey-50: "#f8f8f2" # Light paper color
+  paper-grey-200: "#272136" # Dark paper color
+
   # ============================================
   # SIDEBAR & HEADER - Main navigation styling
   # ============================================
-  sidebar-background-color: "#191528"              # Sidebar background
-  sidebar-icon-color: "#ff5cd6"                    # Sidebar icons - pink
-  sidebar-text-color: "#ffffff"                    # Sidebar text
+  # Sidebar colors
+  sidebar-background-color: "#191528" # Sidebar background
+  sidebar-icon-color: "#ff5cd6" # Sidebar icons - pink
+  sidebar-text-color: "#ffffff" # Sidebar text
   sidebar-selected-background-color: "rgba(255, 92, 214, 0.25)" # Selected item background
-  sidebar-selected-icon-color: "#ff92df"           # Selected item icon
-  sidebar-selected-text-color: "#ffffff"           # Selected item text
-  
+  sidebar-selected-icon-color: "#ff92df" # Selected item icon
+  sidebar-selected-text-color: "#ffffff" # Selected item text
+
   # Header colors
-  app-header-background-color: "#15121e"           # Header background
+  app-header-background-color: "#15121e" # Header background
   app-header-edit-background-color: "rgba(189, 147, 249, 0.3)" # Edit mode background
-  
+
+  # Drawer and menu (related to sidebar)
+  paper-drawer-background-color: "#191528" # Drawer background
+  paper-drawer-text-color: "#ffffff" # Drawer text
+  paper-drawer-selected-color: "#ff5cd6" # Selected drawer item
+  paper-menu-background-color: "#272136" # Menu background
+  paper-menu-color: "#ffffff" # Menu text
+  paper-menu-disabled-color: "#b8b8d0" # Disabled menu item
+
   # ============================================
   # CARDS & UI ELEMENTS - Sharp, neon-accented
   # ============================================
   # Card styling
-  ha-card-border-radius: "12px"                    # Rounded corners
+  ha-card-border-radius: "12px" # Rounded corners
   ha-card-box-shadow: "0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12), 0 0 10px rgba(255, 92, 214, 0.3)"
-  paper-card-background-color: "#272136"           # Paper card background
-  paper-dialog-background-color: "#272136"         # Dialog background
-  
+  paper-card-background-color: "#272136" # Paper card background
+
   # State colors
-  state-icon-color: "#bd93f9"                      # Default state
-  state-icon-active-color: "#ff5cd6"               # Active state
-  state-icon-unavailable-color: "#44475a"          # Unavailable state
-  
-  # More state colors
-  state-on-color: "#50fa7b"                        # On state
-  state-off-color: "#ff5555"                       # Off state
-  state-idle-color: "#8be9fd"                      # Idle state
-  state-standby-color: "#ffb86c"                   # Standby state
-  state-unknown-color: "#6272a4"                   # Unknown state
-  
-  # Slider and toggle controls
-  paper-slider-knob-color: "#ff5cd6"               # Slider knob
-  paper-slider-knob-start-color: "#8c8cb0"         # Slider knob start
-  paper-slider-pin-color: "#ff5cd6"                # Slider pin
-  paper-slider-active-color: "#ff5cd6"             # Slider active
-  paper-slider-secondary-color: "#bd93f9"          # Slider secondary
+  state-icon-color: "#bd93f9" # Default state
+  state-icon-active-color: "#ff5cd6" # Active state
+  state-icon-unavailable-color: "#44475a" # Unavailable state
+
+  # On/Off state colors
+  state-on-color: "#50fa7b" # On state
+  state-off-color: "#ff5555" # Off state
+  state-idle-color: "#8be9fd" # Idle state
+  state-standby-color: "#ffb86c" # Standby state
+  state-unknown-color: "#6272a4" # Unknown state
+
+  # Paper item styling
+  paper-item-icon-color: "#bd93f9" # Icons in list items
+  paper-item-icon-active-color: "#ff5cd6" # Active icons in list items
+  paper-item-icon_-_color: "#bd93f9" # Legacy icon color
+  paper-item-min-height: "36px" # Item height
+  paper-item-selected_-_background-color: "rgba(255, 92, 214, 0.3)" # Selected item
+  paper-item-selected_-_color: "#ffffff" # Selected item text
+  paper-item-hover_-_background-color: "rgba(255, 92, 214, 0.1)" # Hover bg
+  paper-item-focused_-_background-color: "rgba(255, 92, 214, 0.1)" # Focused bg
+  paper-item-focused-before_-_opacity: "0.12" # Focus opacity
+  paper-icon-item_-_background-color: "transparent" # Icon item bg
+
+  # ============================================
+  # CONTROLS - Sliders, switches and toggles
+  # ============================================
+  # Slider controls
+  paper-slider-knob-color: "#ff5cd6" # Slider knob
+  paper-slider-knob-start-color: "#8c8cb0" # Slider knob start
+  paper-slider-pin-color: "#ff5cd6" # Slider pin
+  paper-slider-active-color: "#ff5cd6" # Slider active
+  paper-slider-secondary-color: "#bd93f9" # Slider secondary
   paper-slider-container-color: "rgba(140, 140, 176, 0.4)" # Slider container
-  
-  # Switch colors - vibrant pink theme
-  switch-checked-button-color: "#ff5cd6"           # Switch button when on
+
+  # Switch colors
+  switch-checked-button-color: "#ff5cd6" # Switch button when on
   switch-checked-track-color: "rgba(255, 92, 214, 0.6)" # Switch track when on
-  switch-unchecked-button-color: "#8c8cb0"         # Switch button when off
+  switch-unchecked-button-color: "#8c8cb0" # Switch button when off
   switch-unchecked-track-color: "rgba(140, 140, 176, 0.4)" # Switch track when off
-  
-  # ============================================
-  # ADVANCED UI COMPONENTS - Enhanced styling
-  # ============================================
-  # Paper elements
-  paper-item-icon-color: "#bd93f9"                # Icons in list items
-  paper-item-icon-active-color: "#ff5cd6"         # Active icons in list items
-  paper-item-icon_-_color: "#bd93f9"              # Legacy icon color
-  paper-listbox-background-color: "#272136"       # Dropdown background
-  paper-listbox-color: "#f8f8f2"                  # Dropdown text
-  paper-grey-50: "#f8f8f2"                        # Light paper color
-  paper-grey-200: "#272136"                       # Dark paper color
-  
+
   # Toggle button
   paper-toggle-button-checked-button-color: "#ff5cd6"
   paper-toggle-button-checked-bar-color: "rgba(255, 92, 214, 0.6)"
   paper-toggle-button-unchecked-button-color: "#8c8cb0"
   paper-toggle-button-unchecked-bar-color: "rgba(140, 140, 176, 0.4)"
-  
-  # Tables
-  table-row-background-color: "#272136"            # Table row
-  table-row-alternative-background-color: "#1d1b2e" # Alternate row
-  data-table-background-color: "#15121e"           # Data table background
-  
-  # Dropdowns
-  material-background-color: "#272136"             # Material bg
-  material-secondary-background-color: "#1d1b2e"   # Material secondary bg
-  paper-listbox-color: "#ffffff"                   # Listbox text
-  paper-item-min-height: "36px"                    # Item height
-  paper-item-selected_-_background-color: "rgba(255, 92, 214, 0.3)" # Selected item
-  paper-dropdown-menu-color: "#ffffff"             # Dropdown text
-  paper-dropdown-menu-label-color: "#ffffff"       # Dropdown label
-  mdc-text-field-label-ink-color: "#ffffff"        # Text field label
-  
+
+  # Progress indicators
+  paper-progress-active-color: "#ff5cd6" # Active progress color
+  paper-progress-container-color: "rgba(140, 140, 176, 0.4)" # Progress container
+  paper-progress-disabled-active-color: "#b8b8d0" # Disabled progress active
+  paper-progress-indeterminate-cycle-duration: "2s" # Progress animation speed
+  paper-progress-secondary-color: "#bd93f9" # Secondary progress
+
+  # Spinners
+  paper-spinner-color: "#ff5cd6" # Spinner color
+  paper-spinner-layer-1-color: "#ff5cd6" # Spinner layer 1
+  paper-spinner-layer-2-color: "#50fa7b" # Spinner layer 2
+  paper-spinner-layer-3-color: "#bd93f9" # Spinner layer 3
+  paper-spinner-layer-4-color: "#8be9fd" # Spinner layer 4
+
+  # ============================================
+  # DROPDOWNS & MENUS - List components styling
+  # ============================================
+  # Dropdowns and listboxes
+  paper-listbox-background-color: "#272136" # Dropdown background
+  paper-listbox-color: "#ffffff" # Dropdown text
+  paper-dropdown-menu-color: "#ffffff" # Dropdown text
+  paper-dropdown-menu-label-color: "#ffffff" # Dropdown label
+  input-dropdown-icon-color: "#bd93f9" # Dropdown icon
+
+  # MDC (Material Design Components) Dropdowns
+  mdc-select-fill-color: "#272136" # Select fill
+  mdc-select-ink-color: "#ffffff" # Select ink
+  mdc-select-label-ink-color: "#f0f0ff" # Select label
+  mdc-select-idle-line-color: "#bd93f9" # Select idle line
+  mdc-select-dropdown-icon-color: "#bd93f9" # Select dropdown icon
+  mdc-select-hover-line-color: "#ff5cd6" # Select hover line
+  mdc-text-field-label-ink-color: "#ffffff" # Text field label
+
+  # Tabs
+  paper-tabs-selection-bar-color: "#ff5cd6" # Tab selection indicator
+  paper-tab-ink: "#ff5cd6" # Tab ink effect
+  paper-tabs-container-color: "transparent" # Tabs container
+  paper-tabs-content-container_-_background-color: "transparent" # Tabs content bg
+  paper-tabs-selection-bar_-_border-color: "#ff5cd6" # Selection bar
+
+  # ============================================
+  # FORMS & INPUT - Text fields and form elements
+  # ============================================
   # Input field styling
-  input-fill-color: "rgba(255, 255, 255, 0.06)"    # Input bg
-  input-dropdown-icon-color: "#bd93f9"             # Dropdown icon
-  input-ink-color: "#ffffff"                       # Input text
-  input-label-ink-color: "#f0f0ff"                 # Input label
-  input-disabled-ink-color: "#b8b8d0"              # Disabled text
+  input-fill-color: "rgba(255, 255, 255, 0.06)" # Input bg
+  input-ink-color: "#ffffff" # Input text
+  input-label-ink-color: "#f0f0ff" # Input label
+  input-disabled-ink-color: "#b8b8d0" # Disabled text
   input-disabled-fill-color: "rgba(255, 255, 255, 0.02)" # Disabled bg
-  input-idle-line-color: "#bd93f9"                 # Idle line
-  input-hover-line-color: "#ff5cd6"                # Hover line
-  input-disabled-line-color: "#44475a"             # Disabled line
-  input-outlined-idle-border-color: "#bd93f9"      # Outlined idle border
-  input-outlined-hover-border-color: "#ff5cd6"     # Outlined hover border
-  input-outlined-disabled-border-color: "#44475a"  # Outlined disabled border
-  
-  # MDC (Material Design Components)
-  mdc-theme-primary: "#ff5cd6"                     # MDC primary
-  mdc-theme-secondary: "#bd93f9"                   # MDC secondary
-  mdc-theme-background: "#15121e"                  # MDC background
-  mdc-theme-surface: "#272136"                     # MDC surface
-  mdc-theme-on-primary: "#ffffff"                  # MDC on primary
-  mdc-theme-on-secondary: "#15121e"                # MDC on secondary
-  mdc-theme-on-surface: "#ffffff"                  # MDC on surface
-  
+  input-idle-line-color: "#bd93f9" # Idle line
+  input-hover-line-color: "#ff5cd6" # Hover line
+  input-disabled-line-color: "#44475a" # Disabled line
+  input-outlined-idle-border-color: "#bd93f9" # Outlined idle border
+  input-outlined-hover-border-color: "#ff5cd6" # Outlined hover border
+  input-outlined-disabled-border-color: "#44475a" # Outlined disabled border
+
+  # Form container elements
+  paper-input-container-color: "#f0f0ff" # Input container
+  paper-input-container-focus-color: "#ff5cd6" # Focused input
+  paper-input-container-invalid-color: "#ff5555" # Invalid input
+  paper-input-container-input-color: "#ffffff" # Input text
+
   # Checkboxes
-  mdc-checkbox-unchecked-color: "#b8b8d0"          # Checkbox when unchecked
-  mdc-select-fill-color: "#272136"                 # Select fill
-  mdc-select-ink-color: "#ffffff"                  # Select ink
-  mdc-select-label-ink-color: "#f0f0ff"            # Select label
-  mdc-select-idle-line-color: "#bd93f9"            # Select idle line
-  mdc-select-dropdown-icon-color: "#bd93f9"        # Select dropdown icon
-  mdc-select-hover-line-color: "#ff5cd6"           # Select hover line
-  
-  # Markdown and code
-  markdown-code-background-color: "#1d1b2e"        # Code background
-  
-  # Toast notifications
-  paper-toast-background-color: "#272136"          # Toast notification bg
-  
-  # Labels and badges
-  label-badge-red: "rgba(255, 85, 85, 1)"          # Red badge
-  label-badge-green: "rgba(80, 250, 123, 1)"       # Green badge
-  label-badge-blue: "rgba(139, 233, 253, 1)"       # Blue badge
-  label-badge-yellow: "rgba(241, 250, 140, 1)"     # Yellow badge
-  label-badge-gray: "rgba(98, 114, 164, 1)"        # Gray badge
-  label-badge-text-color: "#ffffff"                # Badge text
-  label-badge-background-color: "rgba(39, 33, 54, 0.8)" # Badge bg
-  
-  # ============================================
-  # EXPANDED COVERAGE - Additional elements
-  # ============================================
-  # More text and background variations
-  text-dark-color: "#15121e"                       # Dark text for light backgrounds
-  text-very-light-color: "#f8f8f2"                 # Very light text
-  dark-primary-color: "#d940b0"                    # Darker primary
-  light-accent-color: "#69ffb0"                    # Lighter accent
-  
-  # Paper cards and dialogs - expanded
-  paper-dialog-button-color: "#ff5cd6"             # Dialog button
-  paper-card-header-color: "#ffffff"               # Card header
-  paper-card-header-text-color: "#ffffff"          # Card header text
-  paper-tabs-selection-bar-color: "#ff5cd6"        # Tab selection indicator
-  paper-tab-ink: "#ff5cd6"                         # Tab ink effect
-  
-  # Additional button states
+  paper-checkbox-checkmark-color: "#15121e" # Checkmark color
+  paper-checkbox-checked-color: "#ff5cd6" # Checked box
+  paper-checkbox-checked-ink-color: "#ff5cd6" # Checked ink effect
+  paper-checkbox-unchecked-color: "#bd93f9" # Unchecked box
+  paper-checkbox-unchecked-ink-color: "#bd93f9" # Unchecked ink effect
+  paper-checkbox-label-color: "#ffffff" # Checkbox label
+  paper-checkbox-label-checked-color: "#ffffff" # Checked label
+  paper-checkbox-disabled-color: "#44475a" # Disabled checkbox
+  paper-checkbox-disabled-ink-color: "#44475a" # Disabled ink effect
+  mdc-checkbox-unchecked-color: "#b8b8d0" # MDC Checkbox when unchecked
+
+  # Radio buttons
+  paper-radio-button-checked-color: "#ff5cd6" # Checked radio
+  paper-radio-button-checked-ink-color: "#ff5cd6" # Checked ink effect
+  paper-radio-button-unchecked-color: "#bd93f9" # Unchecked radio
+  paper-radio-button-unchecked-ink-color: "#bd93f9" # Unchecked ink effect
+  paper-radio-button-label-color: "#ffffff" # Radio button label
+  paper-radio-button-disabled-color: "#44475a" # Disabled radio
+
+  # Buttons
   paper-button-active-keyboard-focus-background: "rgba(255, 92, 214, 0.3)"
-  paper-button-disabled-text-color: "#b8b8d0"      # Disabled button text
+  paper-button-disabled-text-color: "#b8b8d0" # Disabled button text
   paper-button-disabled_-_background-color: "rgba(140, 140, 176, 0.15)"
   paper-button-disabled_-_color: "#b8b8d0"
   paper-button-raised-keyboard-focus_-_background-color: "rgba(255, 92, 214, 0.2)"
-  
-  # Progress indicators
-  paper-progress-active-color: "#ff5cd6"           # Active progress color
-  paper-progress-container-color: "rgba(140, 140, 176, 0.4)" # Progress container
-  paper-progress-disabled-active-color: "#b8b8d0"  # Disabled progress active
-  paper-progress-indeterminate-cycle-duration: "2s" # Progress animation speed
-  paper-progress-secondary-color: "#bd93f9"        # Secondary progress
-  
-  # Spinners
-  paper-spinner-color: "#ff5cd6"                   # Spinner color
-  paper-spinner-layer-1-color: "#ff5cd6"           # Spinner layer 1
-  paper-spinner-layer-2-color: "#50fa7b"           # Spinner layer 2
-  paper-spinner-layer-3-color: "#bd93f9"           # Spinner layer 3
-  paper-spinner-layer-4-color: "#8be9fd"           # Spinner layer 4
-  
+  paper-dialog-button-color: "#ff5cd6" # Dialog button
+
+  # ============================================
+  # MDC THEMING - Material Design Components
+  # ============================================
+  mdc-theme-primary: "#ff5cd6" # MDC primary
+  mdc-theme-secondary: "#bd93f9" # MDC secondary
+  mdc-theme-background: "#15121e" # MDC background
+  mdc-theme-surface: "#272136" # MDC surface
+  mdc-theme-on-primary: "#ffffff" # MDC on primary
+  mdc-theme-on-secondary: "#15121e" # MDC on secondary
+  mdc-theme-on-surface: "#ffffff" # MDC on surface
+
+  # ============================================
+  # MISCELLANEOUS - Special elements and domains
+  # ============================================
   # Chips and tags
-  paper-chip-background-color: "#272136"           # Chip background
-  paper-chip-icon-color: "#bd93f9"                 # Chip icon
-  paper-chip-text-color: "#ffffff"                 # Chip text
+  paper-chip-background-color: "#272136" # Chip background
+  paper-chip-icon-color: "#bd93f9" # Chip icon
+  paper-chip-text-color: "#ffffff" # Chip text
   paper-chip-selected-background-color: "rgba(255, 92, 214, 0.3)" # Selected chip
-  paper-chip-selected-text-color: "#ffffff"        # Selected chip text
-  
-  # Form elements - expanded
-  paper-input-container-color: "#f0f0ff"           # Input container
-  paper-input-container-focus-color: "#ff5cd6"     # Focused input
-  paper-input-container-invalid-color: "#ff5555"   # Invalid input
-  paper-input-container-input-color: "#ffffff"     # Input text
-  
-  # Checkboxes - expanded
-  paper-checkbox-checkmark-color: "#15121e"        # Checkmark color
-  paper-checkbox-checked-color: "#ff5cd6"          # Checked box
-  paper-checkbox-checked-ink-color: "#ff5cd6"      # Checked ink effect
-  paper-checkbox-unchecked-color: "#bd93f9"        # Unchecked box
-  paper-checkbox-unchecked-ink-color: "#bd93f9"    # Unchecked ink effect
-  paper-checkbox-label-color: "#ffffff"            # Checkbox label
-  paper-checkbox-label-checked-color: "#ffffff"    # Checked label
-  paper-checkbox-disabled-color: "#44475a"         # Disabled checkbox
-  paper-checkbox-disabled-ink-color: "#44475a"     # Disabled ink effect
-  
-  # Radio buttons
-  paper-radio-button-checked-color: "#ff5cd6"      # Checked radio
-  paper-radio-button-checked-ink-color: "#ff5cd6"  # Checked ink effect
-  paper-radio-button-unchecked-color: "#bd93f9"    # Unchecked radio
-  paper-radio-button-unchecked-ink-color: "#bd93f9" # Unchecked ink effect
-  paper-radio-button-label-color: "#ffffff"        # Radio button label
-  paper-radio-button-disabled-color: "#44475a"     # Disabled radio
-  
-  # Tree and list items
-  paper-icon-item_-_background-color: "transparent" # Icon item bg
-  paper-item-hover_-_background-color: "rgba(255, 92, 214, 0.1)" # Hover bg
-  paper-item-focused_-_background-color: "rgba(255, 92, 214, 0.1)" # Focused bg
-  paper-item-focused-before_-_opacity: "0.12"      # Focus opacity
-  paper-item-selected_-_color: "#ffffff"           # Selected item text
-  
-  # Tabs
-  paper-tabs-container-color: "transparent"        # Tabs container
-  paper-tabs-content-container_-_background-color: "transparent" # Tabs content bg
-  paper-tabs-selection-bar_-_border-color: "#ff5cd6" # Selection bar
-  
-  # Scrollbars (card-mod-root will apply these)
-  scrollbar-thumb-color: "rgba(255, 92, 214, 0.3)" # Scrollbar thumb
-  scrollbar-track-color: "rgba(0, 0, 0, 0.1)"      # Scrollbar track
-  
-  # Date picker
-  paper-datepicker-ink-color: "#ffffff"            # Date picker ink
-  paper-datepicker-accent-color: "#ff5cd6"         # Date picker accent
-  paper-datepicker-toggled-color: "#ff5cd6"        # Date picker toggle
-  paper-datepicker-disabled-color: "#44475a"       # Disabled date
-  paper-datepicker-calendar-color: "#272136"       # Calendar color
-  
-  # Drawer and menu
-  paper-drawer-background-color: "#191528"         # Drawer background
-  paper-drawer-text-color: "#ffffff"               # Drawer text
-  paper-drawer-selected-color: "#ff5cd6"           # Selected drawer item
-  paper-menu-background-color: "#272136"           # Menu background
-  paper-menu-color: "#ffffff"                      # Menu text
-  paper-menu-disabled-color: "#b8b8d0"             # Disabled menu item
-  
-  # Miscellaneous elements
-  code-editor-background-color: "#1d1b2e"          # Code editor
-  energy-grid-consumption-color: "#ff5555"         # Energy consumption
-  energy-grid-return-color: "#50fa7b"              # Energy return
-  energy-solar-color: "#f1fa8c"                    # Solar energy
-  energy-battery-in-color: "#8be9fd"               # Battery in
-  energy-battery-out-color: "#ffb86c"              # Battery out
-  energy-gas-color: "#ff5555"                      # Gas
-  energy-water-color: "#8be9fd"                    # Water
-  history-graph-color: "#ff5cd6"                   # History graph
-  light-color: "#f1fa8c"                           # Light entity
-  logbook-entry-color: "#ff5cd6"                   # Logbook entry
+  paper-chip-selected-text-color: "#ffffff" # Selected chip text
+
+  # Dialogs
+  paper-toast-background-color: "#272136" # Toast notification bg
+  paper-datepicker-ink-color: "#ffffff" # Date picker ink
+  paper-datepicker-accent-color: "#ff5cd6" # Date picker accent
+  paper-datepicker-toggled-color: "#ff5cd6" # Date picker toggle
+  paper-datepicker-disabled-color: "#44475a" # Disabled date
+  paper-datepicker-calendar-color: "#272136" # Calendar color
+
+  # Labels and badges
+  label-badge-red: "rgba(255, 85, 85, 1)" # Red badge
+  label-badge-green: "rgba(80, 250, 123, 1)" # Green badge
+  label-badge-blue: "rgba(139, 233, 253, 1)" # Blue badge
+  label-badge-yellow: "rgba(241, 250, 140, 1)" # Yellow badge
+  label-badge-gray: "rgba(98, 114, 164, 1)" # Gray badge
+  label-badge-text-color: "#ffffff" # Badge text
+  label-badge-background-color: "rgba(39, 33, 54, 0.8)" # Badge bg
+
+  # Domain-specific colors
+  energy-grid-consumption-color: "#ff5555" # Energy consumption
+  energy-grid-return-color: "#50fa7b" # Energy return
+  energy-solar-color: "#f1fa8c" # Solar energy
+  energy-battery-in-color: "#8be9fd" # Battery in
+  energy-battery-out-color: "#ffb86c" # Battery out
+  energy-gas-color: "#ff5555" # Gas
+  energy-water-color: "#8be9fd" # Water
+  history-graph-color: "#ff5cd6" # History graph
+  light-color: "#f1fa8c" # Light entity
+  logbook-entry-color: "#ff5cd6" # Logbook entry
   media-upload-hover-color: "rgba(255, 92, 214, 0.3)" # Media upload hover
-  mini-media-player-base-color: "#f1fa8c"          # Mini media player
-  mini-media-player-accent-color: "#ff5cd6"        # Mini media player accent
-  svg-card-presets-color: "#ffffff"                # SVG card
-  weather-day-color: "#f1fa8c"                     # Weather day
-  weather-night-color: "#8be9fd"                   # Weather night
-  climate-heat-color: "#ff5555"                    # Climate heat
-  climate-cool-color: "#8be9fd"                    # Climate cool
-  climate-fan-only-color: "#50fa7b"                # Climate fan
-  climate-auto-color: "#bd93f9"                    # Climate auto
-  climate-dry-color: "#ffb86c"                     # Climate dry
-  climate-idle-color: "#f8f8f2"                    # Climate idle
-  climate-off-color: "#44475a"                     # Climate off
-  plant-ok-color: "#50fa7b"                        # Plant OK
-  plant-problem-color: "#ff5555"                   # Plant problem
-  
+  mini-media-player-base-color: "#f1fa8c" # Mini media player
+  mini-media-player-accent-color: "#ff5cd6" # Mini media player accent
+  svg-card-presets-color: "#ffffff" # SVG card
+  weather-day-color: "#f1fa8c" # Weather day
+  weather-night-color: "#8be9fd" # Weather night
+
+  # Climate colors
+  climate-heat-color: "#ff5555" # Climate heat
+  climate-cool-color: "#8be9fd" # Climate cool
+  climate-fan-only-color: "#50fa7b" # Climate fan
+  climate-auto-color: "#bd93f9" # Climate auto
+  climate-dry-color: "#ffb86c" # Climate dry
+  climate-idle-color: "#f8f8f2" # Climate idle
+  climate-off-color: "#44475a" # Climate off
+
+  # Plant colors
+  plant-ok-color: "#50fa7b" # Plant OK
+  plant-problem-color: "#ff5555" # Plant problem
+
   # ============================================
   # CARD-MOD STYLES - Minimal but impactful
   # ============================================
   # Using card-mod only where absolutely necessary
   card-mod-theme: SilkCircuit
-  
+
   # Add cyberpunk styling to the root/global level
   card-mod-root: |
 
-    
+
     /* Enhance sidebar with subtle cyberpunk styling */
     ha-sidebar {
       background: linear-gradient(to bottom, #191528, #15121e) !important;
       border-right: 1px solid rgba(255, 92, 214, 0.2);
       box-shadow: 3px 0 15px rgba(0, 0, 0, 0.5);
     }
-    
+
     /* More visible headings */
     [role="heading"], div.header {
       color: #ffffff !important;
       text-shadow: 0 0 8px rgba(255, 92, 214, 0.3) !important;
     }
-    
+
     /* Custom scrollbar */
     ::-webkit-scrollbar {
       width: 8px;
       height: 8px;
     }
-    
+
     ::-webkit-scrollbar-track {
       background: var(--scrollbar-track-color);
       border-radius: 4px;
     }
-    
+
     ::-webkit-scrollbar-thumb {
       background: var(--scrollbar-thumb-color);
       border-radius: 4px;
     }
-    
+
     ::-webkit-scrollbar-thumb:hover {
       background: rgba(255, 92, 214, 0.5);
     }
-    
+
     /* Card glow effect on hover */
     ha-card {
       transition: all 0.3s ease;
     }
-    
+
     ha-card:hover {
       box-shadow: 0 5px 15px rgba(0,0,0,0.3), 0 0 15px rgba(255, 92, 214, 0.5) !important;
       transform: translateY(-2px);
     }
-    
-  
+
   # Card styling enhancements
   card-mod-card: |
     /* Enhanced card styling */
     ha-card {
       border: 1px solid rgba(255, 92, 214, 0.3);
     }
-    
+
     /* Headers with subtle glow effect */
     .card-header {
       text-shadow: 0 0 8px rgba(255, 92, 214, 0.3);
     }
-    
+
     /* Card content padding */
     .card-content {
       padding: 16px;
     }
-    
+
     /* Entity rows enhancement */
     .entity-row {
       position: relative;
       overflow: hidden;
     }
-    
+
     .entity-row:after {
       content: "";
       position: absolute;
@@ -391,7 +396,7 @@ SilkCircuit:
       height: 1px;
       background: linear-gradient(to right, transparent, rgba(255, 92, 214, 0.3), transparent);
     }
-  
+
   # View styling
   card-mod-view: |
     /* Overall view enhancements */
@@ -406,17 +411,17 @@ SilkCircuit:
       --ha-card-background: var(--card-background-color);
       margin-bottom: 10px;
     }
-    
+
     /* Grid layout improvements */
     .column > * {
       margin-bottom: 12px;
     }
-    
+
     /* View background enhancement */
     #view {
       background-image: radial-gradient(circle at 50% 50%, rgba(255, 92, 214, 0.03) 0%, rgba(0, 0, 0, 0) 70%);
     }
-  
+
   # More info dialog enhancements
   card-mod-more-info: |
     /* Dialog styling */
@@ -425,55 +430,55 @@ SilkCircuit:
       box-shadow: 0 0 20px rgba(255, 92, 214, 0.3);
       background: linear-gradient(145deg, var(--card-background-color), var(--primary-background-color));
     }
-    
+
     /* Blur backdrop for dialogs */
     .mdc-dialog .mdc-dialog__scrim {
       backdrop-filter: blur(5px);
       -webkit-backdrop-filter: blur(5px);
       background: rgba(0, 0, 0, 0.5) !important;
     }
-    
+
     /* Dialog title and buttons */
     .mdc-dialog .mdc-dialog__title {
       color: var(--text-primary-color);
       text-shadow: 0 0 8px rgba(255, 92, 214, 0.3);
     }
-    
+
     /* Dialog buttons */
     .mdc-dialog .mdc-dialog__actions button {
       color: var(--pink-color);
     }
-    
+
     /* Dialog glow effect */
     .mdc-dialog__container {
       filter: drop-shadow(0 0 10px rgba(255, 92, 214, 0.2));
     }
-  
-  # Enhance buttons 
+
+  # Enhance buttons
   card-mod-button: |
     /* Button styling */
     ha-icon-button, ha-button {
       color: var(--pink-color);
       transition: all 0.2s ease;
     }
-    
+
     ha-icon-button:hover, ha-button:hover {
       color: var(--light-pink-color);
       filter: brightness(1.2) drop-shadow(0 0 5px rgba(255, 92, 214, 0.7));
     }
-  
+
   # Form styling
   card-mod-form: |
     /* Form elements */
     ha-textfield, ha-selector, ha-select {
       --mdc-theme-primary: var(--pink-color);
     }
-    
+
     /* Form fields focus state */
     ha-textfield:focus-within, ha-selector:focus-within, ha-select:focus-within {
       --mdc-theme-primary: var(--light-pink-color);
     }
-    
+
     /* Form button styling */
     ha-form-actions mwc-button {
       --mdc-theme-primary: var(--pink-color);
