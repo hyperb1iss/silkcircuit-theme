@@ -1,12 +1,16 @@
 # SilkCircuit - A Neon Dream for Home Assistant 🌃🦋
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/hyperb1iss/silkcircuit-theme)
-![GitHub](https://img.shields.io/github/license/hyperb1iss/silkcircuit-theme)
-[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/hacs/integration)
+<div align="center">
+
+[![](https://img.shields.io/github/v/release/hyperb1iss/silkcircuit-theme?style=for-the-badge&logo=github&logoColor=white&labelColor=272136&color=ff5cd6)](https://github.com/hyperb1iss/silkcircuit-theme/releases)
+[![](https://img.shields.io/github/license/hyperb1iss/silkcircuit-theme?style=for-the-badge&logo=law&logoColor=white&labelColor=272136&color=bd93f9)](https://github.com/hyperb1iss/silkcircuit-theme/blob/main/LICENSE)
+[![](https://img.shields.io/badge/HACS-Default-50fa7b?style=for-the-badge&logo=homeassistantcommunitystore&logoColor=white&labelColor=272136)](https://github.com/hacs/integration)
+
+<img src="https://raw.githubusercontent.com/hyperb1iss/silkcircuit-theme/main/images/silkcircuit-theme.png" alt="SilkCircuit Theme Preview" width="800">
+
+</div>
 
 SilkCircuit is a vibrant, femme-forward theme for Home Assistant, glowing with neon elegance, sleek UI elements, and subtle digital charm. Immerse yourself in a high-tech, luminous dashboard experience that's as stylish as it is functional.
-
-![SilkCircuit Theme Preview](https://raw.githubusercontent.com/hyperb1iss/silkcircuit-theme/main/screenshots/preview.png)
 
 ## 💅 Highlights
 
@@ -18,10 +22,6 @@ SilkCircuit is a vibrant, femme-forward theme for Home Assistant, glowing with n
 - **Enhanced Sidebar**: Sleek navigation with custom neon touches
 - **Intuitive Indicators**: Color-coded statuses for effortless readability
 - **Gorgeous Dialogs**: Popups with a hazy backdrop and glowing borders
-
-## 📸 Screenshots
-
-...coming soon...
 
 ## 💿 Installation
 
