@@ -8,64 +8,64 @@
 
 SilkCircuit:
   # SilkCircuit neon palette
-  --color-primary: "#e135ff"
-  --color-primary-rgb: "225, 53, 255"
-  --color-primary-light: "#f2a6ff"
-  --color-primary-light-rgb: "242, 166, 255"
-  --color-primary-dark: "#b06cff"
-  --color-primary-dark-rgb: "176, 108, 255"
-  --color-pink: "#ff6ac1"
-  --color-pink-rgb: "255, 106, 193"
-  --color-pink-light: "#ff99dd"
-  --color-pink-light-rgb: "255, 153, 221"
-  --color-magenta: "#ff00ff"
-  --color-magenta-rgb: "255, 0, 255"
-  --color-cyan: "#80ffea"
-  --color-cyan-rgb: "128, 255, 234"
-  --color-cyan-light: "#b3fff2"
-  --color-cyan-light-rgb: "179, 255, 242"
-  --color-green: "#50fa7b"
-  --color-green-rgb: "80, 250, 123"
-  --color-green-light: "#7dffa0"
-  --color-green-light-rgb: "125, 255, 160"
-  --color-yellow: "#f1fa8c"
-  --color-yellow-rgb: "241, 250, 140"
-  --color-orange: "#ffb86c"
-  --color-orange-rgb: "255, 184, 108"
-  --color-coral: "#ff6ac1"
-  --color-coral-rgb: "255, 106, 193"
-  --color-teal: "#4fffb0"
-  --color-teal-rgb: "79, 255, 176"
-  --color-red: "#ff6363"
-  --color-red-rgb: "255, 99, 99"
-  --color-text: "#f8f8f2"
-  --color-text-rgb: "248, 248, 242"
-  --color-text-muted: "#c9c2e6"
-  --color-text-muted-rgb: "201, 194, 230"
-  --color-text-disabled: "#8c86a8"
-  --color-text-disabled-rgb: "140, 134, 168"
-  --color-text-on-accent: "#12101a"
-  --color-text-on-accent-rgb: "18, 16, 26"
-  --color-muted: "#8c8cb0"
-  --color-muted-rgb: "140, 140, 176"
-  --color-muted-dark: "#5a5a7a"
-  --color-muted-dark-rgb: "90, 90, 122"
-  --color-white: "#ffffff"
-  --color-white-rgb: "255, 255, 255"
-  --color-off-white: "#f0f0ff"
-  --color-off-white-rgb: "240, 240, 255"
-  --color-bg: "#12101a"
-  --color-bg-rgb: "18, 16, 26"
-  --color-bg-card: "#1a162a"
-  --color-bg-card-rgb: "26, 22, 42"
-  --color-bg-elevated: "#221c34"
-  --color-bg-elevated-rgb: "34, 28, 52"
-  --color-bg-sidebar: "#0a0812"
-  --color-bg-sidebar-rgb: "10, 8, 18"
-  --color-divider: "#332b4d"
-  --color-divider-rgb: "51, 43, 77"
-  --color-glow: "#ff6ac1"
-  --color-glow-rgb: "255, 106, 193"
+  color-primary: "#e135ff"
+  color-primary-rgb: "225, 53, 255"
+  color-primary-light: "#f2a6ff"
+  color-primary-light-rgb: "242, 166, 255"
+  color-primary-dark: "#b06cff"
+  color-primary-dark-rgb: "176, 108, 255"
+  color-pink: "#ff6ac1"
+  color-pink-rgb: "255, 106, 193"
+  color-pink-light: "#ff99dd"
+  color-pink-light-rgb: "255, 153, 221"
+  color-magenta: "#ff00ff"
+  color-magenta-rgb: "255, 0, 255"
+  color-cyan: "#80ffea"
+  color-cyan-rgb: "128, 255, 234"
+  color-cyan-light: "#b3fff2"
+  color-cyan-light-rgb: "179, 255, 242"
+  color-green: "#50fa7b"
+  color-green-rgb: "80, 250, 123"
+  color-green-light: "#7dffa0"
+  color-green-light-rgb: "125, 255, 160"
+  color-yellow: "#f1fa8c"
+  color-yellow-rgb: "241, 250, 140"
+  color-orange: "#ffb86c"
+  color-orange-rgb: "255, 184, 108"
+  color-coral: "#ff6ac1"
+  color-coral-rgb: "255, 106, 193"
+  color-teal: "#4fffb0"
+  color-teal-rgb: "79, 255, 176"
+  color-red: "#ff6363"
+  color-red-rgb: "255, 99, 99"
+  color-text: "#f8f8f2"
+  color-text-rgb: "248, 248, 242"
+  color-text-muted: "#c9c2e6"
+  color-text-muted-rgb: "201, 194, 230"
+  color-text-disabled: "#8c86a8"
+  color-text-disabled-rgb: "140, 134, 168"
+  color-text-on-accent: "#12101a"
+  color-text-on-accent-rgb: "18, 16, 26"
+  color-muted: "#8c8cb0"
+  color-muted-rgb: "140, 140, 176"
+  color-muted-dark: "#5a5a7a"
+  color-muted-dark-rgb: "90, 90, 122"
+  color-white: "#ffffff"
+  color-white-rgb: "255, 255, 255"
+  color-off-white: "#f0f0ff"
+  color-off-white-rgb: "240, 240, 255"
+  color-bg: "#12101a"
+  color-bg-rgb: "18, 16, 26"
+  color-bg-card: "#1a162a"
+  color-bg-card-rgb: "26, 22, 42"
+  color-bg-elevated: "#221c34"
+  color-bg-elevated-rgb: "34, 28, 52"
+  color-bg-sidebar: "#0a0812"
+  color-bg-sidebar-rgb: "10, 8, 18"
+  color-divider: "#332b4d"
+  color-divider-rgb: "51, 43, 77"
+  color-glow: "#ff6ac1"
+  color-glow-rgb: "255, 106, 193"
   card-mod-theme: SilkCircuit
 
   # ============================================
@@ -215,12 +215,15 @@ SilkCircuit:
   paper-dropdown-menu-color: var(--color-text)
   paper-dropdown-menu-label-color: var(--color-text-muted)
   input-dropdown-icon-color: var(--color-primary)
-  mdc-select-fill-color: var(--color-bg-card)
+  mdc-select-fill-color: var(--color-bg-elevated)
   mdc-select-ink-color: var(--color-text)
   mdc-select-label-ink-color: var(--color-text-muted)
   mdc-select-idle-line-color: var(--color-primary)
   mdc-select-dropdown-icon-color: var(--color-primary)
   mdc-select-hover-line-color: var(--color-pink)
+  mdc-text-field-fill-color: var(--color-bg-elevated)
+  mdc-text-field-disabled-fill-color: var(--color-bg)
+  mdc-text-field-ink-color: var(--color-text)
   mdc-text-field-label-ink-color: var(--color-text)
   paper-tabs-selection-bar-color: var(--color-primary)
   paper-tab-ink: var(--color-primary)
@@ -231,11 +234,12 @@ SilkCircuit:
   # ============================================
   # FORMS & INPUTS
   # ============================================
-  input-fill-color: "rgba(var(--color-text-rgb), 0.06)"
+  input-background-color: var(--color-bg-elevated)
+  input-fill-color: var(--color-bg-elevated)
   input-ink-color: var(--color-text)
   input-label-ink-color: var(--color-text-muted)
   input-disabled-ink-color: var(--color-text-disabled)
-  input-disabled-fill-color: "rgba(var(--color-text-rgb), 0.02)"
+  input-disabled-fill-color: var(--color-bg)
   input-idle-line-color: var(--color-primary)
   input-hover-line-color: var(--color-pink)
   input-disabled-line-color: var(--color-muted-dark)
@@ -428,67 +432,69 @@ SilkCircuit:
     ha-form-actions mwc-button {
       --mdc-theme-primary: var(--color-primary);
     }
+  modes:
+    dark: {}
 
 SilkCircuit Vibrant:
   # SilkCircuit vibrant palette
-  --color-primary: "#ff00ff"
-  --color-primary-rgb: "255, 0, 255"
-  --color-primary-light: "#ff66ff"
-  --color-primary-light-rgb: "255, 102, 255"
-  --color-primary-dark: "#c200c2"
-  --color-primary-dark-rgb: "194, 0, 194"
-  --color-pink: "#ff00cc"
-  --color-pink-rgb: "255, 0, 204"
-  --color-pink-light: "#ff66dd"
-  --color-pink-light-rgb: "255, 102, 221"
-  --color-magenta: "#ff00ff"
-  --color-magenta-rgb: "255, 0, 255"
-  --color-cyan: "#00ffcc"
-  --color-cyan-rgb: "0, 255, 204"
-  --color-cyan-light: "#66ffe0"
-  --color-cyan-light-rgb: "102, 255, 224"
-  --color-green: "#00ff66"
-  --color-green-rgb: "0, 255, 102"
-  --color-green-light: "#66ff99"
-  --color-green-light-rgb: "102, 255, 153"
-  --color-yellow: "#ffcc00"
-  --color-yellow-rgb: "255, 204, 0"
-  --color-orange: "#ff00aa"
-  --color-orange-rgb: "255, 0, 170"
-  --color-coral: "#f78c6c"
-  --color-coral-rgb: "247, 140, 108"
-  --color-teal: "#00ffaa"
-  --color-teal-rgb: "0, 255, 170"
-  --color-red: "#ff3366"
-  --color-red-rgb: "255, 51, 102"
-  --color-text: "#f8f8f2"
-  --color-text-rgb: "248, 248, 242"
-  --color-text-muted: "#d0c5e0"
-  --color-text-muted-rgb: "208, 197, 224"
-  --color-text-disabled: "#8c86a8"
-  --color-text-disabled-rgb: "140, 134, 168"
-  --color-text-on-accent: "#0f0c1a"
-  --color-text-on-accent-rgb: "15, 12, 26"
-  --color-muted: "#7a7a9c"
-  --color-muted-rgb: "122, 122, 156"
-  --color-muted-dark: "#4a4a68"
-  --color-muted-dark-rgb: "74, 74, 104"
-  --color-white: "#ffffff"
-  --color-white-rgb: "255, 255, 255"
-  --color-off-white: "#f5f0ff"
-  --color-off-white-rgb: "245, 240, 255"
-  --color-bg: "#0f0c1a"
-  --color-bg-rgb: "15, 12, 26"
-  --color-bg-card: "#171225"
-  --color-bg-card-rgb: "23, 18, 37"
-  --color-bg-elevated: "#1f1733"
-  --color-bg-elevated-rgb: "31, 23, 51"
-  --color-bg-sidebar: "#08060f"
-  --color-bg-sidebar-rgb: "8, 6, 15"
-  --color-divider: "#2e2348"
-  --color-divider-rgb: "46, 35, 72"
-  --color-glow: "#ff00cc"
-  --color-glow-rgb: "255, 0, 204"
+  color-primary: "#ff00ff"
+  color-primary-rgb: "255, 0, 255"
+  color-primary-light: "#ff66ff"
+  color-primary-light-rgb: "255, 102, 255"
+  color-primary-dark: "#c200c2"
+  color-primary-dark-rgb: "194, 0, 194"
+  color-pink: "#ff00cc"
+  color-pink-rgb: "255, 0, 204"
+  color-pink-light: "#ff66dd"
+  color-pink-light-rgb: "255, 102, 221"
+  color-magenta: "#ff00ff"
+  color-magenta-rgb: "255, 0, 255"
+  color-cyan: "#00ffcc"
+  color-cyan-rgb: "0, 255, 204"
+  color-cyan-light: "#66ffe0"
+  color-cyan-light-rgb: "102, 255, 224"
+  color-green: "#00ff66"
+  color-green-rgb: "0, 255, 102"
+  color-green-light: "#66ff99"
+  color-green-light-rgb: "102, 255, 153"
+  color-yellow: "#ffcc00"
+  color-yellow-rgb: "255, 204, 0"
+  color-orange: "#ff00aa"
+  color-orange-rgb: "255, 0, 170"
+  color-coral: "#f78c6c"
+  color-coral-rgb: "247, 140, 108"
+  color-teal: "#00ffaa"
+  color-teal-rgb: "0, 255, 170"
+  color-red: "#ff3366"
+  color-red-rgb: "255, 51, 102"
+  color-text: "#f8f8f2"
+  color-text-rgb: "248, 248, 242"
+  color-text-muted: "#d0c5e0"
+  color-text-muted-rgb: "208, 197, 224"
+  color-text-disabled: "#8c86a8"
+  color-text-disabled-rgb: "140, 134, 168"
+  color-text-on-accent: "#0f0c1a"
+  color-text-on-accent-rgb: "15, 12, 26"
+  color-muted: "#7a7a9c"
+  color-muted-rgb: "122, 122, 156"
+  color-muted-dark: "#4a4a68"
+  color-muted-dark-rgb: "74, 74, 104"
+  color-white: "#ffffff"
+  color-white-rgb: "255, 255, 255"
+  color-off-white: "#f5f0ff"
+  color-off-white-rgb: "245, 240, 255"
+  color-bg: "#0f0c1a"
+  color-bg-rgb: "15, 12, 26"
+  color-bg-card: "#171225"
+  color-bg-card-rgb: "23, 18, 37"
+  color-bg-elevated: "#1f1733"
+  color-bg-elevated-rgb: "31, 23, 51"
+  color-bg-sidebar: "#08060f"
+  color-bg-sidebar-rgb: "8, 6, 15"
+  color-divider: "#2e2348"
+  color-divider-rgb: "46, 35, 72"
+  color-glow: "#ff00cc"
+  color-glow-rgb: "255, 0, 204"
   card-mod-theme: SilkCircuit Vibrant
 
   # ============================================
@@ -638,12 +644,15 @@ SilkCircuit Vibrant:
   paper-dropdown-menu-color: var(--color-text)
   paper-dropdown-menu-label-color: var(--color-text-muted)
   input-dropdown-icon-color: var(--color-primary)
-  mdc-select-fill-color: var(--color-bg-card)
+  mdc-select-fill-color: var(--color-bg-elevated)
   mdc-select-ink-color: var(--color-text)
   mdc-select-label-ink-color: var(--color-text-muted)
   mdc-select-idle-line-color: var(--color-primary)
   mdc-select-dropdown-icon-color: var(--color-primary)
   mdc-select-hover-line-color: var(--color-pink)
+  mdc-text-field-fill-color: var(--color-bg-elevated)
+  mdc-text-field-disabled-fill-color: var(--color-bg)
+  mdc-text-field-ink-color: var(--color-text)
   mdc-text-field-label-ink-color: var(--color-text)
   paper-tabs-selection-bar-color: var(--color-primary)
   paper-tab-ink: var(--color-primary)
@@ -654,11 +663,12 @@ SilkCircuit Vibrant:
   # ============================================
   # FORMS & INPUTS
   # ============================================
-  input-fill-color: "rgba(var(--color-text-rgb), 0.06)"
+  input-background-color: var(--color-bg-elevated)
+  input-fill-color: var(--color-bg-elevated)
   input-ink-color: var(--color-text)
   input-label-ink-color: var(--color-text-muted)
   input-disabled-ink-color: var(--color-text-disabled)
-  input-disabled-fill-color: "rgba(var(--color-text-rgb), 0.02)"
+  input-disabled-fill-color: var(--color-bg)
   input-idle-line-color: var(--color-primary)
   input-hover-line-color: var(--color-pink)
   input-disabled-line-color: var(--color-muted-dark)
@@ -851,67 +861,69 @@ SilkCircuit Vibrant:
     ha-form-actions mwc-button {
       --mdc-theme-primary: var(--color-primary);
     }
+  modes:
+    dark: {}
 
 SilkCircuit Soft:
   # SilkCircuit soft palette
-  --color-primary: "#e892ff"
-  --color-primary-rgb: "232, 146, 255"
-  --color-primary-light: "#f1b8ff"
-  --color-primary-light-rgb: "241, 184, 255"
-  --color-primary-dark: "#c06edd"
-  --color-primary-dark-rgb: "192, 110, 221"
-  --color-pink: "#ff99dd"
-  --color-pink-rgb: "255, 153, 221"
-  --color-pink-light: "#ffc2ff"
-  --color-pink-light-rgb: "255, 194, 255"
-  --color-magenta: "#ff99ff"
-  --color-magenta-rgb: "255, 153, 255"
-  --color-cyan: "#99ffee"
-  --color-cyan-rgb: "153, 255, 238"
-  --color-cyan-light: "#c2fff5"
-  --color-cyan-light-rgb: "194, 255, 245"
-  --color-green: "#66ff99"
-  --color-green-rgb: "102, 255, 153"
-  --color-green-light: "#99ffbb"
-  --color-green-light-rgb: "153, 255, 187"
-  --color-yellow: "#ffe699"
-  --color-yellow-rgb: "255, 230, 153"
-  --color-orange: "#ffb38c"
-  --color-orange-rgb: "255, 179, 140"
-  --color-coral: "#ff99dd"
-  --color-coral-rgb: "255, 153, 221"
-  --color-teal: "#80ffcc"
-  --color-teal-rgb: "128, 255, 204"
-  --color-red: "#ff6677"
-  --color-red-rgb: "255, 102, 119"
-  --color-text: "#f0ecf8"
-  --color-text-rgb: "240, 236, 248"
-  --color-text-muted: "#c8c0db"
-  --color-text-muted-rgb: "200, 192, 219"
-  --color-text-disabled: "#8c86a8"
-  --color-text-disabled-rgb: "140, 134, 168"
-  --color-text-on-accent: "#1a1626"
-  --color-text-on-accent-rgb: "26, 22, 38"
-  --color-muted: "#8c8cb0"
-  --color-muted-rgb: "140, 140, 176"
-  --color-muted-dark: "#5a5a7a"
-  --color-muted-dark-rgb: "90, 90, 122"
-  --color-white: "#ffffff"
-  --color-white-rgb: "255, 255, 255"
-  --color-off-white: "#f5f0ff"
-  --color-off-white-rgb: "245, 240, 255"
-  --color-bg: "#1a1626"
-  --color-bg-rgb: "26, 22, 38"
-  --color-bg-card: "#241f33"
-  --color-bg-card-rgb: "36, 31, 51"
-  --color-bg-elevated: "#2e2845"
-  --color-bg-elevated-rgb: "46, 40, 69"
-  --color-bg-sidebar: "#141220"
-  --color-bg-sidebar-rgb: "20, 18, 32"
-  --color-divider: "#3e3456"
-  --color-divider-rgb: "62, 52, 86"
-  --color-glow: "#ff99dd"
-  --color-glow-rgb: "255, 153, 221"
+  color-primary: "#e892ff"
+  color-primary-rgb: "232, 146, 255"
+  color-primary-light: "#f1b8ff"
+  color-primary-light-rgb: "241, 184, 255"
+  color-primary-dark: "#c06edd"
+  color-primary-dark-rgb: "192, 110, 221"
+  color-pink: "#ff99dd"
+  color-pink-rgb: "255, 153, 221"
+  color-pink-light: "#ffc2ff"
+  color-pink-light-rgb: "255, 194, 255"
+  color-magenta: "#ff99ff"
+  color-magenta-rgb: "255, 153, 255"
+  color-cyan: "#99ffee"
+  color-cyan-rgb: "153, 255, 238"
+  color-cyan-light: "#c2fff5"
+  color-cyan-light-rgb: "194, 255, 245"
+  color-green: "#66ff99"
+  color-green-rgb: "102, 255, 153"
+  color-green-light: "#99ffbb"
+  color-green-light-rgb: "153, 255, 187"
+  color-yellow: "#ffe699"
+  color-yellow-rgb: "255, 230, 153"
+  color-orange: "#ffb38c"
+  color-orange-rgb: "255, 179, 140"
+  color-coral: "#ff99dd"
+  color-coral-rgb: "255, 153, 221"
+  color-teal: "#80ffcc"
+  color-teal-rgb: "128, 255, 204"
+  color-red: "#ff6677"
+  color-red-rgb: "255, 102, 119"
+  color-text: "#f0ecf8"
+  color-text-rgb: "240, 236, 248"
+  color-text-muted: "#c8c0db"
+  color-text-muted-rgb: "200, 192, 219"
+  color-text-disabled: "#8c86a8"
+  color-text-disabled-rgb: "140, 134, 168"
+  color-text-on-accent: "#1a1626"
+  color-text-on-accent-rgb: "26, 22, 38"
+  color-muted: "#8c8cb0"
+  color-muted-rgb: "140, 140, 176"
+  color-muted-dark: "#5a5a7a"
+  color-muted-dark-rgb: "90, 90, 122"
+  color-white: "#ffffff"
+  color-white-rgb: "255, 255, 255"
+  color-off-white: "#f5f0ff"
+  color-off-white-rgb: "245, 240, 255"
+  color-bg: "#1a1626"
+  color-bg-rgb: "26, 22, 38"
+  color-bg-card: "#241f33"
+  color-bg-card-rgb: "36, 31, 51"
+  color-bg-elevated: "#2e2845"
+  color-bg-elevated-rgb: "46, 40, 69"
+  color-bg-sidebar: "#141220"
+  color-bg-sidebar-rgb: "20, 18, 32"
+  color-divider: "#3e3456"
+  color-divider-rgb: "62, 52, 86"
+  color-glow: "#ff99dd"
+  color-glow-rgb: "255, 153, 221"
   card-mod-theme: SilkCircuit Soft
 
   # ============================================
@@ -1061,12 +1073,15 @@ SilkCircuit Soft:
   paper-dropdown-menu-color: var(--color-text)
   paper-dropdown-menu-label-color: var(--color-text-muted)
   input-dropdown-icon-color: var(--color-primary)
-  mdc-select-fill-color: var(--color-bg-card)
+  mdc-select-fill-color: var(--color-bg-elevated)
   mdc-select-ink-color: var(--color-text)
   mdc-select-label-ink-color: var(--color-text-muted)
   mdc-select-idle-line-color: var(--color-primary)
   mdc-select-dropdown-icon-color: var(--color-primary)
   mdc-select-hover-line-color: var(--color-pink)
+  mdc-text-field-fill-color: var(--color-bg-elevated)
+  mdc-text-field-disabled-fill-color: var(--color-bg)
+  mdc-text-field-ink-color: var(--color-text)
   mdc-text-field-label-ink-color: var(--color-text)
   paper-tabs-selection-bar-color: var(--color-primary)
   paper-tab-ink: var(--color-primary)
@@ -1077,11 +1092,12 @@ SilkCircuit Soft:
   # ============================================
   # FORMS & INPUTS
   # ============================================
-  input-fill-color: "rgba(var(--color-text-rgb), 0.06)"
+  input-background-color: var(--color-bg-elevated)
+  input-fill-color: var(--color-bg-elevated)
   input-ink-color: var(--color-text)
   input-label-ink-color: var(--color-text-muted)
   input-disabled-ink-color: var(--color-text-disabled)
-  input-disabled-fill-color: "rgba(var(--color-text-rgb), 0.02)"
+  input-disabled-fill-color: var(--color-bg)
   input-idle-line-color: var(--color-primary)
   input-hover-line-color: var(--color-pink)
   input-disabled-line-color: var(--color-muted-dark)
@@ -1274,67 +1290,69 @@ SilkCircuit Soft:
     ha-form-actions mwc-button {
       --mdc-theme-primary: var(--color-primary);
     }
+  modes:
+    dark: {}
 
 SilkCircuit Glow:
   # SilkCircuit glow palette
-  --color-primary: "#ff00ff"
-  --color-primary-rgb: "255, 0, 255"
-  --color-primary-light: "#ff66ff"
-  --color-primary-light-rgb: "255, 102, 255"
-  --color-primary-dark: "#cc66ff"
-  --color-primary-dark-rgb: "204, 102, 255"
-  --color-pink: "#ff66ff"
-  --color-pink-rgb: "255, 102, 255"
-  --color-pink-light: "#ff99ff"
-  --color-pink-light-rgb: "255, 153, 255"
-  --color-magenta: "#ff00ff"
-  --color-magenta-rgb: "255, 0, 255"
-  --color-cyan: "#00ffff"
-  --color-cyan-rgb: "0, 255, 255"
-  --color-cyan-light: "#66ffff"
-  --color-cyan-light-rgb: "102, 255, 255"
-  --color-green: "#00ff00"
-  --color-green-rgb: "0, 255, 0"
-  --color-green-light: "#66ff66"
-  --color-green-light-rgb: "102, 255, 102"
-  --color-yellow: "#ffff00"
-  --color-yellow-rgb: "255, 255, 0"
-  --color-orange: "#ff66ff"
-  --color-orange-rgb: "255, 102, 255"
-  --color-coral: "#ff66ff"
-  --color-coral-rgb: "255, 102, 255"
-  --color-teal: "#00ffcc"
-  --color-teal-rgb: "0, 255, 204"
-  --color-red: "#ff0066"
-  --color-red-rgb: "255, 0, 102"
-  --color-text: "#ffffff"
-  --color-text-rgb: "255, 255, 255"
-  --color-text-muted: "#cc99ff"
-  --color-text-muted-rgb: "204, 153, 255"
-  --color-text-disabled: "#9977bb"
-  --color-text-disabled-rgb: "153, 119, 187"
-  --color-text-on-accent: "#000000"
-  --color-text-on-accent-rgb: "0, 0, 0"
-  --color-muted: "#666666"
-  --color-muted-rgb: "102, 102, 102"
-  --color-muted-dark: "#444444"
-  --color-muted-dark-rgb: "68, 68, 68"
-  --color-white: "#ffffff"
-  --color-white-rgb: "255, 255, 255"
-  --color-off-white: "#f0e6ff"
-  --color-off-white-rgb: "240, 230, 255"
-  --color-bg: "#0a0816"
-  --color-bg-rgb: "10, 8, 22"
-  --color-bg-card: "#14091f"
-  --color-bg-card-rgb: "20, 9, 31"
-  --color-bg-elevated: "#1a0033"
-  --color-bg-elevated-rgb: "26, 0, 51"
-  --color-bg-sidebar: "#000000"
-  --color-bg-sidebar-rgb: "0, 0, 0"
-  --color-divider: "#2a0a44"
-  --color-divider-rgb: "42, 10, 68"
-  --color-glow: "#ff00ff"
-  --color-glow-rgb: "255, 0, 255"
+  color-primary: "#ff00ff"
+  color-primary-rgb: "255, 0, 255"
+  color-primary-light: "#ff66ff"
+  color-primary-light-rgb: "255, 102, 255"
+  color-primary-dark: "#cc66ff"
+  color-primary-dark-rgb: "204, 102, 255"
+  color-pink: "#ff66ff"
+  color-pink-rgb: "255, 102, 255"
+  color-pink-light: "#ff99ff"
+  color-pink-light-rgb: "255, 153, 255"
+  color-magenta: "#ff00ff"
+  color-magenta-rgb: "255, 0, 255"
+  color-cyan: "#00ffff"
+  color-cyan-rgb: "0, 255, 255"
+  color-cyan-light: "#66ffff"
+  color-cyan-light-rgb: "102, 255, 255"
+  color-green: "#00ff00"
+  color-green-rgb: "0, 255, 0"
+  color-green-light: "#66ff66"
+  color-green-light-rgb: "102, 255, 102"
+  color-yellow: "#ffff00"
+  color-yellow-rgb: "255, 255, 0"
+  color-orange: "#ff66ff"
+  color-orange-rgb: "255, 102, 255"
+  color-coral: "#ff66ff"
+  color-coral-rgb: "255, 102, 255"
+  color-teal: "#00ffcc"
+  color-teal-rgb: "0, 255, 204"
+  color-red: "#ff0066"
+  color-red-rgb: "255, 0, 102"
+  color-text: "#ffffff"
+  color-text-rgb: "255, 255, 255"
+  color-text-muted: "#cc99ff"
+  color-text-muted-rgb: "204, 153, 255"
+  color-text-disabled: "#9977bb"
+  color-text-disabled-rgb: "153, 119, 187"
+  color-text-on-accent: "#000000"
+  color-text-on-accent-rgb: "0, 0, 0"
+  color-muted: "#666666"
+  color-muted-rgb: "102, 102, 102"
+  color-muted-dark: "#444444"
+  color-muted-dark-rgb: "68, 68, 68"
+  color-white: "#ffffff"
+  color-white-rgb: "255, 255, 255"
+  color-off-white: "#f0e6ff"
+  color-off-white-rgb: "240, 230, 255"
+  color-bg: "#0a0816"
+  color-bg-rgb: "10, 8, 22"
+  color-bg-card: "#14091f"
+  color-bg-card-rgb: "20, 9, 31"
+  color-bg-elevated: "#1a0033"
+  color-bg-elevated-rgb: "26, 0, 51"
+  color-bg-sidebar: "#000000"
+  color-bg-sidebar-rgb: "0, 0, 0"
+  color-divider: "#2a0a44"
+  color-divider-rgb: "42, 10, 68"
+  color-glow: "#ff00ff"
+  color-glow-rgb: "255, 0, 255"
   card-mod-theme: SilkCircuit Glow
 
   # ============================================
@@ -1484,12 +1502,15 @@ SilkCircuit Glow:
   paper-dropdown-menu-color: var(--color-text)
   paper-dropdown-menu-label-color: var(--color-text-muted)
   input-dropdown-icon-color: var(--color-primary)
-  mdc-select-fill-color: var(--color-bg-card)
+  mdc-select-fill-color: var(--color-bg-elevated)
   mdc-select-ink-color: var(--color-text)
   mdc-select-label-ink-color: var(--color-text-muted)
   mdc-select-idle-line-color: var(--color-primary)
   mdc-select-dropdown-icon-color: var(--color-primary)
   mdc-select-hover-line-color: var(--color-pink)
+  mdc-text-field-fill-color: var(--color-bg-elevated)
+  mdc-text-field-disabled-fill-color: var(--color-bg)
+  mdc-text-field-ink-color: var(--color-text)
   mdc-text-field-label-ink-color: var(--color-text)
   paper-tabs-selection-bar-color: var(--color-primary)
   paper-tab-ink: var(--color-primary)
@@ -1500,11 +1521,12 @@ SilkCircuit Glow:
   # ============================================
   # FORMS & INPUTS
   # ============================================
-  input-fill-color: "rgba(var(--color-text-rgb), 0.06)"
+  input-background-color: var(--color-bg-elevated)
+  input-fill-color: var(--color-bg-elevated)
   input-ink-color: var(--color-text)
   input-label-ink-color: var(--color-text-muted)
   input-disabled-ink-color: var(--color-text-disabled)
-  input-disabled-fill-color: "rgba(var(--color-text-rgb), 0.02)"
+  input-disabled-fill-color: var(--color-bg)
   input-idle-line-color: var(--color-primary)
   input-hover-line-color: var(--color-pink)
   input-disabled-line-color: var(--color-muted-dark)
@@ -1697,67 +1719,69 @@ SilkCircuit Glow:
     ha-form-actions mwc-button {
       --mdc-theme-primary: var(--color-primary);
     }
+  modes:
+    dark: {}
 
 SilkCircuit Dawn:
   # SilkCircuit dawn palette
-  --color-primary: "#7e2bd5"
-  --color-primary-rgb: "126, 43, 213"
-  --color-primary-light: "#9654e0"
-  --color-primary-light-rgb: "150, 84, 224"
-  --color-primary-dark: "#5e1ba8"
-  --color-primary-dark-rgb: "94, 27, 168"
-  --color-pink: "#b40077"
-  --color-pink-rgb: "180, 0, 119"
-  --color-pink-light: "#c04a8f"
-  --color-pink-light-rgb: "192, 74, 143"
-  --color-magenta: "#b40077"
-  --color-magenta-rgb: "180, 0, 119"
-  --color-cyan: "#007f8e"
-  --color-cyan-rgb: "0, 127, 142"
-  --color-cyan-light: "#009fae"
-  --color-cyan-light-rgb: "0, 159, 174"
-  --color-green: "#2d8659"
-  --color-green-rgb: "45, 134, 89"
-  --color-green-light: "#38a169"
-  --color-green-light-rgb: "56, 161, 105"
-  --color-yellow: "#a88600"
-  --color-yellow-rgb: "168, 134, 0"
-  --color-orange: "#c05621"
-  --color-orange-rgb: "192, 86, 33"
-  --color-coral: "#c74a8c"
-  --color-coral-rgb: "199, 74, 140"
-  --color-teal: "#1f9e7a"
-  --color-teal-rgb: "31, 158, 122"
-  --color-red: "#c1272d"
-  --color-red-rgb: "193, 39, 45"
-  --color-text: "#2b2540"
-  --color-text-rgb: "43, 37, 64"
-  --color-text-muted: "#5a4d6e"
-  --color-text-muted-rgb: "90, 77, 110"
-  --color-text-disabled: "#8e84a8"
-  --color-text-disabled-rgb: "142, 132, 168"
-  --color-text-on-accent: "#ffffff"
-  --color-text-on-accent-rgb: "255, 255, 255"
-  --color-muted: "#8e84a8"
-  --color-muted-rgb: "142, 132, 168"
-  --color-muted-dark: "#6b5f80"
-  --color-muted-dark-rgb: "107, 95, 128"
-  --color-white: "#ffffff"
-  --color-white-rgb: "255, 255, 255"
-  --color-off-white: "#faf8ff"
-  --color-off-white-rgb: "250, 248, 255"
-  --color-bg: "#faf8ff"
-  --color-bg-rgb: "250, 248, 255"
-  --color-bg-card: "#ffffff"
-  --color-bg-card-rgb: "255, 255, 255"
-  --color-bg-elevated: "#f1ecff"
-  --color-bg-elevated-rgb: "241, 236, 255"
-  --color-bg-sidebar: "#f1ecff"
-  --color-bg-sidebar-rgb: "241, 236, 255"
-  --color-divider: "#e0d6f5"
-  --color-divider-rgb: "224, 214, 245"
-  --color-glow: "#b40077"
-  --color-glow-rgb: "180, 0, 119"
+  color-primary: "#7e2bd5"
+  color-primary-rgb: "126, 43, 213"
+  color-primary-light: "#9654e0"
+  color-primary-light-rgb: "150, 84, 224"
+  color-primary-dark: "#5e1ba8"
+  color-primary-dark-rgb: "94, 27, 168"
+  color-pink: "#b40077"
+  color-pink-rgb: "180, 0, 119"
+  color-pink-light: "#c04a8f"
+  color-pink-light-rgb: "192, 74, 143"
+  color-magenta: "#b40077"
+  color-magenta-rgb: "180, 0, 119"
+  color-cyan: "#007f8e"
+  color-cyan-rgb: "0, 127, 142"
+  color-cyan-light: "#009fae"
+  color-cyan-light-rgb: "0, 159, 174"
+  color-green: "#2d8659"
+  color-green-rgb: "45, 134, 89"
+  color-green-light: "#38a169"
+  color-green-light-rgb: "56, 161, 105"
+  color-yellow: "#a88600"
+  color-yellow-rgb: "168, 134, 0"
+  color-orange: "#c05621"
+  color-orange-rgb: "192, 86, 33"
+  color-coral: "#c74a8c"
+  color-coral-rgb: "199, 74, 140"
+  color-teal: "#1f9e7a"
+  color-teal-rgb: "31, 158, 122"
+  color-red: "#c1272d"
+  color-red-rgb: "193, 39, 45"
+  color-text: "#2b2540"
+  color-text-rgb: "43, 37, 64"
+  color-text-muted: "#5a4d6e"
+  color-text-muted-rgb: "90, 77, 110"
+  color-text-disabled: "#8e84a8"
+  color-text-disabled-rgb: "142, 132, 168"
+  color-text-on-accent: "#ffffff"
+  color-text-on-accent-rgb: "255, 255, 255"
+  color-muted: "#8e84a8"
+  color-muted-rgb: "142, 132, 168"
+  color-muted-dark: "#6b5f80"
+  color-muted-dark-rgb: "107, 95, 128"
+  color-white: "#ffffff"
+  color-white-rgb: "255, 255, 255"
+  color-off-white: "#faf8ff"
+  color-off-white-rgb: "250, 248, 255"
+  color-bg: "#faf8ff"
+  color-bg-rgb: "250, 248, 255"
+  color-bg-card: "#ffffff"
+  color-bg-card-rgb: "255, 255, 255"
+  color-bg-elevated: "#f1ecff"
+  color-bg-elevated-rgb: "241, 236, 255"
+  color-bg-sidebar: "#f1ecff"
+  color-bg-sidebar-rgb: "241, 236, 255"
+  color-divider: "#e0d6f5"
+  color-divider-rgb: "224, 214, 245"
+  color-glow: "#b40077"
+  color-glow-rgb: "180, 0, 119"
   card-mod-theme: SilkCircuit Dawn
 
   # ============================================
@@ -1907,12 +1931,15 @@ SilkCircuit Dawn:
   paper-dropdown-menu-color: var(--color-text)
   paper-dropdown-menu-label-color: var(--color-text-muted)
   input-dropdown-icon-color: var(--color-primary)
-  mdc-select-fill-color: var(--color-bg-card)
+  mdc-select-fill-color: var(--color-bg-elevated)
   mdc-select-ink-color: var(--color-text)
   mdc-select-label-ink-color: var(--color-text-muted)
   mdc-select-idle-line-color: var(--color-primary)
   mdc-select-dropdown-icon-color: var(--color-primary)
   mdc-select-hover-line-color: var(--color-pink)
+  mdc-text-field-fill-color: var(--color-bg-elevated)
+  mdc-text-field-disabled-fill-color: var(--color-bg)
+  mdc-text-field-ink-color: var(--color-text)
   mdc-text-field-label-ink-color: var(--color-text)
   paper-tabs-selection-bar-color: var(--color-primary)
   paper-tab-ink: var(--color-primary)
@@ -1923,11 +1950,12 @@ SilkCircuit Dawn:
   # ============================================
   # FORMS & INPUTS
   # ============================================
-  input-fill-color: "rgba(var(--color-text-rgb), 0.06)"
+  input-background-color: var(--color-bg-elevated)
+  input-fill-color: var(--color-bg-elevated)
   input-ink-color: var(--color-text)
   input-label-ink-color: var(--color-text-muted)
   input-disabled-ink-color: var(--color-text-disabled)
-  input-disabled-fill-color: "rgba(var(--color-text-rgb), 0.02)"
+  input-disabled-fill-color: var(--color-bg)
   input-idle-line-color: var(--color-primary)
   input-hover-line-color: var(--color-pink)
   input-disabled-line-color: var(--color-muted-dark)
@@ -2120,6 +2148,8 @@ SilkCircuit Dawn:
     ha-form-actions mwc-button {
       --mdc-theme-primary: var(--color-primary);
     }
+  modes:
+    light: {}
 
 SilkCircuit Auto:
   card-mod-theme: SilkCircuit Auto
@@ -2271,12 +2301,15 @@ SilkCircuit Auto:
   paper-dropdown-menu-color: var(--color-text)
   paper-dropdown-menu-label-color: var(--color-text-muted)
   input-dropdown-icon-color: var(--color-primary)
-  mdc-select-fill-color: var(--color-bg-card)
+  mdc-select-fill-color: var(--color-bg-elevated)
   mdc-select-ink-color: var(--color-text)
   mdc-select-label-ink-color: var(--color-text-muted)
   mdc-select-idle-line-color: var(--color-primary)
   mdc-select-dropdown-icon-color: var(--color-primary)
   mdc-select-hover-line-color: var(--color-pink)
+  mdc-text-field-fill-color: var(--color-bg-elevated)
+  mdc-text-field-disabled-fill-color: var(--color-bg)
+  mdc-text-field-ink-color: var(--color-text)
   mdc-text-field-label-ink-color: var(--color-text)
   paper-tabs-selection-bar-color: var(--color-primary)
   paper-tab-ink: var(--color-primary)
@@ -2287,11 +2320,12 @@ SilkCircuit Auto:
   # ============================================
   # FORMS & INPUTS
   # ============================================
-  input-fill-color: "rgba(var(--color-text-rgb), 0.06)"
+  input-background-color: var(--color-bg-elevated)
+  input-fill-color: var(--color-bg-elevated)
   input-ink-color: var(--color-text)
   input-label-ink-color: var(--color-text-muted)
   input-disabled-ink-color: var(--color-text-disabled)
-  input-disabled-fill-color: "rgba(var(--color-text-rgb), 0.02)"
+  input-disabled-fill-color: var(--color-bg)
   input-idle-line-color: var(--color-primary)
   input-hover-line-color: var(--color-pink)
   input-disabled-line-color: var(--color-muted-dark)
@@ -2487,122 +2521,122 @@ SilkCircuit Auto:
   modes:
     dark:
       # SilkCircuit neon palette
-      --color-primary: "#e135ff"
-      --color-primary-rgb: "225, 53, 255"
-      --color-primary-light: "#f2a6ff"
-      --color-primary-light-rgb: "242, 166, 255"
-      --color-primary-dark: "#b06cff"
-      --color-primary-dark-rgb: "176, 108, 255"
-      --color-pink: "#ff6ac1"
-      --color-pink-rgb: "255, 106, 193"
-      --color-pink-light: "#ff99dd"
-      --color-pink-light-rgb: "255, 153, 221"
-      --color-magenta: "#ff00ff"
-      --color-magenta-rgb: "255, 0, 255"
-      --color-cyan: "#80ffea"
-      --color-cyan-rgb: "128, 255, 234"
-      --color-cyan-light: "#b3fff2"
-      --color-cyan-light-rgb: "179, 255, 242"
-      --color-green: "#50fa7b"
-      --color-green-rgb: "80, 250, 123"
-      --color-green-light: "#7dffa0"
-      --color-green-light-rgb: "125, 255, 160"
-      --color-yellow: "#f1fa8c"
-      --color-yellow-rgb: "241, 250, 140"
-      --color-orange: "#ffb86c"
-      --color-orange-rgb: "255, 184, 108"
-      --color-coral: "#ff6ac1"
-      --color-coral-rgb: "255, 106, 193"
-      --color-teal: "#4fffb0"
-      --color-teal-rgb: "79, 255, 176"
-      --color-red: "#ff6363"
-      --color-red-rgb: "255, 99, 99"
-      --color-text: "#f8f8f2"
-      --color-text-rgb: "248, 248, 242"
-      --color-text-muted: "#c9c2e6"
-      --color-text-muted-rgb: "201, 194, 230"
-      --color-text-disabled: "#8c86a8"
-      --color-text-disabled-rgb: "140, 134, 168"
-      --color-text-on-accent: "#12101a"
-      --color-text-on-accent-rgb: "18, 16, 26"
-      --color-muted: "#8c8cb0"
-      --color-muted-rgb: "140, 140, 176"
-      --color-muted-dark: "#5a5a7a"
-      --color-muted-dark-rgb: "90, 90, 122"
-      --color-white: "#ffffff"
-      --color-white-rgb: "255, 255, 255"
-      --color-off-white: "#f0f0ff"
-      --color-off-white-rgb: "240, 240, 255"
-      --color-bg: "#12101a"
-      --color-bg-rgb: "18, 16, 26"
-      --color-bg-card: "#1a162a"
-      --color-bg-card-rgb: "26, 22, 42"
-      --color-bg-elevated: "#221c34"
-      --color-bg-elevated-rgb: "34, 28, 52"
-      --color-bg-sidebar: "#0a0812"
-      --color-bg-sidebar-rgb: "10, 8, 18"
-      --color-divider: "#332b4d"
-      --color-divider-rgb: "51, 43, 77"
-      --color-glow: "#ff6ac1"
-      --color-glow-rgb: "255, 106, 193"
+      color-primary: "#e135ff"
+      color-primary-rgb: "225, 53, 255"
+      color-primary-light: "#f2a6ff"
+      color-primary-light-rgb: "242, 166, 255"
+      color-primary-dark: "#b06cff"
+      color-primary-dark-rgb: "176, 108, 255"
+      color-pink: "#ff6ac1"
+      color-pink-rgb: "255, 106, 193"
+      color-pink-light: "#ff99dd"
+      color-pink-light-rgb: "255, 153, 221"
+      color-magenta: "#ff00ff"
+      color-magenta-rgb: "255, 0, 255"
+      color-cyan: "#80ffea"
+      color-cyan-rgb: "128, 255, 234"
+      color-cyan-light: "#b3fff2"
+      color-cyan-light-rgb: "179, 255, 242"
+      color-green: "#50fa7b"
+      color-green-rgb: "80, 250, 123"
+      color-green-light: "#7dffa0"
+      color-green-light-rgb: "125, 255, 160"
+      color-yellow: "#f1fa8c"
+      color-yellow-rgb: "241, 250, 140"
+      color-orange: "#ffb86c"
+      color-orange-rgb: "255, 184, 108"
+      color-coral: "#ff6ac1"
+      color-coral-rgb: "255, 106, 193"
+      color-teal: "#4fffb0"
+      color-teal-rgb: "79, 255, 176"
+      color-red: "#ff6363"
+      color-red-rgb: "255, 99, 99"
+      color-text: "#f8f8f2"
+      color-text-rgb: "248, 248, 242"
+      color-text-muted: "#c9c2e6"
+      color-text-muted-rgb: "201, 194, 230"
+      color-text-disabled: "#8c86a8"
+      color-text-disabled-rgb: "140, 134, 168"
+      color-text-on-accent: "#12101a"
+      color-text-on-accent-rgb: "18, 16, 26"
+      color-muted: "#8c8cb0"
+      color-muted-rgb: "140, 140, 176"
+      color-muted-dark: "#5a5a7a"
+      color-muted-dark-rgb: "90, 90, 122"
+      color-white: "#ffffff"
+      color-white-rgb: "255, 255, 255"
+      color-off-white: "#f0f0ff"
+      color-off-white-rgb: "240, 240, 255"
+      color-bg: "#12101a"
+      color-bg-rgb: "18, 16, 26"
+      color-bg-card: "#1a162a"
+      color-bg-card-rgb: "26, 22, 42"
+      color-bg-elevated: "#221c34"
+      color-bg-elevated-rgb: "34, 28, 52"
+      color-bg-sidebar: "#0a0812"
+      color-bg-sidebar-rgb: "10, 8, 18"
+      color-divider: "#332b4d"
+      color-divider-rgb: "51, 43, 77"
+      color-glow: "#ff6ac1"
+      color-glow-rgb: "255, 106, 193"
     light:
       # SilkCircuit dawn palette
-      --color-primary: "#7e2bd5"
-      --color-primary-rgb: "126, 43, 213"
-      --color-primary-light: "#9654e0"
-      --color-primary-light-rgb: "150, 84, 224"
-      --color-primary-dark: "#5e1ba8"
-      --color-primary-dark-rgb: "94, 27, 168"
-      --color-pink: "#b40077"
-      --color-pink-rgb: "180, 0, 119"
-      --color-pink-light: "#c04a8f"
-      --color-pink-light-rgb: "192, 74, 143"
-      --color-magenta: "#b40077"
-      --color-magenta-rgb: "180, 0, 119"
-      --color-cyan: "#007f8e"
-      --color-cyan-rgb: "0, 127, 142"
-      --color-cyan-light: "#009fae"
-      --color-cyan-light-rgb: "0, 159, 174"
-      --color-green: "#2d8659"
-      --color-green-rgb: "45, 134, 89"
-      --color-green-light: "#38a169"
-      --color-green-light-rgb: "56, 161, 105"
-      --color-yellow: "#a88600"
-      --color-yellow-rgb: "168, 134, 0"
-      --color-orange: "#c05621"
-      --color-orange-rgb: "192, 86, 33"
-      --color-coral: "#c74a8c"
-      --color-coral-rgb: "199, 74, 140"
-      --color-teal: "#1f9e7a"
-      --color-teal-rgb: "31, 158, 122"
-      --color-red: "#c1272d"
-      --color-red-rgb: "193, 39, 45"
-      --color-text: "#2b2540"
-      --color-text-rgb: "43, 37, 64"
-      --color-text-muted: "#5a4d6e"
-      --color-text-muted-rgb: "90, 77, 110"
-      --color-text-disabled: "#8e84a8"
-      --color-text-disabled-rgb: "142, 132, 168"
-      --color-text-on-accent: "#ffffff"
-      --color-text-on-accent-rgb: "255, 255, 255"
-      --color-muted: "#8e84a8"
-      --color-muted-rgb: "142, 132, 168"
-      --color-muted-dark: "#6b5f80"
-      --color-muted-dark-rgb: "107, 95, 128"
-      --color-white: "#ffffff"
-      --color-white-rgb: "255, 255, 255"
-      --color-off-white: "#faf8ff"
-      --color-off-white-rgb: "250, 248, 255"
-      --color-bg: "#faf8ff"
-      --color-bg-rgb: "250, 248, 255"
-      --color-bg-card: "#ffffff"
-      --color-bg-card-rgb: "255, 255, 255"
-      --color-bg-elevated: "#f1ecff"
-      --color-bg-elevated-rgb: "241, 236, 255"
-      --color-bg-sidebar: "#f1ecff"
-      --color-bg-sidebar-rgb: "241, 236, 255"
-      --color-divider: "#e0d6f5"
-      --color-divider-rgb: "224, 214, 245"
-      --color-glow: "#b40077"
-      --color-glow-rgb: "180, 0, 119"
+      color-primary: "#7e2bd5"
+      color-primary-rgb: "126, 43, 213"
+      color-primary-light: "#9654e0"
+      color-primary-light-rgb: "150, 84, 224"
+      color-primary-dark: "#5e1ba8"
+      color-primary-dark-rgb: "94, 27, 168"
+      color-pink: "#b40077"
+      color-pink-rgb: "180, 0, 119"
+      color-pink-light: "#c04a8f"
+      color-pink-light-rgb: "192, 74, 143"
+      color-magenta: "#b40077"
+      color-magenta-rgb: "180, 0, 119"
+      color-cyan: "#007f8e"
+      color-cyan-rgb: "0, 127, 142"
+      color-cyan-light: "#009fae"
+      color-cyan-light-rgb: "0, 159, 174"
+      color-green: "#2d8659"
+      color-green-rgb: "45, 134, 89"
+      color-green-light: "#38a169"
+      color-green-light-rgb: "56, 161, 105"
+      color-yellow: "#a88600"
+      color-yellow-rgb: "168, 134, 0"
+      color-orange: "#c05621"
+      color-orange-rgb: "192, 86, 33"
+      color-coral: "#c74a8c"
+      color-coral-rgb: "199, 74, 140"
+      color-teal: "#1f9e7a"
+      color-teal-rgb: "31, 158, 122"
+      color-red: "#c1272d"
+      color-red-rgb: "193, 39, 45"
+      color-text: "#2b2540"
+      color-text-rgb: "43, 37, 64"
+      color-text-muted: "#5a4d6e"
+      color-text-muted-rgb: "90, 77, 110"
+      color-text-disabled: "#8e84a8"
+      color-text-disabled-rgb: "142, 132, 168"
+      color-text-on-accent: "#ffffff"
+      color-text-on-accent-rgb: "255, 255, 255"
+      color-muted: "#8e84a8"
+      color-muted-rgb: "142, 132, 168"
+      color-muted-dark: "#6b5f80"
+      color-muted-dark-rgb: "107, 95, 128"
+      color-white: "#ffffff"
+      color-white-rgb: "255, 255, 255"
+      color-off-white: "#faf8ff"
+      color-off-white-rgb: "250, 248, 255"
+      color-bg: "#faf8ff"
+      color-bg-rgb: "250, 248, 255"
+      color-bg-card: "#ffffff"
+      color-bg-card-rgb: "255, 255, 255"
+      color-bg-elevated: "#f1ecff"
+      color-bg-elevated-rgb: "241, 236, 255"
+      color-bg-sidebar: "#f1ecff"
+      color-bg-sidebar-rgb: "241, 236, 255"
+      color-divider: "#e0d6f5"
+      color-divider-rgb: "224, 214, 245"
+      color-glow: "#b40077"
+      color-glow-rgb: "180, 0, 119"
 

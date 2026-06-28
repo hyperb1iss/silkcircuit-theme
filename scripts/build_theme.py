@@ -26,8 +26,9 @@ from pathlib import Path
 
 OUT = Path(__file__).resolve().parent.parent / "themes" / "silkcircuit.yaml"
 
-# Order palette keys are emitted in. Every key gets a `--color-<key>` plus a
-# `--color-<key>-rgb` triplet so rgba(var(--color-<key>-rgb), a) always works.
+# Order palette keys are emitted in. Each is written without the leading `--`
+# (HA prepends it), and gets a -rgb triplet so rgba(var(--color-<key>-rgb), a)
+# works. The body references them as var(--color-<key>).
 TOKEN_ORDER = [
     "primary",
     "primary-light",
@@ -232,6 +233,17 @@ FLAT_THEMES = [
 # Auto follows the OS light/dark setting: Dawn by day, Neon by night.
 AUTO_NAME = "SilkCircuit Auto"
 
+# Each flat variant declares its appearance via an empty `modes:` marker (the
+# Catppuccin trick). Without it HA applies light MDC component defaults, so
+# selects and text fields render with a white fill regardless of the palette.
+APPEARANCE = {
+    "neon": "dark",
+    "vibrant": "dark",
+    "soft": "dark",
+    "glow": "dark",
+    "dawn": "light",
+}
+
 # All visual rules. Resolves entirely through var(--color-*), so it is identical
 # for every variant; only __CARD_MOD_THEME__ is substituted per theme. Authored
 # at indent 2 (theme level); card-mod literal blocks indent their content to 4.
@@ -385,12 +397,15 @@ BODY = """\
   paper-dropdown-menu-color: var(--color-text)
   paper-dropdown-menu-label-color: var(--color-text-muted)
   input-dropdown-icon-color: var(--color-primary)
-  mdc-select-fill-color: var(--color-bg-card)
+  mdc-select-fill-color: var(--color-bg-elevated)
   mdc-select-ink-color: var(--color-text)
   mdc-select-label-ink-color: var(--color-text-muted)
   mdc-select-idle-line-color: var(--color-primary)
   mdc-select-dropdown-icon-color: var(--color-primary)
   mdc-select-hover-line-color: var(--color-pink)
+  mdc-text-field-fill-color: var(--color-bg-elevated)
+  mdc-text-field-disabled-fill-color: var(--color-bg)
+  mdc-text-field-ink-color: var(--color-text)
   mdc-text-field-label-ink-color: var(--color-text)
   paper-tabs-selection-bar-color: var(--color-primary)
   paper-tab-ink: var(--color-primary)
@@ -401,11 +416,12 @@ BODY = """\
   # ============================================
   # FORMS & INPUTS
   # ============================================
-  input-fill-color: "rgba(var(--color-text-rgb), 0.06)"
+  input-background-color: var(--color-bg-elevated)
+  input-fill-color: var(--color-bg-elevated)
   input-ink-color: var(--color-text)
   input-label-ink-color: var(--color-text-muted)
   input-disabled-ink-color: var(--color-text-disabled)
-  input-disabled-fill-color: "rgba(var(--color-text-rgb), 0.02)"
+  input-disabled-fill-color: var(--color-bg)
   input-idle-line-color: var(--color-primary)
   input-hover-line-color: var(--color-pink)
   input-disabled-line-color: var(--color-muted-dark)
@@ -611,7 +627,13 @@ def hex_to_rgb(value: str) -> str:
 
 
 def color_block(palette_key: str, indent: int) -> str:
-    """Emit `--color-<token>` and `--color-<token>-rgb` lines for a variant."""
+    """Emit color tokens for a variant.
+
+    Keys are written WITHOUT the leading `--`: HA prepends it to every theme
+    key, so `color-bg-card: ...` becomes the CSS var `--color-bg-card` that the
+    body references as `var(--color-bg-card)`. Defining the key as `--color-...`
+    instead double-prefixes it and nothing resolves (white-on-white).
+    """
     pal = PALETTES[palette_key]
     missing = [k for k in TOKEN_ORDER if k not in pal]
     if missing:
@@ -620,8 +642,8 @@ def color_block(palette_key: str, indent: int) -> str:
     lines = [f"{sp}# SilkCircuit {palette_key} palette"]
     for key in TOKEN_ORDER:
         hexv = pal[key]
-        lines.append(f'{sp}--color-{key}: "{hexv}"')
-        lines.append(f'{sp}--color-{key}-rgb: "{hex_to_rgb(hexv)}"')
+        lines.append(f'{sp}color-{key}: "{hexv}"')
+        lines.append(f'{sp}color-{key}-rgb: "{hex_to_rgb(hexv)}"')
     return "\n".join(lines) + "\n"
 
 
@@ -663,6 +685,8 @@ def build() -> str:
         out.append(f"{name}:")
         out.append(color_block(key, indent=2).rstrip("\n"))
         out.append(body_for(name).rstrip("\n"))
+        out.append("  modes:")
+        out.append(f"    {APPEARANCE[key]}: {{}}")
         out.append("")
 
     # Auto: shared body at theme level, palette swapped per light/dark mode.
