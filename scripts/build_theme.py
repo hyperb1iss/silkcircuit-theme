@@ -502,7 +502,7 @@ BODY = """\
   light-color: var(--color-yellow)
   logbook-entry-color: var(--color-pink)
   media-upload-hover-color: rgba(var(--color-primary-rgb), 0.3)
-  mini-media-player-base-color: var(--color-yellow)
+  mini-media-player-base-color: var(--color-text)
   mini-media-player-accent-color: var(--color-pink)
   svg-card-presets-color: var(--color-text)
   weather-day-color: var(--color-yellow)
