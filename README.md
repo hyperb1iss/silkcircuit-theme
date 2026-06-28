@@ -8,30 +8,40 @@
 
 <img src="https://raw.githubusercontent.com/hyperb1iss/silkcircuit-theme/main/images/silkcircuit-theme.png" alt="SilkCircuit Theme Preview" width="800">
 
+**Electric purple, neon cyan, and a signature pink glow on deep, near-black backgrounds.**
+
+![](https://placehold.co/15x15/e135ff/e135ff.png) `#e135ff` &nbsp;
+![](https://placehold.co/15x15/ff6ac1/ff6ac1.png) `#ff6ac1` &nbsp;
+![](https://placehold.co/15x15/ff00ff/ff00ff.png) `#ff00ff` &nbsp;
+![](https://placehold.co/15x15/80ffea/80ffea.png) `#80ffea` &nbsp;
+![](https://placehold.co/15x15/50fa7b/50fa7b.png) `#50fa7b` &nbsp;
+![](https://placehold.co/15x15/f1fa8c/f1fa8c.png) `#f1fa8c` &nbsp;
+![](https://placehold.co/15x15/ff6363/ff6363.png) `#ff6363`
+
 </div>
 
-SilkCircuit is the electric, femme-forward face of the [SilkCircuit design language](https://github.com/hyperb1iss/silkcircuit-nvim), brought to Home Assistant. Electric purple, neon cyan, and a signature pink glow on deep, near-black backgrounds — high-tech and luminous, as stylish as it is readable.
+SilkCircuit is the femme-forward face of the [SilkCircuit design language](https://github.com/hyperb1iss/silkcircuit-nvim), brought to Home Assistant — high-tech and luminous, as stylish as it is readable.
 
 ## 🎨 Variants
 
-Six themes ship in one file. Pick any of them from your profile — they all show up in the theme picker.
+Six themes ship in one file. Pick any of them from your profile — they all appear in the theme picker.
 
-| Theme | Vibe | Background | Primary |
+| Variant | Signature | Vibe | Surface |
 | --- | --- | --- | --- |
-| **SilkCircuit** | The flagship neon experience | `#12101a` | electric purple `#e135ff` |
-| **SilkCircuit Vibrant** | Punchier, magenta-forward | `#0f0c1a` | magenta `#ff00ff` |
-| **SilkCircuit Soft** | Gentler pastels, easy for long sessions | `#1a1626` | soft purple `#e892ff` |
-| **SilkCircuit Glow** | Ultra-dark with pure neon — maximum contrast | `#0a0816` | pure magenta `#ff00ff` |
-| **SilkCircuit Dawn** | Light theme for daytime | `#faf8ff` | deep purple `#7e2bd5` |
-| **SilkCircuit Auto** | Follows your system light/dark — Dawn by day, Neon by night | adaptive | adaptive |
+| **SilkCircuit** | ![](https://placehold.co/15x15/e135ff/e135ff.png) `#e135ff` | The flagship neon experience | ![](https://placehold.co/15x15/12101a/12101a.png) `#12101a` |
+| **SilkCircuit Vibrant** | ![](https://placehold.co/15x15/ff00ff/ff00ff.png) `#ff00ff` | Punchier, magenta-forward | ![](https://placehold.co/15x15/0f0c1a/0f0c1a.png) `#0f0c1a` |
+| **SilkCircuit Soft** | ![](https://placehold.co/15x15/e892ff/e892ff.png) `#e892ff` | Gentle pastels for long sessions | ![](https://placehold.co/15x15/1a1626/1a1626.png) `#1a1626` |
+| **SilkCircuit Glow** | ![](https://placehold.co/15x15/ff00ff/ff00ff.png) `#ff00ff` | Ultra-dark, pure neon, max contrast | ![](https://placehold.co/15x15/0a0816/0a0816.png) `#0a0816` |
+| **SilkCircuit Dawn** | ![](https://placehold.co/15x15/7e2bd5/7e2bd5.png) `#7e2bd5` | Light theme for daytime | ![](https://placehold.co/15x15/faf8ff/faf8ff.png) `#faf8ff` |
+| **SilkCircuit Auto** | 🌗 | Follows system light/dark — Dawn by day, Neon by night | adaptive |
 
-All variants share the same semantic palette: purple for primary actions, cyan for interaction, green for "on", red for "off", yellow for attention, and a pink glow on cards and dialogs.
+All variants share the same semantic palette: **purple** for primary actions, **cyan** for interaction, **green** for "on", **red** for "off", **yellow** for attention, and a **pink** glow on cards and dialogs.
 
 ## 💅 Highlights
 
 - **Real SilkCircuit palette** — the canonical neon colors, not an approximation
 - **Five hand-tuned variants + an auto light/dark theme** for every room and time of day
-- **Crystal-clear contrast** — bright, readable text on luxurious backgrounds (WCAG-minded)
+- **Crystal-clear contrast** — bright, readable text on luxurious backgrounds
 - **Glowing accents** — cards, dialogs, and controls that pulse with neon energy
 - **Comprehensive coverage** — sliders, switches, MDC inputs, climate, energy, badges, and more
 - **Card-mod enhancements** — sidebar gradient, glow-on-hover cards, hazy dialog backdrops
