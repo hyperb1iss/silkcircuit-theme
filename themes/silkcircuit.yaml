@@ -1,444 +1,372 @@
+# SilkCircuit — a neon dream for Home Assistant
+#
+# GENERATED FILE — do not edit by hand.
+# Source of truth: scripts/build_theme.py (palettes from silkcircuit-nvim).
+# Regenerate:  python3 scripts/build_theme.py
+#
+# Variants: SilkCircuit (neon), Vibrant, Soft, Glow, Dawn (light), Auto.
+
 SilkCircuit:
+  # SilkCircuit neon palette
+  --color-primary: "#e135ff"
+  --color-primary-rgb: "225, 53, 255"
+  --color-primary-light: "#f2a6ff"
+  --color-primary-light-rgb: "242, 166, 255"
+  --color-primary-dark: "#b06cff"
+  --color-primary-dark-rgb: "176, 108, 255"
+  --color-pink: "#ff6ac1"
+  --color-pink-rgb: "255, 106, 193"
+  --color-pink-light: "#ff99dd"
+  --color-pink-light-rgb: "255, 153, 221"
+  --color-magenta: "#ff00ff"
+  --color-magenta-rgb: "255, 0, 255"
+  --color-cyan: "#80ffea"
+  --color-cyan-rgb: "128, 255, 234"
+  --color-cyan-light: "#b3fff2"
+  --color-cyan-light-rgb: "179, 255, 242"
+  --color-green: "#50fa7b"
+  --color-green-rgb: "80, 250, 123"
+  --color-green-light: "#7dffa0"
+  --color-green-light-rgb: "125, 255, 160"
+  --color-yellow: "#f1fa8c"
+  --color-yellow-rgb: "241, 250, 140"
+  --color-orange: "#ffb86c"
+  --color-orange-rgb: "255, 184, 108"
+  --color-coral: "#ff6ac1"
+  --color-coral-rgb: "255, 106, 193"
+  --color-teal: "#4fffb0"
+  --color-teal-rgb: "79, 255, 176"
+  --color-red: "#ff6363"
+  --color-red-rgb: "255, 99, 99"
+  --color-text: "#f8f8f2"
+  --color-text-rgb: "248, 248, 242"
+  --color-text-muted: "#c9c2e6"
+  --color-text-muted-rgb: "201, 194, 230"
+  --color-text-disabled: "#8c86a8"
+  --color-text-disabled-rgb: "140, 134, 168"
+  --color-text-on-accent: "#12101a"
+  --color-text-on-accent-rgb: "18, 16, 26"
+  --color-muted: "#8c8cb0"
+  --color-muted-rgb: "140, 140, 176"
+  --color-muted-dark: "#5a5a7a"
+  --color-muted-dark-rgb: "90, 90, 122"
+  --color-white: "#ffffff"
+  --color-white-rgb: "255, 255, 255"
+  --color-off-white: "#f0f0ff"
+  --color-off-white-rgb: "240, 240, 255"
+  --color-bg: "#12101a"
+  --color-bg-rgb: "18, 16, 26"
+  --color-bg-card: "#1a162a"
+  --color-bg-card-rgb: "26, 22, 42"
+  --color-bg-elevated: "#221c34"
+  --color-bg-elevated-rgb: "34, 28, 52"
+  --color-bg-sidebar: "#0a0812"
+  --color-bg-sidebar-rgb: "10, 8, 18"
+  --color-divider: "#332b4d"
+  --color-divider-rgb: "51, 43, 77"
+  --color-glow: "#ff6ac1"
+  --color-glow-rgb: "255, 106, 193"
+  card-mod-theme: SilkCircuit
+
   # ============================================
-  # COLOR DEFINITIONS - All colors defined once
+  # CORE COLORS — purple primary, pink emphasis
   # ============================================
-  # Base colors - define all hex values here
-  color-hot-pink: "#ff5cd6"
-  color-light-pink: "#ff92df"
-  color-dark-pink: "#d940b0"
-  color-neon-green: "#50fa7b"
-  color-light-green: "#69ffb0"
-  color-purple: "#bd93f9"
-  color-cyan: "#8be9fd"
-  color-yellow: "#f1fa8c"
-  color-red: "#ff5555"
-  color-orange: "#ffb86c"
-  color-teal: "#4fffb0"
+  primary-color: var(--color-primary)
+  light-primary-color: var(--color-primary-light)
+  dark-primary-color: var(--color-primary-dark)
+  accent-color: var(--color-pink)
+  light-accent-color: var(--color-pink-light)
+  secondary-color: var(--color-cyan)
 
-  # Neutral colors
-  color-white: "#ffffff"
-  color-off-white: "#f0f0ff"
-  color-very-light-gray: "#f8f8f2"
-  color-light-gray: "#b8b8d0"
-  color-mid-gray: "#8c8cb0"
-  color-dark-gray: "#6272a4"
-  color-darker-gray: "#44475a"
-
-  # Background colors
-  color-bg-primary: "#15121e"
-  color-bg-secondary: "#272136"
-  color-bg-tertiary: "#1d1b2e"
-  color-bg-sidebar: "#191528"
-  color-divider: "#3d3654"
-
-  # Opacity values for consistent transparency
-  opacity-10: "0.1"
-  opacity-12: "0.12"
-  opacity-15: "0.15"
-  opacity-20: "0.2"
-  opacity-25: "0.25"
-  opacity-30: "0.3"
-  opacity-40: "0.4"
-  opacity-50: "0.5"
-  opacity-60: "0.6"
-  opacity-80: "0.8"
-
-  # ============================================
-  # CORE COLORS - Cyberpunk palette fundamentals
-  # ============================================
-  primary-color: var(--color-hot-pink)
-  light-primary-color: var(--color-light-pink)
-  dark-primary-color: var(--color-dark-pink)
-  accent-color: var(--color-neon-green)
-  light-accent-color: var(--color-light-green)
-  secondary-color: var(--color-purple)
-
-  # Extended color palette
-  pink-color: var(--color-hot-pink)
-  light-pink-color: var(--color-light-pink)
-  dark-pink-color: var(--color-dark-pink)
-  purple-color: var(--color-purple)
+  # Dashboard-facing palette aliases
+  purple-color: var(--color-primary)
+  pink-color: var(--color-pink)
+  light-pink-color: var(--color-pink-light)
+  dark-pink-color: var(--color-primary-dark)
+  magenta-color: var(--color-magenta)
   blue-color: var(--color-cyan)
-  green-color: var(--color-neon-green)
+  cyan-color: var(--color-cyan)
+  green-color: var(--color-green)
   yellow-color: var(--color-yellow)
   red-color: var(--color-red)
   orange-color: var(--color-orange)
+  coral-color: var(--color-coral)
   teal-color: var(--color-teal)
 
-  # Status colors
+  # Status
   info-color: var(--color-cyan)
-  success-color: var(--color-neon-green)
+  success-color: var(--color-green)
   warning-color: var(--color-yellow)
   error-color: var(--color-red)
 
   # ============================================
-  # BACKGROUNDS - Deep, rich color foundations
+  # BACKGROUNDS
   # ============================================
-  primary-background-color: var(--color-bg-primary)
-  secondary-background-color: var(--color-bg-secondary)
-  card-background-color: var(--color-bg-secondary)
+  primary-background-color: var(--color-bg)
+  secondary-background-color: var(--color-bg-card)
+  card-background-color: var(--color-bg-card)
+  ha-card-background: var(--color-bg-card)
   divider-color: var(--color-divider)
-
-  # Dialog backgrounds
-  paper-dialog-background-color: var(--color-bg-secondary)
-  markdown-code-background-color: var(--color-bg-tertiary)
-  code-editor-background-color: var(--color-bg-tertiary)
-
-  # Material backgrounds
-  material-background-color: var(--color-bg-secondary)
-  material-secondary-background-color: var(--color-bg-tertiary)
-
-  # Table backgrounds
-  table-row-background-color: var(--color-bg-secondary)
-  table-row-alternative-background-color: var(--color-bg-tertiary)
-  data-table-background-color: var(--color-bg-primary)
+  paper-dialog-background-color: var(--color-bg-card)
+  markdown-code-background-color: var(--color-bg-elevated)
+  code-editor-background-color: var(--color-bg-elevated)
+  material-background-color: var(--color-bg-card)
+  material-secondary-background-color: var(--color-bg-elevated)
+  table-row-background-color: var(--color-bg-card)
+  table-row-alternative-background-color: var(--color-bg-elevated)
+  data-table-background-color: var(--color-bg)
 
   # ============================================
-  # TEXT STYLING - High contrast for readability
+  # TEXT — roles invert for the light (Dawn) variant
   # ============================================
-  text-primary-color: var(--color-white)
-  primary-text-color: var(--color-white)
-  text-secondary-color: var(--color-off-white)
-  secondary-text-color: var(--color-off-white)
-  text-accent-color: var(--color-bg-secondary)
-  text-dark-color: var(--color-bg-primary)
-  text-very-light-color: var(--color-very-light-gray)
-  disabled-text-color: var(--color-light-gray)
-
-  # Headers and special text
-  app-header-text-color: var(--color-white)
-  paper-card-header-color: var(--color-white)
-  paper-card-header-text-color: var(--color-white)
-
-  # Paper element text colors
-  paper-font-headline_-_color: var(--color-white)
-  paper-font-subhead_-_color: var(--color-off-white)
-  paper-font-body1_-_color: var(--color-white)
-  paper-font-caption_-_color: var(--color-off-white)
-  paper-grey-50: var(--color-very-light-gray)
-  paper-grey-200: var(--color-bg-secondary)
+  text-primary-color: var(--color-text)
+  primary-text-color: var(--color-text)
+  text-secondary-color: var(--color-text-muted)
+  secondary-text-color: var(--color-text-muted)
+  text-accent-color: var(--color-text-on-accent)
+  text-dark-color: var(--color-text-on-accent)
+  text-very-light-color: var(--color-text)
+  disabled-text-color: var(--color-text-disabled)
+  app-header-text-color: var(--color-text)
+  paper-card-header-color: var(--color-text)
+  paper-card-header-text-color: var(--color-text)
+  paper-font-headline_-_color: var(--color-text)
+  paper-font-subhead_-_color: var(--color-text-muted)
+  paper-font-body1_-_color: var(--color-text)
+  paper-font-caption_-_color: var(--color-text-muted)
+  paper-grey-50: var(--color-text)
+  paper-grey-200: var(--color-bg-card)
 
   # ============================================
-  # SIDEBAR & HEADER - Main navigation styling
+  # SIDEBAR & HEADER
   # ============================================
-  # Sidebar colors
   sidebar-background-color: var(--color-bg-sidebar)
-  sidebar-icon-color: var(--color-hot-pink)
-  sidebar-text-color: var(--color-white)
-  sidebar-selected-background-color: rgba(var(--color-hot-pink), var(--opacity-25))
-  sidebar-selected-icon-color: var(--color-light-pink)
-  sidebar-selected-text-color: var(--color-white)
-
-  # Header colors
-  app-header-background-color: var(--color-bg-primary)
-  app-header-edit-background-color: rgba(var(--color-purple), var(--opacity-30))
-
-  # Drawer and menu (related to sidebar)
+  sidebar-icon-color: var(--color-primary)
+  sidebar-text-color: var(--color-text)
+  sidebar-selected-background-color: rgba(var(--color-primary-rgb), 0.25)
+  sidebar-selected-icon-color: var(--color-pink)
+  sidebar-selected-text-color: var(--color-text)
+  app-header-background-color: var(--color-bg)
+  app-header-edit-background-color: rgba(var(--color-primary-rgb), 0.3)
   paper-drawer-background-color: var(--color-bg-sidebar)
-  paper-drawer-text-color: var(--color-white)
-  paper-drawer-selected-color: var(--color-hot-pink)
-  paper-menu-background-color: var(--color-bg-secondary)
-  paper-menu-color: var(--color-white)
-  paper-menu-disabled-color: var(--color-light-gray)
+  paper-drawer-text-color: var(--color-text)
+  paper-drawer-selected-color: var(--color-primary)
+  paper-menu-background-color: var(--color-bg-card)
+  paper-menu-color: var(--color-text)
+  paper-menu-disabled-color: var(--color-text-disabled)
 
   # ============================================
-  # CARDS & UI ELEMENTS - Sharp, neon-accented
+  # CARDS & STATE
   # ============================================
-  # Card styling
   ha-card-border-radius: "12px"
-  ha-card-box-shadow: "0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12), 0 0 10px rgba(255, 92, 214, 0.3)"
-  paper-card-background-color: var(--color-bg-secondary)
-
-  # State colors
-  state-icon-color: var(--color-purple)
-  state-icon-active-color: var(--color-hot-pink)
-  state-icon-unavailable-color: var(--color-darker-gray)
-
-  # On/Off state colors
-  state-on-color: var(--color-neon-green)
+  ha-card-box-shadow: "0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12), 0 0 12px rgba(var(--color-glow-rgb), 0.3)"
+  paper-card-background-color: var(--color-bg-card)
+  state-icon-color: var(--color-primary)
+  state-icon-active-color: var(--color-pink)
+  state-icon-unavailable-color: var(--color-muted-dark)
+  state-on-color: var(--color-green)
   state-off-color: var(--color-red)
   state-idle-color: var(--color-cyan)
   state-standby-color: var(--color-orange)
-  state-unknown-color: var(--color-dark-gray)
-
-  # Paper item styling
-  paper-item-icon-color: var(--color-purple)
-  paper-item-icon-active-color: var(--color-hot-pink)
-  paper-item-icon_-_color: var(--color-purple)
+  state-unknown-color: var(--color-muted)
+  paper-item-icon-color: var(--color-primary)
+  paper-item-icon-active-color: var(--color-pink)
+  paper-item-icon_-_color: var(--color-primary)
   paper-item-min-height: "36px"
-  paper-item-selected_-_background-color: rgba(var(--color-hot-pink), var(--opacity-30))
-  paper-item-selected_-_color: var(--color-white)
-  paper-item-hover_-_background-color: rgba(var(--color-hot-pink), var(--opacity-10))
-  paper-item-focused_-_background-color: rgba(var(--color-hot-pink), var(--opacity-10))
-  paper-item-focused-before_-_opacity: var(--opacity-12)
+  paper-item-selected_-_background-color: rgba(var(--color-primary-rgb), 0.3)
+  paper-item-selected_-_color: var(--color-text)
+  paper-item-hover_-_background-color: rgba(var(--color-primary-rgb), 0.1)
+  paper-item-focused_-_background-color: rgba(var(--color-primary-rgb), 0.1)
+  paper-item-focused-before_-_opacity: "0.12"
   paper-icon-item_-_background-color: "transparent"
 
   # ============================================
-  # CONTROLS - Sliders, switches and toggles
+  # CONTROLS — sliders, switches, toggles
   # ============================================
-  # Slider controls
-  paper-slider-knob-color: var(--color-hot-pink)
-  paper-slider-knob-start-color: var(--color-mid-gray)
-  paper-slider-pin-color: var(--color-hot-pink)
-  paper-slider-active-color: var(--color-hot-pink)
-  paper-slider-secondary-color: var(--color-purple)
-  paper-slider-container-color: rgba(var(--color-mid-gray), var(--opacity-40))
-
-  # Switch colors
-  switch-checked-button-color: var(--color-hot-pink)
-  switch-checked-track-color: rgba(var(--color-hot-pink), var(--opacity-60))
-  switch-unchecked-button-color: var(--color-mid-gray)
-  switch-unchecked-track-color: rgba(var(--color-mid-gray), var(--opacity-40))
-
-  # Toggle button
-  paper-toggle-button-checked-button-color: var(--color-hot-pink)
-  paper-toggle-button-checked-bar-color: rgba(var(--color-hot-pink), var(--opacity-60))
-  paper-toggle-button-unchecked-button-color: var(--color-mid-gray)
-  paper-toggle-button-unchecked-bar-color: rgba(var(--color-mid-gray), var(--opacity-40))
-
-  # Progress indicators
-  paper-progress-active-color: var(--color-hot-pink)
-  paper-progress-container-color: rgba(var(--color-mid-gray), var(--opacity-40))
-  paper-progress-disabled-active-color: var(--color-light-gray)
-  paper-progress-indeterminate-cycle-duration: "2s"
-  paper-progress-secondary-color: var(--color-purple)
-
-  # Spinners
-  paper-spinner-color: var(--color-hot-pink)
-  paper-spinner-layer-1-color: var(--color-hot-pink)
-  paper-spinner-layer-2-color: var(--color-neon-green)
-  paper-spinner-layer-3-color: var(--color-purple)
+  paper-slider-knob-color: var(--color-primary)
+  paper-slider-knob-start-color: var(--color-muted)
+  paper-slider-pin-color: var(--color-primary)
+  paper-slider-active-color: var(--color-primary)
+  paper-slider-secondary-color: var(--color-pink)
+  paper-slider-container-color: rgba(var(--color-muted-rgb), 0.4)
+  switch-checked-button-color: var(--color-primary)
+  switch-checked-track-color: rgba(var(--color-primary-rgb), 0.6)
+  switch-unchecked-button-color: var(--color-muted)
+  switch-unchecked-track-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-toggle-button-checked-button-color: var(--color-primary)
+  paper-toggle-button-checked-bar-color: rgba(var(--color-primary-rgb), 0.6)
+  paper-toggle-button-unchecked-button-color: var(--color-muted)
+  paper-toggle-button-unchecked-bar-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-progress-active-color: var(--color-primary)
+  paper-progress-container-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-progress-disabled-active-color: var(--color-text-disabled)
+  paper-progress-secondary-color: var(--color-pink)
+  paper-spinner-color: var(--color-primary)
+  paper-spinner-layer-1-color: var(--color-primary)
+  paper-spinner-layer-2-color: var(--color-green)
+  paper-spinner-layer-3-color: var(--color-pink)
   paper-spinner-layer-4-color: var(--color-cyan)
 
   # ============================================
-  # DROPDOWNS & MENUS - List components styling
+  # DROPDOWNS, MENUS & TABS
   # ============================================
-  # Dropdowns and listboxes
-  paper-listbox-background-color: var(--color-bg-secondary)
-  paper-listbox-color: var(--color-white)
-  paper-dropdown-menu-color: var(--color-white)
-  paper-dropdown-menu-label-color: var(--color-white)
-  input-dropdown-icon-color: var(--color-purple)
-
-  # MDC (Material Design Components) Dropdowns
-  mdc-select-fill-color: var(--color-bg-secondary)
-  mdc-select-ink-color: var(--color-white)
-  mdc-select-label-ink-color: var(--color-off-white)
-  mdc-select-idle-line-color: var(--color-purple)
-  mdc-select-dropdown-icon-color: var(--color-purple)
-  mdc-select-hover-line-color: var(--color-hot-pink)
-  mdc-text-field-label-ink-color: var(--color-white)
-
-  # Tabs
-  paper-tabs-selection-bar-color: var(--color-hot-pink)
-  paper-tab-ink: var(--color-hot-pink)
+  paper-listbox-background-color: var(--color-bg-card)
+  paper-listbox-color: var(--color-text)
+  paper-dropdown-menu-color: var(--color-text)
+  paper-dropdown-menu-label-color: var(--color-text-muted)
+  input-dropdown-icon-color: var(--color-primary)
+  mdc-select-fill-color: var(--color-bg-card)
+  mdc-select-ink-color: var(--color-text)
+  mdc-select-label-ink-color: var(--color-text-muted)
+  mdc-select-idle-line-color: var(--color-primary)
+  mdc-select-dropdown-icon-color: var(--color-primary)
+  mdc-select-hover-line-color: var(--color-pink)
+  mdc-text-field-label-ink-color: var(--color-text)
+  paper-tabs-selection-bar-color: var(--color-primary)
+  paper-tab-ink: var(--color-primary)
   paper-tabs-container-color: "transparent"
   paper-tabs-content-container_-_background-color: "transparent"
-  paper-tabs-selection-bar_-_border-color: var(--color-hot-pink)
+  paper-tabs-selection-bar_-_border-color: var(--color-primary)
 
   # ============================================
-  # FORMS & INPUT - Text fields and form elements
+  # FORMS & INPUTS
   # ============================================
-  # Input field styling
-  input-fill-color: "rgba(255, 255, 255, 0.06)"
-  input-ink-color: var(--color-white)
-  input-label-ink-color: var(--color-off-white)
-  input-disabled-ink-color: var(--color-light-gray)
-  input-disabled-fill-color: "rgba(255, 255, 255, 0.02)"
-  input-idle-line-color: var(--color-purple)
-  input-hover-line-color: var(--color-hot-pink)
-  input-disabled-line-color: var(--color-darker-gray)
-  input-outlined-idle-border-color: var(--color-purple)
-  input-outlined-hover-border-color: var(--color-hot-pink)
-  input-outlined-disabled-border-color: var(--color-darker-gray)
-
-  # Form container elements
-  paper-input-container-color: var(--color-off-white)
-  paper-input-container-focus-color: var(--color-hot-pink)
+  input-fill-color: "rgba(var(--color-text-rgb), 0.06)"
+  input-ink-color: var(--color-text)
+  input-label-ink-color: var(--color-text-muted)
+  input-disabled-ink-color: var(--color-text-disabled)
+  input-disabled-fill-color: "rgba(var(--color-text-rgb), 0.02)"
+  input-idle-line-color: var(--color-primary)
+  input-hover-line-color: var(--color-pink)
+  input-disabled-line-color: var(--color-muted-dark)
+  input-outlined-idle-border-color: var(--color-primary)
+  input-outlined-hover-border-color: var(--color-pink)
+  input-outlined-disabled-border-color: var(--color-muted-dark)
+  paper-input-container-color: var(--color-text-muted)
+  paper-input-container-focus-color: var(--color-primary)
   paper-input-container-invalid-color: var(--color-red)
-  paper-input-container-input-color: var(--color-white)
-
-  # Checkboxes
-  paper-checkbox-checkmark-color: var(--color-bg-primary)
-  paper-checkbox-checked-color: var(--color-hot-pink)
-  paper-checkbox-checked-ink-color: var(--color-hot-pink)
-  paper-checkbox-unchecked-color: var(--color-purple)
-  paper-checkbox-unchecked-ink-color: var(--color-purple)
-  paper-checkbox-label-color: var(--color-white)
-  paper-checkbox-label-checked-color: var(--color-white)
-  paper-checkbox-disabled-color: var(--color-darker-gray)
-  paper-checkbox-disabled-ink-color: var(--color-darker-gray)
-  mdc-checkbox-unchecked-color: var(--color-light-gray)
-
-  # Radio buttons
-  paper-radio-button-checked-color: var(--color-hot-pink)
-  paper-radio-button-checked-ink-color: var(--color-hot-pink)
-  paper-radio-button-unchecked-color: var(--color-purple)
-  paper-radio-button-unchecked-ink-color: var(--color-purple)
-  paper-radio-button-label-color: var(--color-white)
-  paper-radio-button-disabled-color: var(--color-darker-gray)
-
-  # Buttons
-  paper-button-active-keyboard-focus-background: rgba(var(--color-hot-pink), var(--opacity-30))
-  paper-button-disabled-text-color: var(--color-light-gray)
-  paper-button-disabled_-_background-color: rgba(var(--color-mid-gray), var(--opacity-15))
-  paper-button-disabled_-_color: var(--color-light-gray)
-  paper-button-raised-keyboard-focus_-_background-color: rgba(var(--color-hot-pink), var(--opacity-20))
-  paper-dialog-button-color: var(--color-hot-pink)
+  paper-input-container-input-color: var(--color-text)
+  paper-checkbox-checkmark-color: var(--color-text-on-accent)
+  paper-checkbox-checked-color: var(--color-primary)
+  paper-checkbox-checked-ink-color: var(--color-primary)
+  paper-checkbox-unchecked-color: var(--color-primary)
+  paper-checkbox-unchecked-ink-color: var(--color-primary)
+  paper-checkbox-label-color: var(--color-text)
+  paper-checkbox-label-checked-color: var(--color-text)
+  paper-checkbox-disabled-color: var(--color-muted-dark)
+  paper-checkbox-disabled-ink-color: var(--color-muted-dark)
+  mdc-checkbox-unchecked-color: var(--color-muted)
+  paper-radio-button-checked-color: var(--color-primary)
+  paper-radio-button-checked-ink-color: var(--color-primary)
+  paper-radio-button-unchecked-color: var(--color-primary)
+  paper-radio-button-unchecked-ink-color: var(--color-primary)
+  paper-radio-button-label-color: var(--color-text)
+  paper-radio-button-disabled-color: var(--color-muted-dark)
+  paper-button-active-keyboard-focus-background: rgba(var(--color-primary-rgb), 0.3)
+  paper-button-disabled-text-color: var(--color-text-disabled)
+  paper-button-disabled_-_background-color: rgba(var(--color-muted-rgb), 0.15)
+  paper-button-disabled_-_color: var(--color-text-disabled)
+  paper-button-raised-keyboard-focus_-_background-color: rgba(var(--color-primary-rgb), 0.2)
+  paper-dialog-button-color: var(--color-primary)
 
   # ============================================
-  # MDC THEMING - Material Design Components
+  # MDC THEMING
   # ============================================
-  mdc-theme-primary: var(--color-hot-pink)
-  mdc-theme-secondary: var(--color-purple)
-  mdc-theme-background: var(--color-bg-primary)
-  mdc-theme-surface: var(--color-bg-secondary)
-  mdc-theme-on-primary: var(--color-white)
-  mdc-theme-on-secondary: var(--color-bg-primary)
-  mdc-theme-on-surface: var(--color-white)
+  mdc-theme-primary: var(--color-primary)
+  mdc-theme-secondary: var(--color-pink)
+  mdc-theme-background: var(--color-bg)
+  mdc-theme-surface: var(--color-bg-card)
+  mdc-theme-on-primary: var(--color-text-on-accent)
+  mdc-theme-on-secondary: var(--color-text-on-accent)
+  mdc-theme-on-surface: var(--color-text)
 
   # ============================================
-  # MISCELLANEOUS - Special elements and domains
+  # CHIPS, DIALOGS, BADGES
   # ============================================
-  # Chips and tags
-  paper-chip-background-color: var(--color-bg-secondary)
-  paper-chip-icon-color: var(--color-purple)
-  paper-chip-text-color: var(--color-white)
-  paper-chip-selected-background-color: rgba(var(--color-hot-pink), var(--opacity-30))
-  paper-chip-selected-text-color: var(--color-white)
-
-  # Dialogs
-  paper-toast-background-color: var(--color-bg-secondary)
-  paper-datepicker-ink-color: var(--color-white)
-  paper-datepicker-accent-color: var(--color-hot-pink)
-  paper-datepicker-toggled-color: var(--color-hot-pink)
-  paper-datepicker-disabled-color: var(--color-darker-gray)
-  paper-datepicker-calendar-color: var(--color-bg-secondary)
-
-  # Labels and badges
+  paper-chip-background-color: var(--color-bg-card)
+  paper-chip-icon-color: var(--color-primary)
+  paper-chip-text-color: var(--color-text)
+  paper-chip-selected-background-color: rgba(var(--color-primary-rgb), 0.3)
+  paper-chip-selected-text-color: var(--color-text)
+  paper-toast-background-color: var(--color-bg-card)
+  paper-datepicker-ink-color: var(--color-text)
+  paper-datepicker-accent-color: var(--color-primary)
+  paper-datepicker-toggled-color: var(--color-primary)
+  paper-datepicker-disabled-color: var(--color-muted-dark)
+  paper-datepicker-calendar-color: var(--color-bg-card)
   label-badge-red: var(--color-red)
-  label-badge-green: var(--color-neon-green)
+  label-badge-green: var(--color-green)
   label-badge-blue: var(--color-cyan)
   label-badge-yellow: var(--color-yellow)
-  label-badge-gray: var(--color-dark-gray)
-  label-badge-text-color: var(--color-white)
-  label-badge-background-color: rgba(var(--color-bg-secondary), var(--opacity-80))
+  label-badge-gray: var(--color-muted)
+  label-badge-text-color: var(--color-text)
+  label-badge-background-color: rgba(var(--color-bg-card-rgb), 0.8)
 
-  # Domain-specific colors
+  # ============================================
+  # DOMAIN-SPECIFIC
+  # ============================================
   energy-grid-consumption-color: var(--color-red)
-  energy-grid-return-color: var(--color-neon-green)
+  energy-grid-return-color: var(--color-green)
   energy-solar-color: var(--color-yellow)
   energy-battery-in-color: var(--color-cyan)
   energy-battery-out-color: var(--color-orange)
   energy-gas-color: var(--color-red)
   energy-water-color: var(--color-cyan)
-  history-graph-color: var(--color-hot-pink)
+  history-graph-color: var(--color-pink)
   light-color: var(--color-yellow)
-  logbook-entry-color: var(--color-hot-pink)
-  media-upload-hover-color: rgba(var(--color-hot-pink), var(--opacity-30))
+  logbook-entry-color: var(--color-pink)
+  media-upload-hover-color: rgba(var(--color-primary-rgb), 0.3)
   mini-media-player-base-color: var(--color-yellow)
-  mini-media-player-accent-color: var(--color-hot-pink)
-  svg-card-presets-color: var(--color-white)
+  mini-media-player-accent-color: var(--color-pink)
+  svg-card-presets-color: var(--color-text)
   weather-day-color: var(--color-yellow)
   weather-night-color: var(--color-cyan)
-
-  # Climate colors
   climate-heat-color: var(--color-red)
   climate-cool-color: var(--color-cyan)
-  climate-fan-only-color: var(--color-neon-green)
-  climate-auto-color: var(--color-purple)
+  climate-fan-only-color: var(--color-green)
+  climate-auto-color: var(--color-primary)
   climate-dry-color: var(--color-orange)
-  climate-idle-color: var(--color-very-light-gray)
-  climate-off-color: var(--color-darker-gray)
-
-  # Plant colors
-  plant-ok-color: var(--color-neon-green)
+  climate-idle-color: var(--color-text-muted)
+  climate-off-color: var(--color-muted-dark)
+  plant-ok-color: var(--color-green)
   plant-problem-color: var(--color-red)
+  scrollbar-thumb-color: var(--color-divider)
 
   # ============================================
-  # CARD-MOD STYLES - Minimal but impactful
+  # CARD-MOD — the electric layer (glow, gradients)
   # ============================================
-  # Using card-mod only where absolutely necessary
-  card-mod-theme: SilkCircuit
-
-  # Add cyberpunk styling to the root/global level
   card-mod-root: |
-    /* Define CSS variables for consistent use in card-mod sections */
     :root {
-      --sc-pink-glow: rgba(var(--color-hot-pink), 0.3);
-      --sc-pink-glow-strong: rgba(var(--color-hot-pink), 0.5);
-      --sc-pink-border: rgba(var(--color-hot-pink), 0.2);
-      --sc-pink-border-light: rgba(var(--color-hot-pink), 0.3);
+      --sc-glow: rgba(var(--color-glow-rgb), 0.3);
+      --sc-glow-strong: rgba(var(--color-glow-rgb), 0.5);
+      --sc-border: rgba(var(--color-primary-rgb), 0.2);
+      --sc-border-light: rgba(var(--color-primary-rgb), 0.3);
       --sc-shadow-normal: rgba(0, 0, 0, 0.3);
       --sc-shadow-strong: rgba(0, 0, 0, 0.5);
     }
-
-    /* Enhance sidebar with subtle cyberpunk styling */
     ha-sidebar {
-      background: linear-gradient(to bottom, var(--color-bg-sidebar), var(--color-bg-primary)) !important;
-      border-right: 1px solid var(--sc-pink-border);
+      background: linear-gradient(to bottom, var(--color-bg-sidebar), var(--color-bg)) !important;
+      border-right: 1px solid var(--sc-border);
       box-shadow: 3px 0 15px var(--sc-shadow-strong);
     }
-
-    /* More visible headings */
     [role="heading"], div.header {
-      color: var(--color-white) !important;
-      text-shadow: 0 0 8px var(--sc-pink-glow) !important;
+      color: var(--color-text) !important;
+      text-shadow: 0 0 8px var(--sc-glow) !important;
     }
-
-    /* Custom scrollbar */
-    ::-webkit-scrollbar {
-      width: 8px;
-      height: 8px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: var(--scrollbar-track-color);
-      border-radius: 4px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: var(--scrollbar-thumb-color);
-      border-radius: 4px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background: var(--sc-pink-glow-strong);
-    }
-
-    /* Card glow effect on hover */
-    ha-card {
-      transition: all 0.3s ease;
-    }
-
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: var(--color-bg); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb { background: var(--color-divider); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--sc-glow-strong); }
+    ha-card { transition: all 0.3s ease; }
     ha-card:hover {
-      box-shadow: 0 5px 15px var(--sc-shadow-normal), 0 0 15px var(--sc-pink-glow-strong) !important;
+      box-shadow: 0 5px 15px var(--sc-shadow-normal), 0 0 15px var(--sc-glow-strong) !important;
       transform: translateY(-2px);
     }
-
-  # Card styling enhancements
   card-mod-card: |
-    /* Enhanced card styling */
-    ha-card {
-      border: 1px solid var(--sc-pink-border-light);
-    }
-
-    /* Headers with subtle glow effect */
-    .card-header {
-      text-shadow: 0 0 8px var(--sc-pink-glow);
-    }
-
-    /* Card content padding */
-    .card-content {
-      padding: 16px;
-    }
-
-    /* Entity rows enhancement */
-    .entity-row {
-      position: relative;
-      overflow: hidden;
-    }
-
+    ha-card { border: 1px solid var(--sc-border-light); }
+    .card-header { text-shadow: 0 0 8px var(--sc-glow); }
+    .card-content { padding: 16px; }
+    .entity-row { position: relative; overflow: hidden; }
     .entity-row:after {
       content: "";
       position: absolute;
@@ -446,92 +374,2235 @@ SilkCircuit:
       left: 0;
       width: 100%;
       height: 1px;
-      background: linear-gradient(to right, transparent, var(--sc-pink-border-light), transparent);
+      background: linear-gradient(to right, transparent, var(--sc-border-light), transparent);
     }
-
-  # View styling
   card-mod-view: |
-    /* Overall view enhancements */
-    .type-custom-button-card, 
-    .type-entities, 
+    .type-custom-button-card,
+    .type-entities,
     .type-custom-hui-entities-card,
-    .type-history-graph, 
-    .type-media-control, 
+    .type-history-graph,
+    .type-media-control,
     .type-weather-forecast {
       --ha-card-box-shadow: 0 2px 5px 0 var(--sc-shadow-normal);
       --ha-card-border-radius: 12px;
       --ha-card-background: var(--card-background-color);
       margin-bottom: 10px;
     }
-
-    /* Grid layout improvements */
-    .column > * {
-      margin-bottom: 12px;
-    }
-
-    /* View background enhancement */
+    .column > * { margin-bottom: 12px; }
     #view {
-      background-image: radial-gradient(circle at 50% 50%, var(--sc-pink-glow), rgba(0, 0, 0, 0) 70%);
+      background-image: radial-gradient(circle at 50% 50%, var(--sc-glow), rgba(0, 0, 0, 0) 70%);
     }
-
-  # More info dialog enhancements
   card-mod-more-info: |
-    /* Dialog styling */
     .mdc-dialog .mdc-dialog__container .mdc-dialog__surface {
-      border: 1px solid var(--sc-pink-border-light);
-      box-shadow: 0 0 20px var(--sc-pink-glow);
+      border: 1px solid var(--sc-border-light);
+      box-shadow: 0 0 20px var(--sc-glow);
       background: linear-gradient(145deg, var(--card-background-color), var(--primary-background-color));
     }
-
-    /* Blur backdrop for dialogs */
     .mdc-dialog .mdc-dialog__scrim {
       backdrop-filter: blur(5px);
       -webkit-backdrop-filter: blur(5px);
       background: rgba(0, 0, 0, 0.5) !important;
     }
-
-    /* Dialog title and buttons */
     .mdc-dialog .mdc-dialog__title {
-      color: var(--text-primary-color);
-      text-shadow: 0 0 8px var(--sc-pink-glow);
+      color: var(--color-text);
+      text-shadow: 0 0 8px var(--sc-glow);
     }
-
-    /* Dialog buttons */
-    .mdc-dialog .mdc-dialog__actions button {
-      color: var(--pink-color);
-    }
-
-    /* Dialog glow effect */
-    .mdc-dialog__container {
-      filter: drop-shadow(0 0 10px var(--sc-pink-border));
-    }
-
-  # Enhance buttons
+    .mdc-dialog .mdc-dialog__actions button { color: var(--color-pink); }
+    .mdc-dialog__container { filter: drop-shadow(0 0 10px var(--sc-border)); }
   card-mod-button: |
-    /* Button styling */
     ha-icon-button, ha-button {
-      color: var(--pink-color);
+      color: var(--color-pink);
       transition: all 0.2s ease;
     }
-
     ha-icon-button:hover, ha-button:hover {
-      color: var(--light-pink-color);
-      filter: brightness(1.2) drop-shadow(0 0 5px var(--sc-pink-glow-strong));
+      color: var(--color-pink-light);
+      filter: brightness(1.2) drop-shadow(0 0 5px var(--sc-glow-strong));
     }
-
-  # Form styling
   card-mod-form: |
-    /* Form elements */
     ha-textfield, ha-selector, ha-select {
-      --mdc-theme-primary: var(--pink-color);
+      --mdc-theme-primary: var(--color-primary);
     }
-
-    /* Form fields focus state */
     ha-textfield:focus-within, ha-selector:focus-within, ha-select:focus-within {
-      --mdc-theme-primary: var(--light-pink-color);
+      --mdc-theme-primary: var(--color-pink);
+    }
+    ha-form-actions mwc-button {
+      --mdc-theme-primary: var(--color-primary);
     }
 
-    /* Form button styling */
-    ha-form-actions mwc-button {
-      --mdc-theme-primary: var(--pink-color);
+SilkCircuit Vibrant:
+  # SilkCircuit vibrant palette
+  --color-primary: "#ff00ff"
+  --color-primary-rgb: "255, 0, 255"
+  --color-primary-light: "#ff66ff"
+  --color-primary-light-rgb: "255, 102, 255"
+  --color-primary-dark: "#c200c2"
+  --color-primary-dark-rgb: "194, 0, 194"
+  --color-pink: "#ff00cc"
+  --color-pink-rgb: "255, 0, 204"
+  --color-pink-light: "#ff66dd"
+  --color-pink-light-rgb: "255, 102, 221"
+  --color-magenta: "#ff00ff"
+  --color-magenta-rgb: "255, 0, 255"
+  --color-cyan: "#00ffcc"
+  --color-cyan-rgb: "0, 255, 204"
+  --color-cyan-light: "#66ffe0"
+  --color-cyan-light-rgb: "102, 255, 224"
+  --color-green: "#00ff66"
+  --color-green-rgb: "0, 255, 102"
+  --color-green-light: "#66ff99"
+  --color-green-light-rgb: "102, 255, 153"
+  --color-yellow: "#ffcc00"
+  --color-yellow-rgb: "255, 204, 0"
+  --color-orange: "#ff00aa"
+  --color-orange-rgb: "255, 0, 170"
+  --color-coral: "#f78c6c"
+  --color-coral-rgb: "247, 140, 108"
+  --color-teal: "#00ffaa"
+  --color-teal-rgb: "0, 255, 170"
+  --color-red: "#ff3366"
+  --color-red-rgb: "255, 51, 102"
+  --color-text: "#f8f8f2"
+  --color-text-rgb: "248, 248, 242"
+  --color-text-muted: "#d0c5e0"
+  --color-text-muted-rgb: "208, 197, 224"
+  --color-text-disabled: "#8c86a8"
+  --color-text-disabled-rgb: "140, 134, 168"
+  --color-text-on-accent: "#0f0c1a"
+  --color-text-on-accent-rgb: "15, 12, 26"
+  --color-muted: "#7a7a9c"
+  --color-muted-rgb: "122, 122, 156"
+  --color-muted-dark: "#4a4a68"
+  --color-muted-dark-rgb: "74, 74, 104"
+  --color-white: "#ffffff"
+  --color-white-rgb: "255, 255, 255"
+  --color-off-white: "#f5f0ff"
+  --color-off-white-rgb: "245, 240, 255"
+  --color-bg: "#0f0c1a"
+  --color-bg-rgb: "15, 12, 26"
+  --color-bg-card: "#171225"
+  --color-bg-card-rgb: "23, 18, 37"
+  --color-bg-elevated: "#1f1733"
+  --color-bg-elevated-rgb: "31, 23, 51"
+  --color-bg-sidebar: "#08060f"
+  --color-bg-sidebar-rgb: "8, 6, 15"
+  --color-divider: "#2e2348"
+  --color-divider-rgb: "46, 35, 72"
+  --color-glow: "#ff00cc"
+  --color-glow-rgb: "255, 0, 204"
+  card-mod-theme: SilkCircuit Vibrant
+
+  # ============================================
+  # CORE COLORS — purple primary, pink emphasis
+  # ============================================
+  primary-color: var(--color-primary)
+  light-primary-color: var(--color-primary-light)
+  dark-primary-color: var(--color-primary-dark)
+  accent-color: var(--color-pink)
+  light-accent-color: var(--color-pink-light)
+  secondary-color: var(--color-cyan)
+
+  # Dashboard-facing palette aliases
+  purple-color: var(--color-primary)
+  pink-color: var(--color-pink)
+  light-pink-color: var(--color-pink-light)
+  dark-pink-color: var(--color-primary-dark)
+  magenta-color: var(--color-magenta)
+  blue-color: var(--color-cyan)
+  cyan-color: var(--color-cyan)
+  green-color: var(--color-green)
+  yellow-color: var(--color-yellow)
+  red-color: var(--color-red)
+  orange-color: var(--color-orange)
+  coral-color: var(--color-coral)
+  teal-color: var(--color-teal)
+
+  # Status
+  info-color: var(--color-cyan)
+  success-color: var(--color-green)
+  warning-color: var(--color-yellow)
+  error-color: var(--color-red)
+
+  # ============================================
+  # BACKGROUNDS
+  # ============================================
+  primary-background-color: var(--color-bg)
+  secondary-background-color: var(--color-bg-card)
+  card-background-color: var(--color-bg-card)
+  ha-card-background: var(--color-bg-card)
+  divider-color: var(--color-divider)
+  paper-dialog-background-color: var(--color-bg-card)
+  markdown-code-background-color: var(--color-bg-elevated)
+  code-editor-background-color: var(--color-bg-elevated)
+  material-background-color: var(--color-bg-card)
+  material-secondary-background-color: var(--color-bg-elevated)
+  table-row-background-color: var(--color-bg-card)
+  table-row-alternative-background-color: var(--color-bg-elevated)
+  data-table-background-color: var(--color-bg)
+
+  # ============================================
+  # TEXT — roles invert for the light (Dawn) variant
+  # ============================================
+  text-primary-color: var(--color-text)
+  primary-text-color: var(--color-text)
+  text-secondary-color: var(--color-text-muted)
+  secondary-text-color: var(--color-text-muted)
+  text-accent-color: var(--color-text-on-accent)
+  text-dark-color: var(--color-text-on-accent)
+  text-very-light-color: var(--color-text)
+  disabled-text-color: var(--color-text-disabled)
+  app-header-text-color: var(--color-text)
+  paper-card-header-color: var(--color-text)
+  paper-card-header-text-color: var(--color-text)
+  paper-font-headline_-_color: var(--color-text)
+  paper-font-subhead_-_color: var(--color-text-muted)
+  paper-font-body1_-_color: var(--color-text)
+  paper-font-caption_-_color: var(--color-text-muted)
+  paper-grey-50: var(--color-text)
+  paper-grey-200: var(--color-bg-card)
+
+  # ============================================
+  # SIDEBAR & HEADER
+  # ============================================
+  sidebar-background-color: var(--color-bg-sidebar)
+  sidebar-icon-color: var(--color-primary)
+  sidebar-text-color: var(--color-text)
+  sidebar-selected-background-color: rgba(var(--color-primary-rgb), 0.25)
+  sidebar-selected-icon-color: var(--color-pink)
+  sidebar-selected-text-color: var(--color-text)
+  app-header-background-color: var(--color-bg)
+  app-header-edit-background-color: rgba(var(--color-primary-rgb), 0.3)
+  paper-drawer-background-color: var(--color-bg-sidebar)
+  paper-drawer-text-color: var(--color-text)
+  paper-drawer-selected-color: var(--color-primary)
+  paper-menu-background-color: var(--color-bg-card)
+  paper-menu-color: var(--color-text)
+  paper-menu-disabled-color: var(--color-text-disabled)
+
+  # ============================================
+  # CARDS & STATE
+  # ============================================
+  ha-card-border-radius: "12px"
+  ha-card-box-shadow: "0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12), 0 0 12px rgba(var(--color-glow-rgb), 0.3)"
+  paper-card-background-color: var(--color-bg-card)
+  state-icon-color: var(--color-primary)
+  state-icon-active-color: var(--color-pink)
+  state-icon-unavailable-color: var(--color-muted-dark)
+  state-on-color: var(--color-green)
+  state-off-color: var(--color-red)
+  state-idle-color: var(--color-cyan)
+  state-standby-color: var(--color-orange)
+  state-unknown-color: var(--color-muted)
+  paper-item-icon-color: var(--color-primary)
+  paper-item-icon-active-color: var(--color-pink)
+  paper-item-icon_-_color: var(--color-primary)
+  paper-item-min-height: "36px"
+  paper-item-selected_-_background-color: rgba(var(--color-primary-rgb), 0.3)
+  paper-item-selected_-_color: var(--color-text)
+  paper-item-hover_-_background-color: rgba(var(--color-primary-rgb), 0.1)
+  paper-item-focused_-_background-color: rgba(var(--color-primary-rgb), 0.1)
+  paper-item-focused-before_-_opacity: "0.12"
+  paper-icon-item_-_background-color: "transparent"
+
+  # ============================================
+  # CONTROLS — sliders, switches, toggles
+  # ============================================
+  paper-slider-knob-color: var(--color-primary)
+  paper-slider-knob-start-color: var(--color-muted)
+  paper-slider-pin-color: var(--color-primary)
+  paper-slider-active-color: var(--color-primary)
+  paper-slider-secondary-color: var(--color-pink)
+  paper-slider-container-color: rgba(var(--color-muted-rgb), 0.4)
+  switch-checked-button-color: var(--color-primary)
+  switch-checked-track-color: rgba(var(--color-primary-rgb), 0.6)
+  switch-unchecked-button-color: var(--color-muted)
+  switch-unchecked-track-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-toggle-button-checked-button-color: var(--color-primary)
+  paper-toggle-button-checked-bar-color: rgba(var(--color-primary-rgb), 0.6)
+  paper-toggle-button-unchecked-button-color: var(--color-muted)
+  paper-toggle-button-unchecked-bar-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-progress-active-color: var(--color-primary)
+  paper-progress-container-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-progress-disabled-active-color: var(--color-text-disabled)
+  paper-progress-secondary-color: var(--color-pink)
+  paper-spinner-color: var(--color-primary)
+  paper-spinner-layer-1-color: var(--color-primary)
+  paper-spinner-layer-2-color: var(--color-green)
+  paper-spinner-layer-3-color: var(--color-pink)
+  paper-spinner-layer-4-color: var(--color-cyan)
+
+  # ============================================
+  # DROPDOWNS, MENUS & TABS
+  # ============================================
+  paper-listbox-background-color: var(--color-bg-card)
+  paper-listbox-color: var(--color-text)
+  paper-dropdown-menu-color: var(--color-text)
+  paper-dropdown-menu-label-color: var(--color-text-muted)
+  input-dropdown-icon-color: var(--color-primary)
+  mdc-select-fill-color: var(--color-bg-card)
+  mdc-select-ink-color: var(--color-text)
+  mdc-select-label-ink-color: var(--color-text-muted)
+  mdc-select-idle-line-color: var(--color-primary)
+  mdc-select-dropdown-icon-color: var(--color-primary)
+  mdc-select-hover-line-color: var(--color-pink)
+  mdc-text-field-label-ink-color: var(--color-text)
+  paper-tabs-selection-bar-color: var(--color-primary)
+  paper-tab-ink: var(--color-primary)
+  paper-tabs-container-color: "transparent"
+  paper-tabs-content-container_-_background-color: "transparent"
+  paper-tabs-selection-bar_-_border-color: var(--color-primary)
+
+  # ============================================
+  # FORMS & INPUTS
+  # ============================================
+  input-fill-color: "rgba(var(--color-text-rgb), 0.06)"
+  input-ink-color: var(--color-text)
+  input-label-ink-color: var(--color-text-muted)
+  input-disabled-ink-color: var(--color-text-disabled)
+  input-disabled-fill-color: "rgba(var(--color-text-rgb), 0.02)"
+  input-idle-line-color: var(--color-primary)
+  input-hover-line-color: var(--color-pink)
+  input-disabled-line-color: var(--color-muted-dark)
+  input-outlined-idle-border-color: var(--color-primary)
+  input-outlined-hover-border-color: var(--color-pink)
+  input-outlined-disabled-border-color: var(--color-muted-dark)
+  paper-input-container-color: var(--color-text-muted)
+  paper-input-container-focus-color: var(--color-primary)
+  paper-input-container-invalid-color: var(--color-red)
+  paper-input-container-input-color: var(--color-text)
+  paper-checkbox-checkmark-color: var(--color-text-on-accent)
+  paper-checkbox-checked-color: var(--color-primary)
+  paper-checkbox-checked-ink-color: var(--color-primary)
+  paper-checkbox-unchecked-color: var(--color-primary)
+  paper-checkbox-unchecked-ink-color: var(--color-primary)
+  paper-checkbox-label-color: var(--color-text)
+  paper-checkbox-label-checked-color: var(--color-text)
+  paper-checkbox-disabled-color: var(--color-muted-dark)
+  paper-checkbox-disabled-ink-color: var(--color-muted-dark)
+  mdc-checkbox-unchecked-color: var(--color-muted)
+  paper-radio-button-checked-color: var(--color-primary)
+  paper-radio-button-checked-ink-color: var(--color-primary)
+  paper-radio-button-unchecked-color: var(--color-primary)
+  paper-radio-button-unchecked-ink-color: var(--color-primary)
+  paper-radio-button-label-color: var(--color-text)
+  paper-radio-button-disabled-color: var(--color-muted-dark)
+  paper-button-active-keyboard-focus-background: rgba(var(--color-primary-rgb), 0.3)
+  paper-button-disabled-text-color: var(--color-text-disabled)
+  paper-button-disabled_-_background-color: rgba(var(--color-muted-rgb), 0.15)
+  paper-button-disabled_-_color: var(--color-text-disabled)
+  paper-button-raised-keyboard-focus_-_background-color: rgba(var(--color-primary-rgb), 0.2)
+  paper-dialog-button-color: var(--color-primary)
+
+  # ============================================
+  # MDC THEMING
+  # ============================================
+  mdc-theme-primary: var(--color-primary)
+  mdc-theme-secondary: var(--color-pink)
+  mdc-theme-background: var(--color-bg)
+  mdc-theme-surface: var(--color-bg-card)
+  mdc-theme-on-primary: var(--color-text-on-accent)
+  mdc-theme-on-secondary: var(--color-text-on-accent)
+  mdc-theme-on-surface: var(--color-text)
+
+  # ============================================
+  # CHIPS, DIALOGS, BADGES
+  # ============================================
+  paper-chip-background-color: var(--color-bg-card)
+  paper-chip-icon-color: var(--color-primary)
+  paper-chip-text-color: var(--color-text)
+  paper-chip-selected-background-color: rgba(var(--color-primary-rgb), 0.3)
+  paper-chip-selected-text-color: var(--color-text)
+  paper-toast-background-color: var(--color-bg-card)
+  paper-datepicker-ink-color: var(--color-text)
+  paper-datepicker-accent-color: var(--color-primary)
+  paper-datepicker-toggled-color: var(--color-primary)
+  paper-datepicker-disabled-color: var(--color-muted-dark)
+  paper-datepicker-calendar-color: var(--color-bg-card)
+  label-badge-red: var(--color-red)
+  label-badge-green: var(--color-green)
+  label-badge-blue: var(--color-cyan)
+  label-badge-yellow: var(--color-yellow)
+  label-badge-gray: var(--color-muted)
+  label-badge-text-color: var(--color-text)
+  label-badge-background-color: rgba(var(--color-bg-card-rgb), 0.8)
+
+  # ============================================
+  # DOMAIN-SPECIFIC
+  # ============================================
+  energy-grid-consumption-color: var(--color-red)
+  energy-grid-return-color: var(--color-green)
+  energy-solar-color: var(--color-yellow)
+  energy-battery-in-color: var(--color-cyan)
+  energy-battery-out-color: var(--color-orange)
+  energy-gas-color: var(--color-red)
+  energy-water-color: var(--color-cyan)
+  history-graph-color: var(--color-pink)
+  light-color: var(--color-yellow)
+  logbook-entry-color: var(--color-pink)
+  media-upload-hover-color: rgba(var(--color-primary-rgb), 0.3)
+  mini-media-player-base-color: var(--color-yellow)
+  mini-media-player-accent-color: var(--color-pink)
+  svg-card-presets-color: var(--color-text)
+  weather-day-color: var(--color-yellow)
+  weather-night-color: var(--color-cyan)
+  climate-heat-color: var(--color-red)
+  climate-cool-color: var(--color-cyan)
+  climate-fan-only-color: var(--color-green)
+  climate-auto-color: var(--color-primary)
+  climate-dry-color: var(--color-orange)
+  climate-idle-color: var(--color-text-muted)
+  climate-off-color: var(--color-muted-dark)
+  plant-ok-color: var(--color-green)
+  plant-problem-color: var(--color-red)
+  scrollbar-thumb-color: var(--color-divider)
+
+  # ============================================
+  # CARD-MOD — the electric layer (glow, gradients)
+  # ============================================
+  card-mod-root: |
+    :root {
+      --sc-glow: rgba(var(--color-glow-rgb), 0.3);
+      --sc-glow-strong: rgba(var(--color-glow-rgb), 0.5);
+      --sc-border: rgba(var(--color-primary-rgb), 0.2);
+      --sc-border-light: rgba(var(--color-primary-rgb), 0.3);
+      --sc-shadow-normal: rgba(0, 0, 0, 0.3);
+      --sc-shadow-strong: rgba(0, 0, 0, 0.5);
     }
+    ha-sidebar {
+      background: linear-gradient(to bottom, var(--color-bg-sidebar), var(--color-bg)) !important;
+      border-right: 1px solid var(--sc-border);
+      box-shadow: 3px 0 15px var(--sc-shadow-strong);
+    }
+    [role="heading"], div.header {
+      color: var(--color-text) !important;
+      text-shadow: 0 0 8px var(--sc-glow) !important;
+    }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: var(--color-bg); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb { background: var(--color-divider); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--sc-glow-strong); }
+    ha-card { transition: all 0.3s ease; }
+    ha-card:hover {
+      box-shadow: 0 5px 15px var(--sc-shadow-normal), 0 0 15px var(--sc-glow-strong) !important;
+      transform: translateY(-2px);
+    }
+  card-mod-card: |
+    ha-card { border: 1px solid var(--sc-border-light); }
+    .card-header { text-shadow: 0 0 8px var(--sc-glow); }
+    .card-content { padding: 16px; }
+    .entity-row { position: relative; overflow: hidden; }
+    .entity-row:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--sc-border-light), transparent);
+    }
+  card-mod-view: |
+    .type-custom-button-card,
+    .type-entities,
+    .type-custom-hui-entities-card,
+    .type-history-graph,
+    .type-media-control,
+    .type-weather-forecast {
+      --ha-card-box-shadow: 0 2px 5px 0 var(--sc-shadow-normal);
+      --ha-card-border-radius: 12px;
+      --ha-card-background: var(--card-background-color);
+      margin-bottom: 10px;
+    }
+    .column > * { margin-bottom: 12px; }
+    #view {
+      background-image: radial-gradient(circle at 50% 50%, var(--sc-glow), rgba(0, 0, 0, 0) 70%);
+    }
+  card-mod-more-info: |
+    .mdc-dialog .mdc-dialog__container .mdc-dialog__surface {
+      border: 1px solid var(--sc-border-light);
+      box-shadow: 0 0 20px var(--sc-glow);
+      background: linear-gradient(145deg, var(--card-background-color), var(--primary-background-color));
+    }
+    .mdc-dialog .mdc-dialog__scrim {
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      background: rgba(0, 0, 0, 0.5) !important;
+    }
+    .mdc-dialog .mdc-dialog__title {
+      color: var(--color-text);
+      text-shadow: 0 0 8px var(--sc-glow);
+    }
+    .mdc-dialog .mdc-dialog__actions button { color: var(--color-pink); }
+    .mdc-dialog__container { filter: drop-shadow(0 0 10px var(--sc-border)); }
+  card-mod-button: |
+    ha-icon-button, ha-button {
+      color: var(--color-pink);
+      transition: all 0.2s ease;
+    }
+    ha-icon-button:hover, ha-button:hover {
+      color: var(--color-pink-light);
+      filter: brightness(1.2) drop-shadow(0 0 5px var(--sc-glow-strong));
+    }
+  card-mod-form: |
+    ha-textfield, ha-selector, ha-select {
+      --mdc-theme-primary: var(--color-primary);
+    }
+    ha-textfield:focus-within, ha-selector:focus-within, ha-select:focus-within {
+      --mdc-theme-primary: var(--color-pink);
+    }
+    ha-form-actions mwc-button {
+      --mdc-theme-primary: var(--color-primary);
+    }
+
+SilkCircuit Soft:
+  # SilkCircuit soft palette
+  --color-primary: "#e892ff"
+  --color-primary-rgb: "232, 146, 255"
+  --color-primary-light: "#f1b8ff"
+  --color-primary-light-rgb: "241, 184, 255"
+  --color-primary-dark: "#c06edd"
+  --color-primary-dark-rgb: "192, 110, 221"
+  --color-pink: "#ff99dd"
+  --color-pink-rgb: "255, 153, 221"
+  --color-pink-light: "#ffc2ff"
+  --color-pink-light-rgb: "255, 194, 255"
+  --color-magenta: "#ff99ff"
+  --color-magenta-rgb: "255, 153, 255"
+  --color-cyan: "#99ffee"
+  --color-cyan-rgb: "153, 255, 238"
+  --color-cyan-light: "#c2fff5"
+  --color-cyan-light-rgb: "194, 255, 245"
+  --color-green: "#66ff99"
+  --color-green-rgb: "102, 255, 153"
+  --color-green-light: "#99ffbb"
+  --color-green-light-rgb: "153, 255, 187"
+  --color-yellow: "#ffe699"
+  --color-yellow-rgb: "255, 230, 153"
+  --color-orange: "#ffb38c"
+  --color-orange-rgb: "255, 179, 140"
+  --color-coral: "#ff99dd"
+  --color-coral-rgb: "255, 153, 221"
+  --color-teal: "#80ffcc"
+  --color-teal-rgb: "128, 255, 204"
+  --color-red: "#ff6677"
+  --color-red-rgb: "255, 102, 119"
+  --color-text: "#f0ecf8"
+  --color-text-rgb: "240, 236, 248"
+  --color-text-muted: "#c8c0db"
+  --color-text-muted-rgb: "200, 192, 219"
+  --color-text-disabled: "#8c86a8"
+  --color-text-disabled-rgb: "140, 134, 168"
+  --color-text-on-accent: "#1a1626"
+  --color-text-on-accent-rgb: "26, 22, 38"
+  --color-muted: "#8c8cb0"
+  --color-muted-rgb: "140, 140, 176"
+  --color-muted-dark: "#5a5a7a"
+  --color-muted-dark-rgb: "90, 90, 122"
+  --color-white: "#ffffff"
+  --color-white-rgb: "255, 255, 255"
+  --color-off-white: "#f5f0ff"
+  --color-off-white-rgb: "245, 240, 255"
+  --color-bg: "#1a1626"
+  --color-bg-rgb: "26, 22, 38"
+  --color-bg-card: "#241f33"
+  --color-bg-card-rgb: "36, 31, 51"
+  --color-bg-elevated: "#2e2845"
+  --color-bg-elevated-rgb: "46, 40, 69"
+  --color-bg-sidebar: "#141220"
+  --color-bg-sidebar-rgb: "20, 18, 32"
+  --color-divider: "#3e3456"
+  --color-divider-rgb: "62, 52, 86"
+  --color-glow: "#ff99dd"
+  --color-glow-rgb: "255, 153, 221"
+  card-mod-theme: SilkCircuit Soft
+
+  # ============================================
+  # CORE COLORS — purple primary, pink emphasis
+  # ============================================
+  primary-color: var(--color-primary)
+  light-primary-color: var(--color-primary-light)
+  dark-primary-color: var(--color-primary-dark)
+  accent-color: var(--color-pink)
+  light-accent-color: var(--color-pink-light)
+  secondary-color: var(--color-cyan)
+
+  # Dashboard-facing palette aliases
+  purple-color: var(--color-primary)
+  pink-color: var(--color-pink)
+  light-pink-color: var(--color-pink-light)
+  dark-pink-color: var(--color-primary-dark)
+  magenta-color: var(--color-magenta)
+  blue-color: var(--color-cyan)
+  cyan-color: var(--color-cyan)
+  green-color: var(--color-green)
+  yellow-color: var(--color-yellow)
+  red-color: var(--color-red)
+  orange-color: var(--color-orange)
+  coral-color: var(--color-coral)
+  teal-color: var(--color-teal)
+
+  # Status
+  info-color: var(--color-cyan)
+  success-color: var(--color-green)
+  warning-color: var(--color-yellow)
+  error-color: var(--color-red)
+
+  # ============================================
+  # BACKGROUNDS
+  # ============================================
+  primary-background-color: var(--color-bg)
+  secondary-background-color: var(--color-bg-card)
+  card-background-color: var(--color-bg-card)
+  ha-card-background: var(--color-bg-card)
+  divider-color: var(--color-divider)
+  paper-dialog-background-color: var(--color-bg-card)
+  markdown-code-background-color: var(--color-bg-elevated)
+  code-editor-background-color: var(--color-bg-elevated)
+  material-background-color: var(--color-bg-card)
+  material-secondary-background-color: var(--color-bg-elevated)
+  table-row-background-color: var(--color-bg-card)
+  table-row-alternative-background-color: var(--color-bg-elevated)
+  data-table-background-color: var(--color-bg)
+
+  # ============================================
+  # TEXT — roles invert for the light (Dawn) variant
+  # ============================================
+  text-primary-color: var(--color-text)
+  primary-text-color: var(--color-text)
+  text-secondary-color: var(--color-text-muted)
+  secondary-text-color: var(--color-text-muted)
+  text-accent-color: var(--color-text-on-accent)
+  text-dark-color: var(--color-text-on-accent)
+  text-very-light-color: var(--color-text)
+  disabled-text-color: var(--color-text-disabled)
+  app-header-text-color: var(--color-text)
+  paper-card-header-color: var(--color-text)
+  paper-card-header-text-color: var(--color-text)
+  paper-font-headline_-_color: var(--color-text)
+  paper-font-subhead_-_color: var(--color-text-muted)
+  paper-font-body1_-_color: var(--color-text)
+  paper-font-caption_-_color: var(--color-text-muted)
+  paper-grey-50: var(--color-text)
+  paper-grey-200: var(--color-bg-card)
+
+  # ============================================
+  # SIDEBAR & HEADER
+  # ============================================
+  sidebar-background-color: var(--color-bg-sidebar)
+  sidebar-icon-color: var(--color-primary)
+  sidebar-text-color: var(--color-text)
+  sidebar-selected-background-color: rgba(var(--color-primary-rgb), 0.25)
+  sidebar-selected-icon-color: var(--color-pink)
+  sidebar-selected-text-color: var(--color-text)
+  app-header-background-color: var(--color-bg)
+  app-header-edit-background-color: rgba(var(--color-primary-rgb), 0.3)
+  paper-drawer-background-color: var(--color-bg-sidebar)
+  paper-drawer-text-color: var(--color-text)
+  paper-drawer-selected-color: var(--color-primary)
+  paper-menu-background-color: var(--color-bg-card)
+  paper-menu-color: var(--color-text)
+  paper-menu-disabled-color: var(--color-text-disabled)
+
+  # ============================================
+  # CARDS & STATE
+  # ============================================
+  ha-card-border-radius: "12px"
+  ha-card-box-shadow: "0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12), 0 0 12px rgba(var(--color-glow-rgb), 0.3)"
+  paper-card-background-color: var(--color-bg-card)
+  state-icon-color: var(--color-primary)
+  state-icon-active-color: var(--color-pink)
+  state-icon-unavailable-color: var(--color-muted-dark)
+  state-on-color: var(--color-green)
+  state-off-color: var(--color-red)
+  state-idle-color: var(--color-cyan)
+  state-standby-color: var(--color-orange)
+  state-unknown-color: var(--color-muted)
+  paper-item-icon-color: var(--color-primary)
+  paper-item-icon-active-color: var(--color-pink)
+  paper-item-icon_-_color: var(--color-primary)
+  paper-item-min-height: "36px"
+  paper-item-selected_-_background-color: rgba(var(--color-primary-rgb), 0.3)
+  paper-item-selected_-_color: var(--color-text)
+  paper-item-hover_-_background-color: rgba(var(--color-primary-rgb), 0.1)
+  paper-item-focused_-_background-color: rgba(var(--color-primary-rgb), 0.1)
+  paper-item-focused-before_-_opacity: "0.12"
+  paper-icon-item_-_background-color: "transparent"
+
+  # ============================================
+  # CONTROLS — sliders, switches, toggles
+  # ============================================
+  paper-slider-knob-color: var(--color-primary)
+  paper-slider-knob-start-color: var(--color-muted)
+  paper-slider-pin-color: var(--color-primary)
+  paper-slider-active-color: var(--color-primary)
+  paper-slider-secondary-color: var(--color-pink)
+  paper-slider-container-color: rgba(var(--color-muted-rgb), 0.4)
+  switch-checked-button-color: var(--color-primary)
+  switch-checked-track-color: rgba(var(--color-primary-rgb), 0.6)
+  switch-unchecked-button-color: var(--color-muted)
+  switch-unchecked-track-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-toggle-button-checked-button-color: var(--color-primary)
+  paper-toggle-button-checked-bar-color: rgba(var(--color-primary-rgb), 0.6)
+  paper-toggle-button-unchecked-button-color: var(--color-muted)
+  paper-toggle-button-unchecked-bar-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-progress-active-color: var(--color-primary)
+  paper-progress-container-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-progress-disabled-active-color: var(--color-text-disabled)
+  paper-progress-secondary-color: var(--color-pink)
+  paper-spinner-color: var(--color-primary)
+  paper-spinner-layer-1-color: var(--color-primary)
+  paper-spinner-layer-2-color: var(--color-green)
+  paper-spinner-layer-3-color: var(--color-pink)
+  paper-spinner-layer-4-color: var(--color-cyan)
+
+  # ============================================
+  # DROPDOWNS, MENUS & TABS
+  # ============================================
+  paper-listbox-background-color: var(--color-bg-card)
+  paper-listbox-color: var(--color-text)
+  paper-dropdown-menu-color: var(--color-text)
+  paper-dropdown-menu-label-color: var(--color-text-muted)
+  input-dropdown-icon-color: var(--color-primary)
+  mdc-select-fill-color: var(--color-bg-card)
+  mdc-select-ink-color: var(--color-text)
+  mdc-select-label-ink-color: var(--color-text-muted)
+  mdc-select-idle-line-color: var(--color-primary)
+  mdc-select-dropdown-icon-color: var(--color-primary)
+  mdc-select-hover-line-color: var(--color-pink)
+  mdc-text-field-label-ink-color: var(--color-text)
+  paper-tabs-selection-bar-color: var(--color-primary)
+  paper-tab-ink: var(--color-primary)
+  paper-tabs-container-color: "transparent"
+  paper-tabs-content-container_-_background-color: "transparent"
+  paper-tabs-selection-bar_-_border-color: var(--color-primary)
+
+  # ============================================
+  # FORMS & INPUTS
+  # ============================================
+  input-fill-color: "rgba(var(--color-text-rgb), 0.06)"
+  input-ink-color: var(--color-text)
+  input-label-ink-color: var(--color-text-muted)
+  input-disabled-ink-color: var(--color-text-disabled)
+  input-disabled-fill-color: "rgba(var(--color-text-rgb), 0.02)"
+  input-idle-line-color: var(--color-primary)
+  input-hover-line-color: var(--color-pink)
+  input-disabled-line-color: var(--color-muted-dark)
+  input-outlined-idle-border-color: var(--color-primary)
+  input-outlined-hover-border-color: var(--color-pink)
+  input-outlined-disabled-border-color: var(--color-muted-dark)
+  paper-input-container-color: var(--color-text-muted)
+  paper-input-container-focus-color: var(--color-primary)
+  paper-input-container-invalid-color: var(--color-red)
+  paper-input-container-input-color: var(--color-text)
+  paper-checkbox-checkmark-color: var(--color-text-on-accent)
+  paper-checkbox-checked-color: var(--color-primary)
+  paper-checkbox-checked-ink-color: var(--color-primary)
+  paper-checkbox-unchecked-color: var(--color-primary)
+  paper-checkbox-unchecked-ink-color: var(--color-primary)
+  paper-checkbox-label-color: var(--color-text)
+  paper-checkbox-label-checked-color: var(--color-text)
+  paper-checkbox-disabled-color: var(--color-muted-dark)
+  paper-checkbox-disabled-ink-color: var(--color-muted-dark)
+  mdc-checkbox-unchecked-color: var(--color-muted)
+  paper-radio-button-checked-color: var(--color-primary)
+  paper-radio-button-checked-ink-color: var(--color-primary)
+  paper-radio-button-unchecked-color: var(--color-primary)
+  paper-radio-button-unchecked-ink-color: var(--color-primary)
+  paper-radio-button-label-color: var(--color-text)
+  paper-radio-button-disabled-color: var(--color-muted-dark)
+  paper-button-active-keyboard-focus-background: rgba(var(--color-primary-rgb), 0.3)
+  paper-button-disabled-text-color: var(--color-text-disabled)
+  paper-button-disabled_-_background-color: rgba(var(--color-muted-rgb), 0.15)
+  paper-button-disabled_-_color: var(--color-text-disabled)
+  paper-button-raised-keyboard-focus_-_background-color: rgba(var(--color-primary-rgb), 0.2)
+  paper-dialog-button-color: var(--color-primary)
+
+  # ============================================
+  # MDC THEMING
+  # ============================================
+  mdc-theme-primary: var(--color-primary)
+  mdc-theme-secondary: var(--color-pink)
+  mdc-theme-background: var(--color-bg)
+  mdc-theme-surface: var(--color-bg-card)
+  mdc-theme-on-primary: var(--color-text-on-accent)
+  mdc-theme-on-secondary: var(--color-text-on-accent)
+  mdc-theme-on-surface: var(--color-text)
+
+  # ============================================
+  # CHIPS, DIALOGS, BADGES
+  # ============================================
+  paper-chip-background-color: var(--color-bg-card)
+  paper-chip-icon-color: var(--color-primary)
+  paper-chip-text-color: var(--color-text)
+  paper-chip-selected-background-color: rgba(var(--color-primary-rgb), 0.3)
+  paper-chip-selected-text-color: var(--color-text)
+  paper-toast-background-color: var(--color-bg-card)
+  paper-datepicker-ink-color: var(--color-text)
+  paper-datepicker-accent-color: var(--color-primary)
+  paper-datepicker-toggled-color: var(--color-primary)
+  paper-datepicker-disabled-color: var(--color-muted-dark)
+  paper-datepicker-calendar-color: var(--color-bg-card)
+  label-badge-red: var(--color-red)
+  label-badge-green: var(--color-green)
+  label-badge-blue: var(--color-cyan)
+  label-badge-yellow: var(--color-yellow)
+  label-badge-gray: var(--color-muted)
+  label-badge-text-color: var(--color-text)
+  label-badge-background-color: rgba(var(--color-bg-card-rgb), 0.8)
+
+  # ============================================
+  # DOMAIN-SPECIFIC
+  # ============================================
+  energy-grid-consumption-color: var(--color-red)
+  energy-grid-return-color: var(--color-green)
+  energy-solar-color: var(--color-yellow)
+  energy-battery-in-color: var(--color-cyan)
+  energy-battery-out-color: var(--color-orange)
+  energy-gas-color: var(--color-red)
+  energy-water-color: var(--color-cyan)
+  history-graph-color: var(--color-pink)
+  light-color: var(--color-yellow)
+  logbook-entry-color: var(--color-pink)
+  media-upload-hover-color: rgba(var(--color-primary-rgb), 0.3)
+  mini-media-player-base-color: var(--color-yellow)
+  mini-media-player-accent-color: var(--color-pink)
+  svg-card-presets-color: var(--color-text)
+  weather-day-color: var(--color-yellow)
+  weather-night-color: var(--color-cyan)
+  climate-heat-color: var(--color-red)
+  climate-cool-color: var(--color-cyan)
+  climate-fan-only-color: var(--color-green)
+  climate-auto-color: var(--color-primary)
+  climate-dry-color: var(--color-orange)
+  climate-idle-color: var(--color-text-muted)
+  climate-off-color: var(--color-muted-dark)
+  plant-ok-color: var(--color-green)
+  plant-problem-color: var(--color-red)
+  scrollbar-thumb-color: var(--color-divider)
+
+  # ============================================
+  # CARD-MOD — the electric layer (glow, gradients)
+  # ============================================
+  card-mod-root: |
+    :root {
+      --sc-glow: rgba(var(--color-glow-rgb), 0.3);
+      --sc-glow-strong: rgba(var(--color-glow-rgb), 0.5);
+      --sc-border: rgba(var(--color-primary-rgb), 0.2);
+      --sc-border-light: rgba(var(--color-primary-rgb), 0.3);
+      --sc-shadow-normal: rgba(0, 0, 0, 0.3);
+      --sc-shadow-strong: rgba(0, 0, 0, 0.5);
+    }
+    ha-sidebar {
+      background: linear-gradient(to bottom, var(--color-bg-sidebar), var(--color-bg)) !important;
+      border-right: 1px solid var(--sc-border);
+      box-shadow: 3px 0 15px var(--sc-shadow-strong);
+    }
+    [role="heading"], div.header {
+      color: var(--color-text) !important;
+      text-shadow: 0 0 8px var(--sc-glow) !important;
+    }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: var(--color-bg); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb { background: var(--color-divider); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--sc-glow-strong); }
+    ha-card { transition: all 0.3s ease; }
+    ha-card:hover {
+      box-shadow: 0 5px 15px var(--sc-shadow-normal), 0 0 15px var(--sc-glow-strong) !important;
+      transform: translateY(-2px);
+    }
+  card-mod-card: |
+    ha-card { border: 1px solid var(--sc-border-light); }
+    .card-header { text-shadow: 0 0 8px var(--sc-glow); }
+    .card-content { padding: 16px; }
+    .entity-row { position: relative; overflow: hidden; }
+    .entity-row:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--sc-border-light), transparent);
+    }
+  card-mod-view: |
+    .type-custom-button-card,
+    .type-entities,
+    .type-custom-hui-entities-card,
+    .type-history-graph,
+    .type-media-control,
+    .type-weather-forecast {
+      --ha-card-box-shadow: 0 2px 5px 0 var(--sc-shadow-normal);
+      --ha-card-border-radius: 12px;
+      --ha-card-background: var(--card-background-color);
+      margin-bottom: 10px;
+    }
+    .column > * { margin-bottom: 12px; }
+    #view {
+      background-image: radial-gradient(circle at 50% 50%, var(--sc-glow), rgba(0, 0, 0, 0) 70%);
+    }
+  card-mod-more-info: |
+    .mdc-dialog .mdc-dialog__container .mdc-dialog__surface {
+      border: 1px solid var(--sc-border-light);
+      box-shadow: 0 0 20px var(--sc-glow);
+      background: linear-gradient(145deg, var(--card-background-color), var(--primary-background-color));
+    }
+    .mdc-dialog .mdc-dialog__scrim {
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      background: rgba(0, 0, 0, 0.5) !important;
+    }
+    .mdc-dialog .mdc-dialog__title {
+      color: var(--color-text);
+      text-shadow: 0 0 8px var(--sc-glow);
+    }
+    .mdc-dialog .mdc-dialog__actions button { color: var(--color-pink); }
+    .mdc-dialog__container { filter: drop-shadow(0 0 10px var(--sc-border)); }
+  card-mod-button: |
+    ha-icon-button, ha-button {
+      color: var(--color-pink);
+      transition: all 0.2s ease;
+    }
+    ha-icon-button:hover, ha-button:hover {
+      color: var(--color-pink-light);
+      filter: brightness(1.2) drop-shadow(0 0 5px var(--sc-glow-strong));
+    }
+  card-mod-form: |
+    ha-textfield, ha-selector, ha-select {
+      --mdc-theme-primary: var(--color-primary);
+    }
+    ha-textfield:focus-within, ha-selector:focus-within, ha-select:focus-within {
+      --mdc-theme-primary: var(--color-pink);
+    }
+    ha-form-actions mwc-button {
+      --mdc-theme-primary: var(--color-primary);
+    }
+
+SilkCircuit Glow:
+  # SilkCircuit glow palette
+  --color-primary: "#ff00ff"
+  --color-primary-rgb: "255, 0, 255"
+  --color-primary-light: "#ff66ff"
+  --color-primary-light-rgb: "255, 102, 255"
+  --color-primary-dark: "#cc66ff"
+  --color-primary-dark-rgb: "204, 102, 255"
+  --color-pink: "#ff66ff"
+  --color-pink-rgb: "255, 102, 255"
+  --color-pink-light: "#ff99ff"
+  --color-pink-light-rgb: "255, 153, 255"
+  --color-magenta: "#ff00ff"
+  --color-magenta-rgb: "255, 0, 255"
+  --color-cyan: "#00ffff"
+  --color-cyan-rgb: "0, 255, 255"
+  --color-cyan-light: "#66ffff"
+  --color-cyan-light-rgb: "102, 255, 255"
+  --color-green: "#00ff00"
+  --color-green-rgb: "0, 255, 0"
+  --color-green-light: "#66ff66"
+  --color-green-light-rgb: "102, 255, 102"
+  --color-yellow: "#ffff00"
+  --color-yellow-rgb: "255, 255, 0"
+  --color-orange: "#ff66ff"
+  --color-orange-rgb: "255, 102, 255"
+  --color-coral: "#ff66ff"
+  --color-coral-rgb: "255, 102, 255"
+  --color-teal: "#00ffcc"
+  --color-teal-rgb: "0, 255, 204"
+  --color-red: "#ff0066"
+  --color-red-rgb: "255, 0, 102"
+  --color-text: "#ffffff"
+  --color-text-rgb: "255, 255, 255"
+  --color-text-muted: "#cc99ff"
+  --color-text-muted-rgb: "204, 153, 255"
+  --color-text-disabled: "#9977bb"
+  --color-text-disabled-rgb: "153, 119, 187"
+  --color-text-on-accent: "#000000"
+  --color-text-on-accent-rgb: "0, 0, 0"
+  --color-muted: "#666666"
+  --color-muted-rgb: "102, 102, 102"
+  --color-muted-dark: "#444444"
+  --color-muted-dark-rgb: "68, 68, 68"
+  --color-white: "#ffffff"
+  --color-white-rgb: "255, 255, 255"
+  --color-off-white: "#f0e6ff"
+  --color-off-white-rgb: "240, 230, 255"
+  --color-bg: "#0a0816"
+  --color-bg-rgb: "10, 8, 22"
+  --color-bg-card: "#14091f"
+  --color-bg-card-rgb: "20, 9, 31"
+  --color-bg-elevated: "#1a0033"
+  --color-bg-elevated-rgb: "26, 0, 51"
+  --color-bg-sidebar: "#000000"
+  --color-bg-sidebar-rgb: "0, 0, 0"
+  --color-divider: "#2a0a44"
+  --color-divider-rgb: "42, 10, 68"
+  --color-glow: "#ff00ff"
+  --color-glow-rgb: "255, 0, 255"
+  card-mod-theme: SilkCircuit Glow
+
+  # ============================================
+  # CORE COLORS — purple primary, pink emphasis
+  # ============================================
+  primary-color: var(--color-primary)
+  light-primary-color: var(--color-primary-light)
+  dark-primary-color: var(--color-primary-dark)
+  accent-color: var(--color-pink)
+  light-accent-color: var(--color-pink-light)
+  secondary-color: var(--color-cyan)
+
+  # Dashboard-facing palette aliases
+  purple-color: var(--color-primary)
+  pink-color: var(--color-pink)
+  light-pink-color: var(--color-pink-light)
+  dark-pink-color: var(--color-primary-dark)
+  magenta-color: var(--color-magenta)
+  blue-color: var(--color-cyan)
+  cyan-color: var(--color-cyan)
+  green-color: var(--color-green)
+  yellow-color: var(--color-yellow)
+  red-color: var(--color-red)
+  orange-color: var(--color-orange)
+  coral-color: var(--color-coral)
+  teal-color: var(--color-teal)
+
+  # Status
+  info-color: var(--color-cyan)
+  success-color: var(--color-green)
+  warning-color: var(--color-yellow)
+  error-color: var(--color-red)
+
+  # ============================================
+  # BACKGROUNDS
+  # ============================================
+  primary-background-color: var(--color-bg)
+  secondary-background-color: var(--color-bg-card)
+  card-background-color: var(--color-bg-card)
+  ha-card-background: var(--color-bg-card)
+  divider-color: var(--color-divider)
+  paper-dialog-background-color: var(--color-bg-card)
+  markdown-code-background-color: var(--color-bg-elevated)
+  code-editor-background-color: var(--color-bg-elevated)
+  material-background-color: var(--color-bg-card)
+  material-secondary-background-color: var(--color-bg-elevated)
+  table-row-background-color: var(--color-bg-card)
+  table-row-alternative-background-color: var(--color-bg-elevated)
+  data-table-background-color: var(--color-bg)
+
+  # ============================================
+  # TEXT — roles invert for the light (Dawn) variant
+  # ============================================
+  text-primary-color: var(--color-text)
+  primary-text-color: var(--color-text)
+  text-secondary-color: var(--color-text-muted)
+  secondary-text-color: var(--color-text-muted)
+  text-accent-color: var(--color-text-on-accent)
+  text-dark-color: var(--color-text-on-accent)
+  text-very-light-color: var(--color-text)
+  disabled-text-color: var(--color-text-disabled)
+  app-header-text-color: var(--color-text)
+  paper-card-header-color: var(--color-text)
+  paper-card-header-text-color: var(--color-text)
+  paper-font-headline_-_color: var(--color-text)
+  paper-font-subhead_-_color: var(--color-text-muted)
+  paper-font-body1_-_color: var(--color-text)
+  paper-font-caption_-_color: var(--color-text-muted)
+  paper-grey-50: var(--color-text)
+  paper-grey-200: var(--color-bg-card)
+
+  # ============================================
+  # SIDEBAR & HEADER
+  # ============================================
+  sidebar-background-color: var(--color-bg-sidebar)
+  sidebar-icon-color: var(--color-primary)
+  sidebar-text-color: var(--color-text)
+  sidebar-selected-background-color: rgba(var(--color-primary-rgb), 0.25)
+  sidebar-selected-icon-color: var(--color-pink)
+  sidebar-selected-text-color: var(--color-text)
+  app-header-background-color: var(--color-bg)
+  app-header-edit-background-color: rgba(var(--color-primary-rgb), 0.3)
+  paper-drawer-background-color: var(--color-bg-sidebar)
+  paper-drawer-text-color: var(--color-text)
+  paper-drawer-selected-color: var(--color-primary)
+  paper-menu-background-color: var(--color-bg-card)
+  paper-menu-color: var(--color-text)
+  paper-menu-disabled-color: var(--color-text-disabled)
+
+  # ============================================
+  # CARDS & STATE
+  # ============================================
+  ha-card-border-radius: "12px"
+  ha-card-box-shadow: "0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12), 0 0 12px rgba(var(--color-glow-rgb), 0.3)"
+  paper-card-background-color: var(--color-bg-card)
+  state-icon-color: var(--color-primary)
+  state-icon-active-color: var(--color-pink)
+  state-icon-unavailable-color: var(--color-muted-dark)
+  state-on-color: var(--color-green)
+  state-off-color: var(--color-red)
+  state-idle-color: var(--color-cyan)
+  state-standby-color: var(--color-orange)
+  state-unknown-color: var(--color-muted)
+  paper-item-icon-color: var(--color-primary)
+  paper-item-icon-active-color: var(--color-pink)
+  paper-item-icon_-_color: var(--color-primary)
+  paper-item-min-height: "36px"
+  paper-item-selected_-_background-color: rgba(var(--color-primary-rgb), 0.3)
+  paper-item-selected_-_color: var(--color-text)
+  paper-item-hover_-_background-color: rgba(var(--color-primary-rgb), 0.1)
+  paper-item-focused_-_background-color: rgba(var(--color-primary-rgb), 0.1)
+  paper-item-focused-before_-_opacity: "0.12"
+  paper-icon-item_-_background-color: "transparent"
+
+  # ============================================
+  # CONTROLS — sliders, switches, toggles
+  # ============================================
+  paper-slider-knob-color: var(--color-primary)
+  paper-slider-knob-start-color: var(--color-muted)
+  paper-slider-pin-color: var(--color-primary)
+  paper-slider-active-color: var(--color-primary)
+  paper-slider-secondary-color: var(--color-pink)
+  paper-slider-container-color: rgba(var(--color-muted-rgb), 0.4)
+  switch-checked-button-color: var(--color-primary)
+  switch-checked-track-color: rgba(var(--color-primary-rgb), 0.6)
+  switch-unchecked-button-color: var(--color-muted)
+  switch-unchecked-track-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-toggle-button-checked-button-color: var(--color-primary)
+  paper-toggle-button-checked-bar-color: rgba(var(--color-primary-rgb), 0.6)
+  paper-toggle-button-unchecked-button-color: var(--color-muted)
+  paper-toggle-button-unchecked-bar-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-progress-active-color: var(--color-primary)
+  paper-progress-container-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-progress-disabled-active-color: var(--color-text-disabled)
+  paper-progress-secondary-color: var(--color-pink)
+  paper-spinner-color: var(--color-primary)
+  paper-spinner-layer-1-color: var(--color-primary)
+  paper-spinner-layer-2-color: var(--color-green)
+  paper-spinner-layer-3-color: var(--color-pink)
+  paper-spinner-layer-4-color: var(--color-cyan)
+
+  # ============================================
+  # DROPDOWNS, MENUS & TABS
+  # ============================================
+  paper-listbox-background-color: var(--color-bg-card)
+  paper-listbox-color: var(--color-text)
+  paper-dropdown-menu-color: var(--color-text)
+  paper-dropdown-menu-label-color: var(--color-text-muted)
+  input-dropdown-icon-color: var(--color-primary)
+  mdc-select-fill-color: var(--color-bg-card)
+  mdc-select-ink-color: var(--color-text)
+  mdc-select-label-ink-color: var(--color-text-muted)
+  mdc-select-idle-line-color: var(--color-primary)
+  mdc-select-dropdown-icon-color: var(--color-primary)
+  mdc-select-hover-line-color: var(--color-pink)
+  mdc-text-field-label-ink-color: var(--color-text)
+  paper-tabs-selection-bar-color: var(--color-primary)
+  paper-tab-ink: var(--color-primary)
+  paper-tabs-container-color: "transparent"
+  paper-tabs-content-container_-_background-color: "transparent"
+  paper-tabs-selection-bar_-_border-color: var(--color-primary)
+
+  # ============================================
+  # FORMS & INPUTS
+  # ============================================
+  input-fill-color: "rgba(var(--color-text-rgb), 0.06)"
+  input-ink-color: var(--color-text)
+  input-label-ink-color: var(--color-text-muted)
+  input-disabled-ink-color: var(--color-text-disabled)
+  input-disabled-fill-color: "rgba(var(--color-text-rgb), 0.02)"
+  input-idle-line-color: var(--color-primary)
+  input-hover-line-color: var(--color-pink)
+  input-disabled-line-color: var(--color-muted-dark)
+  input-outlined-idle-border-color: var(--color-primary)
+  input-outlined-hover-border-color: var(--color-pink)
+  input-outlined-disabled-border-color: var(--color-muted-dark)
+  paper-input-container-color: var(--color-text-muted)
+  paper-input-container-focus-color: var(--color-primary)
+  paper-input-container-invalid-color: var(--color-red)
+  paper-input-container-input-color: var(--color-text)
+  paper-checkbox-checkmark-color: var(--color-text-on-accent)
+  paper-checkbox-checked-color: var(--color-primary)
+  paper-checkbox-checked-ink-color: var(--color-primary)
+  paper-checkbox-unchecked-color: var(--color-primary)
+  paper-checkbox-unchecked-ink-color: var(--color-primary)
+  paper-checkbox-label-color: var(--color-text)
+  paper-checkbox-label-checked-color: var(--color-text)
+  paper-checkbox-disabled-color: var(--color-muted-dark)
+  paper-checkbox-disabled-ink-color: var(--color-muted-dark)
+  mdc-checkbox-unchecked-color: var(--color-muted)
+  paper-radio-button-checked-color: var(--color-primary)
+  paper-radio-button-checked-ink-color: var(--color-primary)
+  paper-radio-button-unchecked-color: var(--color-primary)
+  paper-radio-button-unchecked-ink-color: var(--color-primary)
+  paper-radio-button-label-color: var(--color-text)
+  paper-radio-button-disabled-color: var(--color-muted-dark)
+  paper-button-active-keyboard-focus-background: rgba(var(--color-primary-rgb), 0.3)
+  paper-button-disabled-text-color: var(--color-text-disabled)
+  paper-button-disabled_-_background-color: rgba(var(--color-muted-rgb), 0.15)
+  paper-button-disabled_-_color: var(--color-text-disabled)
+  paper-button-raised-keyboard-focus_-_background-color: rgba(var(--color-primary-rgb), 0.2)
+  paper-dialog-button-color: var(--color-primary)
+
+  # ============================================
+  # MDC THEMING
+  # ============================================
+  mdc-theme-primary: var(--color-primary)
+  mdc-theme-secondary: var(--color-pink)
+  mdc-theme-background: var(--color-bg)
+  mdc-theme-surface: var(--color-bg-card)
+  mdc-theme-on-primary: var(--color-text-on-accent)
+  mdc-theme-on-secondary: var(--color-text-on-accent)
+  mdc-theme-on-surface: var(--color-text)
+
+  # ============================================
+  # CHIPS, DIALOGS, BADGES
+  # ============================================
+  paper-chip-background-color: var(--color-bg-card)
+  paper-chip-icon-color: var(--color-primary)
+  paper-chip-text-color: var(--color-text)
+  paper-chip-selected-background-color: rgba(var(--color-primary-rgb), 0.3)
+  paper-chip-selected-text-color: var(--color-text)
+  paper-toast-background-color: var(--color-bg-card)
+  paper-datepicker-ink-color: var(--color-text)
+  paper-datepicker-accent-color: var(--color-primary)
+  paper-datepicker-toggled-color: var(--color-primary)
+  paper-datepicker-disabled-color: var(--color-muted-dark)
+  paper-datepicker-calendar-color: var(--color-bg-card)
+  label-badge-red: var(--color-red)
+  label-badge-green: var(--color-green)
+  label-badge-blue: var(--color-cyan)
+  label-badge-yellow: var(--color-yellow)
+  label-badge-gray: var(--color-muted)
+  label-badge-text-color: var(--color-text)
+  label-badge-background-color: rgba(var(--color-bg-card-rgb), 0.8)
+
+  # ============================================
+  # DOMAIN-SPECIFIC
+  # ============================================
+  energy-grid-consumption-color: var(--color-red)
+  energy-grid-return-color: var(--color-green)
+  energy-solar-color: var(--color-yellow)
+  energy-battery-in-color: var(--color-cyan)
+  energy-battery-out-color: var(--color-orange)
+  energy-gas-color: var(--color-red)
+  energy-water-color: var(--color-cyan)
+  history-graph-color: var(--color-pink)
+  light-color: var(--color-yellow)
+  logbook-entry-color: var(--color-pink)
+  media-upload-hover-color: rgba(var(--color-primary-rgb), 0.3)
+  mini-media-player-base-color: var(--color-yellow)
+  mini-media-player-accent-color: var(--color-pink)
+  svg-card-presets-color: var(--color-text)
+  weather-day-color: var(--color-yellow)
+  weather-night-color: var(--color-cyan)
+  climate-heat-color: var(--color-red)
+  climate-cool-color: var(--color-cyan)
+  climate-fan-only-color: var(--color-green)
+  climate-auto-color: var(--color-primary)
+  climate-dry-color: var(--color-orange)
+  climate-idle-color: var(--color-text-muted)
+  climate-off-color: var(--color-muted-dark)
+  plant-ok-color: var(--color-green)
+  plant-problem-color: var(--color-red)
+  scrollbar-thumb-color: var(--color-divider)
+
+  # ============================================
+  # CARD-MOD — the electric layer (glow, gradients)
+  # ============================================
+  card-mod-root: |
+    :root {
+      --sc-glow: rgba(var(--color-glow-rgb), 0.3);
+      --sc-glow-strong: rgba(var(--color-glow-rgb), 0.5);
+      --sc-border: rgba(var(--color-primary-rgb), 0.2);
+      --sc-border-light: rgba(var(--color-primary-rgb), 0.3);
+      --sc-shadow-normal: rgba(0, 0, 0, 0.3);
+      --sc-shadow-strong: rgba(0, 0, 0, 0.5);
+    }
+    ha-sidebar {
+      background: linear-gradient(to bottom, var(--color-bg-sidebar), var(--color-bg)) !important;
+      border-right: 1px solid var(--sc-border);
+      box-shadow: 3px 0 15px var(--sc-shadow-strong);
+    }
+    [role="heading"], div.header {
+      color: var(--color-text) !important;
+      text-shadow: 0 0 8px var(--sc-glow) !important;
+    }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: var(--color-bg); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb { background: var(--color-divider); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--sc-glow-strong); }
+    ha-card { transition: all 0.3s ease; }
+    ha-card:hover {
+      box-shadow: 0 5px 15px var(--sc-shadow-normal), 0 0 15px var(--sc-glow-strong) !important;
+      transform: translateY(-2px);
+    }
+  card-mod-card: |
+    ha-card { border: 1px solid var(--sc-border-light); }
+    .card-header { text-shadow: 0 0 8px var(--sc-glow); }
+    .card-content { padding: 16px; }
+    .entity-row { position: relative; overflow: hidden; }
+    .entity-row:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--sc-border-light), transparent);
+    }
+  card-mod-view: |
+    .type-custom-button-card,
+    .type-entities,
+    .type-custom-hui-entities-card,
+    .type-history-graph,
+    .type-media-control,
+    .type-weather-forecast {
+      --ha-card-box-shadow: 0 2px 5px 0 var(--sc-shadow-normal);
+      --ha-card-border-radius: 12px;
+      --ha-card-background: var(--card-background-color);
+      margin-bottom: 10px;
+    }
+    .column > * { margin-bottom: 12px; }
+    #view {
+      background-image: radial-gradient(circle at 50% 50%, var(--sc-glow), rgba(0, 0, 0, 0) 70%);
+    }
+  card-mod-more-info: |
+    .mdc-dialog .mdc-dialog__container .mdc-dialog__surface {
+      border: 1px solid var(--sc-border-light);
+      box-shadow: 0 0 20px var(--sc-glow);
+      background: linear-gradient(145deg, var(--card-background-color), var(--primary-background-color));
+    }
+    .mdc-dialog .mdc-dialog__scrim {
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      background: rgba(0, 0, 0, 0.5) !important;
+    }
+    .mdc-dialog .mdc-dialog__title {
+      color: var(--color-text);
+      text-shadow: 0 0 8px var(--sc-glow);
+    }
+    .mdc-dialog .mdc-dialog__actions button { color: var(--color-pink); }
+    .mdc-dialog__container { filter: drop-shadow(0 0 10px var(--sc-border)); }
+  card-mod-button: |
+    ha-icon-button, ha-button {
+      color: var(--color-pink);
+      transition: all 0.2s ease;
+    }
+    ha-icon-button:hover, ha-button:hover {
+      color: var(--color-pink-light);
+      filter: brightness(1.2) drop-shadow(0 0 5px var(--sc-glow-strong));
+    }
+  card-mod-form: |
+    ha-textfield, ha-selector, ha-select {
+      --mdc-theme-primary: var(--color-primary);
+    }
+    ha-textfield:focus-within, ha-selector:focus-within, ha-select:focus-within {
+      --mdc-theme-primary: var(--color-pink);
+    }
+    ha-form-actions mwc-button {
+      --mdc-theme-primary: var(--color-primary);
+    }
+
+SilkCircuit Dawn:
+  # SilkCircuit dawn palette
+  --color-primary: "#7e2bd5"
+  --color-primary-rgb: "126, 43, 213"
+  --color-primary-light: "#9654e0"
+  --color-primary-light-rgb: "150, 84, 224"
+  --color-primary-dark: "#5e1ba8"
+  --color-primary-dark-rgb: "94, 27, 168"
+  --color-pink: "#b40077"
+  --color-pink-rgb: "180, 0, 119"
+  --color-pink-light: "#c04a8f"
+  --color-pink-light-rgb: "192, 74, 143"
+  --color-magenta: "#b40077"
+  --color-magenta-rgb: "180, 0, 119"
+  --color-cyan: "#007f8e"
+  --color-cyan-rgb: "0, 127, 142"
+  --color-cyan-light: "#009fae"
+  --color-cyan-light-rgb: "0, 159, 174"
+  --color-green: "#2d8659"
+  --color-green-rgb: "45, 134, 89"
+  --color-green-light: "#38a169"
+  --color-green-light-rgb: "56, 161, 105"
+  --color-yellow: "#a88600"
+  --color-yellow-rgb: "168, 134, 0"
+  --color-orange: "#c05621"
+  --color-orange-rgb: "192, 86, 33"
+  --color-coral: "#c74a8c"
+  --color-coral-rgb: "199, 74, 140"
+  --color-teal: "#1f9e7a"
+  --color-teal-rgb: "31, 158, 122"
+  --color-red: "#c1272d"
+  --color-red-rgb: "193, 39, 45"
+  --color-text: "#2b2540"
+  --color-text-rgb: "43, 37, 64"
+  --color-text-muted: "#5a4d6e"
+  --color-text-muted-rgb: "90, 77, 110"
+  --color-text-disabled: "#8e84a8"
+  --color-text-disabled-rgb: "142, 132, 168"
+  --color-text-on-accent: "#ffffff"
+  --color-text-on-accent-rgb: "255, 255, 255"
+  --color-muted: "#8e84a8"
+  --color-muted-rgb: "142, 132, 168"
+  --color-muted-dark: "#6b5f80"
+  --color-muted-dark-rgb: "107, 95, 128"
+  --color-white: "#ffffff"
+  --color-white-rgb: "255, 255, 255"
+  --color-off-white: "#faf8ff"
+  --color-off-white-rgb: "250, 248, 255"
+  --color-bg: "#faf8ff"
+  --color-bg-rgb: "250, 248, 255"
+  --color-bg-card: "#ffffff"
+  --color-bg-card-rgb: "255, 255, 255"
+  --color-bg-elevated: "#f1ecff"
+  --color-bg-elevated-rgb: "241, 236, 255"
+  --color-bg-sidebar: "#f1ecff"
+  --color-bg-sidebar-rgb: "241, 236, 255"
+  --color-divider: "#e0d6f5"
+  --color-divider-rgb: "224, 214, 245"
+  --color-glow: "#b40077"
+  --color-glow-rgb: "180, 0, 119"
+  card-mod-theme: SilkCircuit Dawn
+
+  # ============================================
+  # CORE COLORS — purple primary, pink emphasis
+  # ============================================
+  primary-color: var(--color-primary)
+  light-primary-color: var(--color-primary-light)
+  dark-primary-color: var(--color-primary-dark)
+  accent-color: var(--color-pink)
+  light-accent-color: var(--color-pink-light)
+  secondary-color: var(--color-cyan)
+
+  # Dashboard-facing palette aliases
+  purple-color: var(--color-primary)
+  pink-color: var(--color-pink)
+  light-pink-color: var(--color-pink-light)
+  dark-pink-color: var(--color-primary-dark)
+  magenta-color: var(--color-magenta)
+  blue-color: var(--color-cyan)
+  cyan-color: var(--color-cyan)
+  green-color: var(--color-green)
+  yellow-color: var(--color-yellow)
+  red-color: var(--color-red)
+  orange-color: var(--color-orange)
+  coral-color: var(--color-coral)
+  teal-color: var(--color-teal)
+
+  # Status
+  info-color: var(--color-cyan)
+  success-color: var(--color-green)
+  warning-color: var(--color-yellow)
+  error-color: var(--color-red)
+
+  # ============================================
+  # BACKGROUNDS
+  # ============================================
+  primary-background-color: var(--color-bg)
+  secondary-background-color: var(--color-bg-card)
+  card-background-color: var(--color-bg-card)
+  ha-card-background: var(--color-bg-card)
+  divider-color: var(--color-divider)
+  paper-dialog-background-color: var(--color-bg-card)
+  markdown-code-background-color: var(--color-bg-elevated)
+  code-editor-background-color: var(--color-bg-elevated)
+  material-background-color: var(--color-bg-card)
+  material-secondary-background-color: var(--color-bg-elevated)
+  table-row-background-color: var(--color-bg-card)
+  table-row-alternative-background-color: var(--color-bg-elevated)
+  data-table-background-color: var(--color-bg)
+
+  # ============================================
+  # TEXT — roles invert for the light (Dawn) variant
+  # ============================================
+  text-primary-color: var(--color-text)
+  primary-text-color: var(--color-text)
+  text-secondary-color: var(--color-text-muted)
+  secondary-text-color: var(--color-text-muted)
+  text-accent-color: var(--color-text-on-accent)
+  text-dark-color: var(--color-text-on-accent)
+  text-very-light-color: var(--color-text)
+  disabled-text-color: var(--color-text-disabled)
+  app-header-text-color: var(--color-text)
+  paper-card-header-color: var(--color-text)
+  paper-card-header-text-color: var(--color-text)
+  paper-font-headline_-_color: var(--color-text)
+  paper-font-subhead_-_color: var(--color-text-muted)
+  paper-font-body1_-_color: var(--color-text)
+  paper-font-caption_-_color: var(--color-text-muted)
+  paper-grey-50: var(--color-text)
+  paper-grey-200: var(--color-bg-card)
+
+  # ============================================
+  # SIDEBAR & HEADER
+  # ============================================
+  sidebar-background-color: var(--color-bg-sidebar)
+  sidebar-icon-color: var(--color-primary)
+  sidebar-text-color: var(--color-text)
+  sidebar-selected-background-color: rgba(var(--color-primary-rgb), 0.25)
+  sidebar-selected-icon-color: var(--color-pink)
+  sidebar-selected-text-color: var(--color-text)
+  app-header-background-color: var(--color-bg)
+  app-header-edit-background-color: rgba(var(--color-primary-rgb), 0.3)
+  paper-drawer-background-color: var(--color-bg-sidebar)
+  paper-drawer-text-color: var(--color-text)
+  paper-drawer-selected-color: var(--color-primary)
+  paper-menu-background-color: var(--color-bg-card)
+  paper-menu-color: var(--color-text)
+  paper-menu-disabled-color: var(--color-text-disabled)
+
+  # ============================================
+  # CARDS & STATE
+  # ============================================
+  ha-card-border-radius: "12px"
+  ha-card-box-shadow: "0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12), 0 0 12px rgba(var(--color-glow-rgb), 0.3)"
+  paper-card-background-color: var(--color-bg-card)
+  state-icon-color: var(--color-primary)
+  state-icon-active-color: var(--color-pink)
+  state-icon-unavailable-color: var(--color-muted-dark)
+  state-on-color: var(--color-green)
+  state-off-color: var(--color-red)
+  state-idle-color: var(--color-cyan)
+  state-standby-color: var(--color-orange)
+  state-unknown-color: var(--color-muted)
+  paper-item-icon-color: var(--color-primary)
+  paper-item-icon-active-color: var(--color-pink)
+  paper-item-icon_-_color: var(--color-primary)
+  paper-item-min-height: "36px"
+  paper-item-selected_-_background-color: rgba(var(--color-primary-rgb), 0.3)
+  paper-item-selected_-_color: var(--color-text)
+  paper-item-hover_-_background-color: rgba(var(--color-primary-rgb), 0.1)
+  paper-item-focused_-_background-color: rgba(var(--color-primary-rgb), 0.1)
+  paper-item-focused-before_-_opacity: "0.12"
+  paper-icon-item_-_background-color: "transparent"
+
+  # ============================================
+  # CONTROLS — sliders, switches, toggles
+  # ============================================
+  paper-slider-knob-color: var(--color-primary)
+  paper-slider-knob-start-color: var(--color-muted)
+  paper-slider-pin-color: var(--color-primary)
+  paper-slider-active-color: var(--color-primary)
+  paper-slider-secondary-color: var(--color-pink)
+  paper-slider-container-color: rgba(var(--color-muted-rgb), 0.4)
+  switch-checked-button-color: var(--color-primary)
+  switch-checked-track-color: rgba(var(--color-primary-rgb), 0.6)
+  switch-unchecked-button-color: var(--color-muted)
+  switch-unchecked-track-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-toggle-button-checked-button-color: var(--color-primary)
+  paper-toggle-button-checked-bar-color: rgba(var(--color-primary-rgb), 0.6)
+  paper-toggle-button-unchecked-button-color: var(--color-muted)
+  paper-toggle-button-unchecked-bar-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-progress-active-color: var(--color-primary)
+  paper-progress-container-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-progress-disabled-active-color: var(--color-text-disabled)
+  paper-progress-secondary-color: var(--color-pink)
+  paper-spinner-color: var(--color-primary)
+  paper-spinner-layer-1-color: var(--color-primary)
+  paper-spinner-layer-2-color: var(--color-green)
+  paper-spinner-layer-3-color: var(--color-pink)
+  paper-spinner-layer-4-color: var(--color-cyan)
+
+  # ============================================
+  # DROPDOWNS, MENUS & TABS
+  # ============================================
+  paper-listbox-background-color: var(--color-bg-card)
+  paper-listbox-color: var(--color-text)
+  paper-dropdown-menu-color: var(--color-text)
+  paper-dropdown-menu-label-color: var(--color-text-muted)
+  input-dropdown-icon-color: var(--color-primary)
+  mdc-select-fill-color: var(--color-bg-card)
+  mdc-select-ink-color: var(--color-text)
+  mdc-select-label-ink-color: var(--color-text-muted)
+  mdc-select-idle-line-color: var(--color-primary)
+  mdc-select-dropdown-icon-color: var(--color-primary)
+  mdc-select-hover-line-color: var(--color-pink)
+  mdc-text-field-label-ink-color: var(--color-text)
+  paper-tabs-selection-bar-color: var(--color-primary)
+  paper-tab-ink: var(--color-primary)
+  paper-tabs-container-color: "transparent"
+  paper-tabs-content-container_-_background-color: "transparent"
+  paper-tabs-selection-bar_-_border-color: var(--color-primary)
+
+  # ============================================
+  # FORMS & INPUTS
+  # ============================================
+  input-fill-color: "rgba(var(--color-text-rgb), 0.06)"
+  input-ink-color: var(--color-text)
+  input-label-ink-color: var(--color-text-muted)
+  input-disabled-ink-color: var(--color-text-disabled)
+  input-disabled-fill-color: "rgba(var(--color-text-rgb), 0.02)"
+  input-idle-line-color: var(--color-primary)
+  input-hover-line-color: var(--color-pink)
+  input-disabled-line-color: var(--color-muted-dark)
+  input-outlined-idle-border-color: var(--color-primary)
+  input-outlined-hover-border-color: var(--color-pink)
+  input-outlined-disabled-border-color: var(--color-muted-dark)
+  paper-input-container-color: var(--color-text-muted)
+  paper-input-container-focus-color: var(--color-primary)
+  paper-input-container-invalid-color: var(--color-red)
+  paper-input-container-input-color: var(--color-text)
+  paper-checkbox-checkmark-color: var(--color-text-on-accent)
+  paper-checkbox-checked-color: var(--color-primary)
+  paper-checkbox-checked-ink-color: var(--color-primary)
+  paper-checkbox-unchecked-color: var(--color-primary)
+  paper-checkbox-unchecked-ink-color: var(--color-primary)
+  paper-checkbox-label-color: var(--color-text)
+  paper-checkbox-label-checked-color: var(--color-text)
+  paper-checkbox-disabled-color: var(--color-muted-dark)
+  paper-checkbox-disabled-ink-color: var(--color-muted-dark)
+  mdc-checkbox-unchecked-color: var(--color-muted)
+  paper-radio-button-checked-color: var(--color-primary)
+  paper-radio-button-checked-ink-color: var(--color-primary)
+  paper-radio-button-unchecked-color: var(--color-primary)
+  paper-radio-button-unchecked-ink-color: var(--color-primary)
+  paper-radio-button-label-color: var(--color-text)
+  paper-radio-button-disabled-color: var(--color-muted-dark)
+  paper-button-active-keyboard-focus-background: rgba(var(--color-primary-rgb), 0.3)
+  paper-button-disabled-text-color: var(--color-text-disabled)
+  paper-button-disabled_-_background-color: rgba(var(--color-muted-rgb), 0.15)
+  paper-button-disabled_-_color: var(--color-text-disabled)
+  paper-button-raised-keyboard-focus_-_background-color: rgba(var(--color-primary-rgb), 0.2)
+  paper-dialog-button-color: var(--color-primary)
+
+  # ============================================
+  # MDC THEMING
+  # ============================================
+  mdc-theme-primary: var(--color-primary)
+  mdc-theme-secondary: var(--color-pink)
+  mdc-theme-background: var(--color-bg)
+  mdc-theme-surface: var(--color-bg-card)
+  mdc-theme-on-primary: var(--color-text-on-accent)
+  mdc-theme-on-secondary: var(--color-text-on-accent)
+  mdc-theme-on-surface: var(--color-text)
+
+  # ============================================
+  # CHIPS, DIALOGS, BADGES
+  # ============================================
+  paper-chip-background-color: var(--color-bg-card)
+  paper-chip-icon-color: var(--color-primary)
+  paper-chip-text-color: var(--color-text)
+  paper-chip-selected-background-color: rgba(var(--color-primary-rgb), 0.3)
+  paper-chip-selected-text-color: var(--color-text)
+  paper-toast-background-color: var(--color-bg-card)
+  paper-datepicker-ink-color: var(--color-text)
+  paper-datepicker-accent-color: var(--color-primary)
+  paper-datepicker-toggled-color: var(--color-primary)
+  paper-datepicker-disabled-color: var(--color-muted-dark)
+  paper-datepicker-calendar-color: var(--color-bg-card)
+  label-badge-red: var(--color-red)
+  label-badge-green: var(--color-green)
+  label-badge-blue: var(--color-cyan)
+  label-badge-yellow: var(--color-yellow)
+  label-badge-gray: var(--color-muted)
+  label-badge-text-color: var(--color-text)
+  label-badge-background-color: rgba(var(--color-bg-card-rgb), 0.8)
+
+  # ============================================
+  # DOMAIN-SPECIFIC
+  # ============================================
+  energy-grid-consumption-color: var(--color-red)
+  energy-grid-return-color: var(--color-green)
+  energy-solar-color: var(--color-yellow)
+  energy-battery-in-color: var(--color-cyan)
+  energy-battery-out-color: var(--color-orange)
+  energy-gas-color: var(--color-red)
+  energy-water-color: var(--color-cyan)
+  history-graph-color: var(--color-pink)
+  light-color: var(--color-yellow)
+  logbook-entry-color: var(--color-pink)
+  media-upload-hover-color: rgba(var(--color-primary-rgb), 0.3)
+  mini-media-player-base-color: var(--color-yellow)
+  mini-media-player-accent-color: var(--color-pink)
+  svg-card-presets-color: var(--color-text)
+  weather-day-color: var(--color-yellow)
+  weather-night-color: var(--color-cyan)
+  climate-heat-color: var(--color-red)
+  climate-cool-color: var(--color-cyan)
+  climate-fan-only-color: var(--color-green)
+  climate-auto-color: var(--color-primary)
+  climate-dry-color: var(--color-orange)
+  climate-idle-color: var(--color-text-muted)
+  climate-off-color: var(--color-muted-dark)
+  plant-ok-color: var(--color-green)
+  plant-problem-color: var(--color-red)
+  scrollbar-thumb-color: var(--color-divider)
+
+  # ============================================
+  # CARD-MOD — the electric layer (glow, gradients)
+  # ============================================
+  card-mod-root: |
+    :root {
+      --sc-glow: rgba(var(--color-glow-rgb), 0.3);
+      --sc-glow-strong: rgba(var(--color-glow-rgb), 0.5);
+      --sc-border: rgba(var(--color-primary-rgb), 0.2);
+      --sc-border-light: rgba(var(--color-primary-rgb), 0.3);
+      --sc-shadow-normal: rgba(0, 0, 0, 0.3);
+      --sc-shadow-strong: rgba(0, 0, 0, 0.5);
+    }
+    ha-sidebar {
+      background: linear-gradient(to bottom, var(--color-bg-sidebar), var(--color-bg)) !important;
+      border-right: 1px solid var(--sc-border);
+      box-shadow: 3px 0 15px var(--sc-shadow-strong);
+    }
+    [role="heading"], div.header {
+      color: var(--color-text) !important;
+      text-shadow: 0 0 8px var(--sc-glow) !important;
+    }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: var(--color-bg); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb { background: var(--color-divider); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--sc-glow-strong); }
+    ha-card { transition: all 0.3s ease; }
+    ha-card:hover {
+      box-shadow: 0 5px 15px var(--sc-shadow-normal), 0 0 15px var(--sc-glow-strong) !important;
+      transform: translateY(-2px);
+    }
+  card-mod-card: |
+    ha-card { border: 1px solid var(--sc-border-light); }
+    .card-header { text-shadow: 0 0 8px var(--sc-glow); }
+    .card-content { padding: 16px; }
+    .entity-row { position: relative; overflow: hidden; }
+    .entity-row:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--sc-border-light), transparent);
+    }
+  card-mod-view: |
+    .type-custom-button-card,
+    .type-entities,
+    .type-custom-hui-entities-card,
+    .type-history-graph,
+    .type-media-control,
+    .type-weather-forecast {
+      --ha-card-box-shadow: 0 2px 5px 0 var(--sc-shadow-normal);
+      --ha-card-border-radius: 12px;
+      --ha-card-background: var(--card-background-color);
+      margin-bottom: 10px;
+    }
+    .column > * { margin-bottom: 12px; }
+    #view {
+      background-image: radial-gradient(circle at 50% 50%, var(--sc-glow), rgba(0, 0, 0, 0) 70%);
+    }
+  card-mod-more-info: |
+    .mdc-dialog .mdc-dialog__container .mdc-dialog__surface {
+      border: 1px solid var(--sc-border-light);
+      box-shadow: 0 0 20px var(--sc-glow);
+      background: linear-gradient(145deg, var(--card-background-color), var(--primary-background-color));
+    }
+    .mdc-dialog .mdc-dialog__scrim {
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      background: rgba(0, 0, 0, 0.5) !important;
+    }
+    .mdc-dialog .mdc-dialog__title {
+      color: var(--color-text);
+      text-shadow: 0 0 8px var(--sc-glow);
+    }
+    .mdc-dialog .mdc-dialog__actions button { color: var(--color-pink); }
+    .mdc-dialog__container { filter: drop-shadow(0 0 10px var(--sc-border)); }
+  card-mod-button: |
+    ha-icon-button, ha-button {
+      color: var(--color-pink);
+      transition: all 0.2s ease;
+    }
+    ha-icon-button:hover, ha-button:hover {
+      color: var(--color-pink-light);
+      filter: brightness(1.2) drop-shadow(0 0 5px var(--sc-glow-strong));
+    }
+  card-mod-form: |
+    ha-textfield, ha-selector, ha-select {
+      --mdc-theme-primary: var(--color-primary);
+    }
+    ha-textfield:focus-within, ha-selector:focus-within, ha-select:focus-within {
+      --mdc-theme-primary: var(--color-pink);
+    }
+    ha-form-actions mwc-button {
+      --mdc-theme-primary: var(--color-primary);
+    }
+
+SilkCircuit Auto:
+  card-mod-theme: SilkCircuit Auto
+
+  # ============================================
+  # CORE COLORS — purple primary, pink emphasis
+  # ============================================
+  primary-color: var(--color-primary)
+  light-primary-color: var(--color-primary-light)
+  dark-primary-color: var(--color-primary-dark)
+  accent-color: var(--color-pink)
+  light-accent-color: var(--color-pink-light)
+  secondary-color: var(--color-cyan)
+
+  # Dashboard-facing palette aliases
+  purple-color: var(--color-primary)
+  pink-color: var(--color-pink)
+  light-pink-color: var(--color-pink-light)
+  dark-pink-color: var(--color-primary-dark)
+  magenta-color: var(--color-magenta)
+  blue-color: var(--color-cyan)
+  cyan-color: var(--color-cyan)
+  green-color: var(--color-green)
+  yellow-color: var(--color-yellow)
+  red-color: var(--color-red)
+  orange-color: var(--color-orange)
+  coral-color: var(--color-coral)
+  teal-color: var(--color-teal)
+
+  # Status
+  info-color: var(--color-cyan)
+  success-color: var(--color-green)
+  warning-color: var(--color-yellow)
+  error-color: var(--color-red)
+
+  # ============================================
+  # BACKGROUNDS
+  # ============================================
+  primary-background-color: var(--color-bg)
+  secondary-background-color: var(--color-bg-card)
+  card-background-color: var(--color-bg-card)
+  ha-card-background: var(--color-bg-card)
+  divider-color: var(--color-divider)
+  paper-dialog-background-color: var(--color-bg-card)
+  markdown-code-background-color: var(--color-bg-elevated)
+  code-editor-background-color: var(--color-bg-elevated)
+  material-background-color: var(--color-bg-card)
+  material-secondary-background-color: var(--color-bg-elevated)
+  table-row-background-color: var(--color-bg-card)
+  table-row-alternative-background-color: var(--color-bg-elevated)
+  data-table-background-color: var(--color-bg)
+
+  # ============================================
+  # TEXT — roles invert for the light (Dawn) variant
+  # ============================================
+  text-primary-color: var(--color-text)
+  primary-text-color: var(--color-text)
+  text-secondary-color: var(--color-text-muted)
+  secondary-text-color: var(--color-text-muted)
+  text-accent-color: var(--color-text-on-accent)
+  text-dark-color: var(--color-text-on-accent)
+  text-very-light-color: var(--color-text)
+  disabled-text-color: var(--color-text-disabled)
+  app-header-text-color: var(--color-text)
+  paper-card-header-color: var(--color-text)
+  paper-card-header-text-color: var(--color-text)
+  paper-font-headline_-_color: var(--color-text)
+  paper-font-subhead_-_color: var(--color-text-muted)
+  paper-font-body1_-_color: var(--color-text)
+  paper-font-caption_-_color: var(--color-text-muted)
+  paper-grey-50: var(--color-text)
+  paper-grey-200: var(--color-bg-card)
+
+  # ============================================
+  # SIDEBAR & HEADER
+  # ============================================
+  sidebar-background-color: var(--color-bg-sidebar)
+  sidebar-icon-color: var(--color-primary)
+  sidebar-text-color: var(--color-text)
+  sidebar-selected-background-color: rgba(var(--color-primary-rgb), 0.25)
+  sidebar-selected-icon-color: var(--color-pink)
+  sidebar-selected-text-color: var(--color-text)
+  app-header-background-color: var(--color-bg)
+  app-header-edit-background-color: rgba(var(--color-primary-rgb), 0.3)
+  paper-drawer-background-color: var(--color-bg-sidebar)
+  paper-drawer-text-color: var(--color-text)
+  paper-drawer-selected-color: var(--color-primary)
+  paper-menu-background-color: var(--color-bg-card)
+  paper-menu-color: var(--color-text)
+  paper-menu-disabled-color: var(--color-text-disabled)
+
+  # ============================================
+  # CARDS & STATE
+  # ============================================
+  ha-card-border-radius: "12px"
+  ha-card-box-shadow: "0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12), 0 0 12px rgba(var(--color-glow-rgb), 0.3)"
+  paper-card-background-color: var(--color-bg-card)
+  state-icon-color: var(--color-primary)
+  state-icon-active-color: var(--color-pink)
+  state-icon-unavailable-color: var(--color-muted-dark)
+  state-on-color: var(--color-green)
+  state-off-color: var(--color-red)
+  state-idle-color: var(--color-cyan)
+  state-standby-color: var(--color-orange)
+  state-unknown-color: var(--color-muted)
+  paper-item-icon-color: var(--color-primary)
+  paper-item-icon-active-color: var(--color-pink)
+  paper-item-icon_-_color: var(--color-primary)
+  paper-item-min-height: "36px"
+  paper-item-selected_-_background-color: rgba(var(--color-primary-rgb), 0.3)
+  paper-item-selected_-_color: var(--color-text)
+  paper-item-hover_-_background-color: rgba(var(--color-primary-rgb), 0.1)
+  paper-item-focused_-_background-color: rgba(var(--color-primary-rgb), 0.1)
+  paper-item-focused-before_-_opacity: "0.12"
+  paper-icon-item_-_background-color: "transparent"
+
+  # ============================================
+  # CONTROLS — sliders, switches, toggles
+  # ============================================
+  paper-slider-knob-color: var(--color-primary)
+  paper-slider-knob-start-color: var(--color-muted)
+  paper-slider-pin-color: var(--color-primary)
+  paper-slider-active-color: var(--color-primary)
+  paper-slider-secondary-color: var(--color-pink)
+  paper-slider-container-color: rgba(var(--color-muted-rgb), 0.4)
+  switch-checked-button-color: var(--color-primary)
+  switch-checked-track-color: rgba(var(--color-primary-rgb), 0.6)
+  switch-unchecked-button-color: var(--color-muted)
+  switch-unchecked-track-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-toggle-button-checked-button-color: var(--color-primary)
+  paper-toggle-button-checked-bar-color: rgba(var(--color-primary-rgb), 0.6)
+  paper-toggle-button-unchecked-button-color: var(--color-muted)
+  paper-toggle-button-unchecked-bar-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-progress-active-color: var(--color-primary)
+  paper-progress-container-color: rgba(var(--color-muted-rgb), 0.4)
+  paper-progress-disabled-active-color: var(--color-text-disabled)
+  paper-progress-secondary-color: var(--color-pink)
+  paper-spinner-color: var(--color-primary)
+  paper-spinner-layer-1-color: var(--color-primary)
+  paper-spinner-layer-2-color: var(--color-green)
+  paper-spinner-layer-3-color: var(--color-pink)
+  paper-spinner-layer-4-color: var(--color-cyan)
+
+  # ============================================
+  # DROPDOWNS, MENUS & TABS
+  # ============================================
+  paper-listbox-background-color: var(--color-bg-card)
+  paper-listbox-color: var(--color-text)
+  paper-dropdown-menu-color: var(--color-text)
+  paper-dropdown-menu-label-color: var(--color-text-muted)
+  input-dropdown-icon-color: var(--color-primary)
+  mdc-select-fill-color: var(--color-bg-card)
+  mdc-select-ink-color: var(--color-text)
+  mdc-select-label-ink-color: var(--color-text-muted)
+  mdc-select-idle-line-color: var(--color-primary)
+  mdc-select-dropdown-icon-color: var(--color-primary)
+  mdc-select-hover-line-color: var(--color-pink)
+  mdc-text-field-label-ink-color: var(--color-text)
+  paper-tabs-selection-bar-color: var(--color-primary)
+  paper-tab-ink: var(--color-primary)
+  paper-tabs-container-color: "transparent"
+  paper-tabs-content-container_-_background-color: "transparent"
+  paper-tabs-selection-bar_-_border-color: var(--color-primary)
+
+  # ============================================
+  # FORMS & INPUTS
+  # ============================================
+  input-fill-color: "rgba(var(--color-text-rgb), 0.06)"
+  input-ink-color: var(--color-text)
+  input-label-ink-color: var(--color-text-muted)
+  input-disabled-ink-color: var(--color-text-disabled)
+  input-disabled-fill-color: "rgba(var(--color-text-rgb), 0.02)"
+  input-idle-line-color: var(--color-primary)
+  input-hover-line-color: var(--color-pink)
+  input-disabled-line-color: var(--color-muted-dark)
+  input-outlined-idle-border-color: var(--color-primary)
+  input-outlined-hover-border-color: var(--color-pink)
+  input-outlined-disabled-border-color: var(--color-muted-dark)
+  paper-input-container-color: var(--color-text-muted)
+  paper-input-container-focus-color: var(--color-primary)
+  paper-input-container-invalid-color: var(--color-red)
+  paper-input-container-input-color: var(--color-text)
+  paper-checkbox-checkmark-color: var(--color-text-on-accent)
+  paper-checkbox-checked-color: var(--color-primary)
+  paper-checkbox-checked-ink-color: var(--color-primary)
+  paper-checkbox-unchecked-color: var(--color-primary)
+  paper-checkbox-unchecked-ink-color: var(--color-primary)
+  paper-checkbox-label-color: var(--color-text)
+  paper-checkbox-label-checked-color: var(--color-text)
+  paper-checkbox-disabled-color: var(--color-muted-dark)
+  paper-checkbox-disabled-ink-color: var(--color-muted-dark)
+  mdc-checkbox-unchecked-color: var(--color-muted)
+  paper-radio-button-checked-color: var(--color-primary)
+  paper-radio-button-checked-ink-color: var(--color-primary)
+  paper-radio-button-unchecked-color: var(--color-primary)
+  paper-radio-button-unchecked-ink-color: var(--color-primary)
+  paper-radio-button-label-color: var(--color-text)
+  paper-radio-button-disabled-color: var(--color-muted-dark)
+  paper-button-active-keyboard-focus-background: rgba(var(--color-primary-rgb), 0.3)
+  paper-button-disabled-text-color: var(--color-text-disabled)
+  paper-button-disabled_-_background-color: rgba(var(--color-muted-rgb), 0.15)
+  paper-button-disabled_-_color: var(--color-text-disabled)
+  paper-button-raised-keyboard-focus_-_background-color: rgba(var(--color-primary-rgb), 0.2)
+  paper-dialog-button-color: var(--color-primary)
+
+  # ============================================
+  # MDC THEMING
+  # ============================================
+  mdc-theme-primary: var(--color-primary)
+  mdc-theme-secondary: var(--color-pink)
+  mdc-theme-background: var(--color-bg)
+  mdc-theme-surface: var(--color-bg-card)
+  mdc-theme-on-primary: var(--color-text-on-accent)
+  mdc-theme-on-secondary: var(--color-text-on-accent)
+  mdc-theme-on-surface: var(--color-text)
+
+  # ============================================
+  # CHIPS, DIALOGS, BADGES
+  # ============================================
+  paper-chip-background-color: var(--color-bg-card)
+  paper-chip-icon-color: var(--color-primary)
+  paper-chip-text-color: var(--color-text)
+  paper-chip-selected-background-color: rgba(var(--color-primary-rgb), 0.3)
+  paper-chip-selected-text-color: var(--color-text)
+  paper-toast-background-color: var(--color-bg-card)
+  paper-datepicker-ink-color: var(--color-text)
+  paper-datepicker-accent-color: var(--color-primary)
+  paper-datepicker-toggled-color: var(--color-primary)
+  paper-datepicker-disabled-color: var(--color-muted-dark)
+  paper-datepicker-calendar-color: var(--color-bg-card)
+  label-badge-red: var(--color-red)
+  label-badge-green: var(--color-green)
+  label-badge-blue: var(--color-cyan)
+  label-badge-yellow: var(--color-yellow)
+  label-badge-gray: var(--color-muted)
+  label-badge-text-color: var(--color-text)
+  label-badge-background-color: rgba(var(--color-bg-card-rgb), 0.8)
+
+  # ============================================
+  # DOMAIN-SPECIFIC
+  # ============================================
+  energy-grid-consumption-color: var(--color-red)
+  energy-grid-return-color: var(--color-green)
+  energy-solar-color: var(--color-yellow)
+  energy-battery-in-color: var(--color-cyan)
+  energy-battery-out-color: var(--color-orange)
+  energy-gas-color: var(--color-red)
+  energy-water-color: var(--color-cyan)
+  history-graph-color: var(--color-pink)
+  light-color: var(--color-yellow)
+  logbook-entry-color: var(--color-pink)
+  media-upload-hover-color: rgba(var(--color-primary-rgb), 0.3)
+  mini-media-player-base-color: var(--color-yellow)
+  mini-media-player-accent-color: var(--color-pink)
+  svg-card-presets-color: var(--color-text)
+  weather-day-color: var(--color-yellow)
+  weather-night-color: var(--color-cyan)
+  climate-heat-color: var(--color-red)
+  climate-cool-color: var(--color-cyan)
+  climate-fan-only-color: var(--color-green)
+  climate-auto-color: var(--color-primary)
+  climate-dry-color: var(--color-orange)
+  climate-idle-color: var(--color-text-muted)
+  climate-off-color: var(--color-muted-dark)
+  plant-ok-color: var(--color-green)
+  plant-problem-color: var(--color-red)
+  scrollbar-thumb-color: var(--color-divider)
+
+  # ============================================
+  # CARD-MOD — the electric layer (glow, gradients)
+  # ============================================
+  card-mod-root: |
+    :root {
+      --sc-glow: rgba(var(--color-glow-rgb), 0.3);
+      --sc-glow-strong: rgba(var(--color-glow-rgb), 0.5);
+      --sc-border: rgba(var(--color-primary-rgb), 0.2);
+      --sc-border-light: rgba(var(--color-primary-rgb), 0.3);
+      --sc-shadow-normal: rgba(0, 0, 0, 0.3);
+      --sc-shadow-strong: rgba(0, 0, 0, 0.5);
+    }
+    ha-sidebar {
+      background: linear-gradient(to bottom, var(--color-bg-sidebar), var(--color-bg)) !important;
+      border-right: 1px solid var(--sc-border);
+      box-shadow: 3px 0 15px var(--sc-shadow-strong);
+    }
+    [role="heading"], div.header {
+      color: var(--color-text) !important;
+      text-shadow: 0 0 8px var(--sc-glow) !important;
+    }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: var(--color-bg); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb { background: var(--color-divider); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--sc-glow-strong); }
+    ha-card { transition: all 0.3s ease; }
+    ha-card:hover {
+      box-shadow: 0 5px 15px var(--sc-shadow-normal), 0 0 15px var(--sc-glow-strong) !important;
+      transform: translateY(-2px);
+    }
+  card-mod-card: |
+    ha-card { border: 1px solid var(--sc-border-light); }
+    .card-header { text-shadow: 0 0 8px var(--sc-glow); }
+    .card-content { padding: 16px; }
+    .entity-row { position: relative; overflow: hidden; }
+    .entity-row:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--sc-border-light), transparent);
+    }
+  card-mod-view: |
+    .type-custom-button-card,
+    .type-entities,
+    .type-custom-hui-entities-card,
+    .type-history-graph,
+    .type-media-control,
+    .type-weather-forecast {
+      --ha-card-box-shadow: 0 2px 5px 0 var(--sc-shadow-normal);
+      --ha-card-border-radius: 12px;
+      --ha-card-background: var(--card-background-color);
+      margin-bottom: 10px;
+    }
+    .column > * { margin-bottom: 12px; }
+    #view {
+      background-image: radial-gradient(circle at 50% 50%, var(--sc-glow), rgba(0, 0, 0, 0) 70%);
+    }
+  card-mod-more-info: |
+    .mdc-dialog .mdc-dialog__container .mdc-dialog__surface {
+      border: 1px solid var(--sc-border-light);
+      box-shadow: 0 0 20px var(--sc-glow);
+      background: linear-gradient(145deg, var(--card-background-color), var(--primary-background-color));
+    }
+    .mdc-dialog .mdc-dialog__scrim {
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      background: rgba(0, 0, 0, 0.5) !important;
+    }
+    .mdc-dialog .mdc-dialog__title {
+      color: var(--color-text);
+      text-shadow: 0 0 8px var(--sc-glow);
+    }
+    .mdc-dialog .mdc-dialog__actions button { color: var(--color-pink); }
+    .mdc-dialog__container { filter: drop-shadow(0 0 10px var(--sc-border)); }
+  card-mod-button: |
+    ha-icon-button, ha-button {
+      color: var(--color-pink);
+      transition: all 0.2s ease;
+    }
+    ha-icon-button:hover, ha-button:hover {
+      color: var(--color-pink-light);
+      filter: brightness(1.2) drop-shadow(0 0 5px var(--sc-glow-strong));
+    }
+  card-mod-form: |
+    ha-textfield, ha-selector, ha-select {
+      --mdc-theme-primary: var(--color-primary);
+    }
+    ha-textfield:focus-within, ha-selector:focus-within, ha-select:focus-within {
+      --mdc-theme-primary: var(--color-pink);
+    }
+    ha-form-actions mwc-button {
+      --mdc-theme-primary: var(--color-primary);
+    }
+  modes:
+    dark:
+      # SilkCircuit neon palette
+      --color-primary: "#e135ff"
+      --color-primary-rgb: "225, 53, 255"
+      --color-primary-light: "#f2a6ff"
+      --color-primary-light-rgb: "242, 166, 255"
+      --color-primary-dark: "#b06cff"
+      --color-primary-dark-rgb: "176, 108, 255"
+      --color-pink: "#ff6ac1"
+      --color-pink-rgb: "255, 106, 193"
+      --color-pink-light: "#ff99dd"
+      --color-pink-light-rgb: "255, 153, 221"
+      --color-magenta: "#ff00ff"
+      --color-magenta-rgb: "255, 0, 255"
+      --color-cyan: "#80ffea"
+      --color-cyan-rgb: "128, 255, 234"
+      --color-cyan-light: "#b3fff2"
+      --color-cyan-light-rgb: "179, 255, 242"
+      --color-green: "#50fa7b"
+      --color-green-rgb: "80, 250, 123"
+      --color-green-light: "#7dffa0"
+      --color-green-light-rgb: "125, 255, 160"
+      --color-yellow: "#f1fa8c"
+      --color-yellow-rgb: "241, 250, 140"
+      --color-orange: "#ffb86c"
+      --color-orange-rgb: "255, 184, 108"
+      --color-coral: "#ff6ac1"
+      --color-coral-rgb: "255, 106, 193"
+      --color-teal: "#4fffb0"
+      --color-teal-rgb: "79, 255, 176"
+      --color-red: "#ff6363"
+      --color-red-rgb: "255, 99, 99"
+      --color-text: "#f8f8f2"
+      --color-text-rgb: "248, 248, 242"
+      --color-text-muted: "#c9c2e6"
+      --color-text-muted-rgb: "201, 194, 230"
+      --color-text-disabled: "#8c86a8"
+      --color-text-disabled-rgb: "140, 134, 168"
+      --color-text-on-accent: "#12101a"
+      --color-text-on-accent-rgb: "18, 16, 26"
+      --color-muted: "#8c8cb0"
+      --color-muted-rgb: "140, 140, 176"
+      --color-muted-dark: "#5a5a7a"
+      --color-muted-dark-rgb: "90, 90, 122"
+      --color-white: "#ffffff"
+      --color-white-rgb: "255, 255, 255"
+      --color-off-white: "#f0f0ff"
+      --color-off-white-rgb: "240, 240, 255"
+      --color-bg: "#12101a"
+      --color-bg-rgb: "18, 16, 26"
+      --color-bg-card: "#1a162a"
+      --color-bg-card-rgb: "26, 22, 42"
+      --color-bg-elevated: "#221c34"
+      --color-bg-elevated-rgb: "34, 28, 52"
+      --color-bg-sidebar: "#0a0812"
+      --color-bg-sidebar-rgb: "10, 8, 18"
+      --color-divider: "#332b4d"
+      --color-divider-rgb: "51, 43, 77"
+      --color-glow: "#ff6ac1"
+      --color-glow-rgb: "255, 106, 193"
+    light:
+      # SilkCircuit dawn palette
+      --color-primary: "#7e2bd5"
+      --color-primary-rgb: "126, 43, 213"
+      --color-primary-light: "#9654e0"
+      --color-primary-light-rgb: "150, 84, 224"
+      --color-primary-dark: "#5e1ba8"
+      --color-primary-dark-rgb: "94, 27, 168"
+      --color-pink: "#b40077"
+      --color-pink-rgb: "180, 0, 119"
+      --color-pink-light: "#c04a8f"
+      --color-pink-light-rgb: "192, 74, 143"
+      --color-magenta: "#b40077"
+      --color-magenta-rgb: "180, 0, 119"
+      --color-cyan: "#007f8e"
+      --color-cyan-rgb: "0, 127, 142"
+      --color-cyan-light: "#009fae"
+      --color-cyan-light-rgb: "0, 159, 174"
+      --color-green: "#2d8659"
+      --color-green-rgb: "45, 134, 89"
+      --color-green-light: "#38a169"
+      --color-green-light-rgb: "56, 161, 105"
+      --color-yellow: "#a88600"
+      --color-yellow-rgb: "168, 134, 0"
+      --color-orange: "#c05621"
+      --color-orange-rgb: "192, 86, 33"
+      --color-coral: "#c74a8c"
+      --color-coral-rgb: "199, 74, 140"
+      --color-teal: "#1f9e7a"
+      --color-teal-rgb: "31, 158, 122"
+      --color-red: "#c1272d"
+      --color-red-rgb: "193, 39, 45"
+      --color-text: "#2b2540"
+      --color-text-rgb: "43, 37, 64"
+      --color-text-muted: "#5a4d6e"
+      --color-text-muted-rgb: "90, 77, 110"
+      --color-text-disabled: "#8e84a8"
+      --color-text-disabled-rgb: "142, 132, 168"
+      --color-text-on-accent: "#ffffff"
+      --color-text-on-accent-rgb: "255, 255, 255"
+      --color-muted: "#8e84a8"
+      --color-muted-rgb: "142, 132, 168"
+      --color-muted-dark: "#6b5f80"
+      --color-muted-dark-rgb: "107, 95, 128"
+      --color-white: "#ffffff"
+      --color-white-rgb: "255, 255, 255"
+      --color-off-white: "#faf8ff"
+      --color-off-white-rgb: "250, 248, 255"
+      --color-bg: "#faf8ff"
+      --color-bg-rgb: "250, 248, 255"
+      --color-bg-card: "#ffffff"
+      --color-bg-card-rgb: "255, 255, 255"
+      --color-bg-elevated: "#f1ecff"
+      --color-bg-elevated-rgb: "241, 236, 255"
+      --color-bg-sidebar: "#f1ecff"
+      --color-bg-sidebar-rgb: "241, 236, 255"
+      --color-divider: "#e0d6f5"
+      --color-divider-rgb: "224, 214, 245"
+      --color-glow: "#b40077"
+      --color-glow-rgb: "180, 0, 119"
+
