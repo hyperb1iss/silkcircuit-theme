@@ -15,7 +15,7 @@ jobs:
     name: HACS Validation
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: HACS validation
         uses: hacs/action@main
         with:
@@ -28,11 +28,11 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
-          name: Release ${{ github.ref_name }}
+          name: SilkCircuit ${{ github.ref_name }} 🦋
           draft: false
           prerelease: false
           generate_release_notes: true
