@@ -4,6 +4,15 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/), and this project adheres to
 [Semantic Versioning](https://semver.org/).
 
+## [1.0.1] - 2026-06-28
+
+### Changed
+
+- Harmonized the sidebar selected item to **cyan** (the interaction
+  color) instead of a pink that clashed with the purple icons and the
+  pink notification badges.
+- Refreshed the README hero with a screenshot of the current theme.
+
 ## [1.0.0] - 2026-06-28
 
 First tagged release — the electric, femme-forward face of the
@@ -25,4 +34,5 @@ brought to Home Assistant.
 - **Generator** (`scripts/build_theme.py`) that expands one shared body across
   all variants and self-checks that every `var(--color-*)` token is defined.
 
+[1.0.1]: https://github.com/hyperb1iss/silkcircuit-theme/releases/tag/v1.0.1
 [1.0.0]: https://github.com/hyperb1iss/silkcircuit-theme/releases/tag/v1.0.0
